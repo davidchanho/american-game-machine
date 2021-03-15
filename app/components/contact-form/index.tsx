@@ -1,12 +1,13 @@
 import React from "react";
 import { Button, Form } from "react-bootstrap";
+import Container from "./Container";
 import useContactForm from "./useContactForm";
 
 function ContactForm() {
   const { form, onChange, onSubmit } = useContactForm();
 
   return (
-    <Form id="contact-form" className="ml-auto w-75" onSubmit={onSubmit}>
+    <Container id="contact-form" onSubmit={onSubmit}>
       <Form.Group controlId="name">
         <Form.Label>Name</Form.Label>
         <Form.Control
@@ -78,19 +79,10 @@ function ContactForm() {
         />
       </Form.Group>
 
-      <div className="d-flex align-items-center justify-content-between">
-        <Form.Group controlId="newsletter" className="invisible">
-          <Form.Check
-            type="checkbox"
-            label="Stay up-to-date by signing up to our newsletter"
-          />
-        </Form.Group>
-
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
-      </div>
-    </Form>
+      <Button variant="primary" type="submit">
+        Submit
+      </Button>
+    </Container>
   );
 }
 

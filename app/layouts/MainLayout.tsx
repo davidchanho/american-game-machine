@@ -1,16 +1,20 @@
-import React from "react";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import Navbar from "../components/navbar";
+import ScrollToTop from "../components/scroll-to-top";
+import Main from "./Main";
+import { PropsWithChildren } from "react";
+import Section from "./Section";
 
-function MainLayout({ children }) {
+function MainLayout({children}: PropsWithChildren<{}>) {
   return (
-    <div>
+    <Main>
       <Header />
       <Navbar />
-      {children}
+      <Section>{children}</Section>
       <Footer />
-    </div>
+      <ScrollToTop />
+    </Main>
   );
 }
 
