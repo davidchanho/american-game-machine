@@ -1,7 +1,12 @@
 import React from "react";
 import { Button, Form } from "react-bootstrap";
-import { Container } from "./styles";
+import styled from "styled-components";
 import useContactForm from "./hooks";
+
+const Container = styled(Form)`
+  margin: auto;
+  width: 75%;
+`;
 
 function ContactForm() {
   const { form, onChange, onSubmit } = useContactForm();

@@ -1,6 +1,10 @@
 import React from "react";
 import { useAppContext } from "../../context";
-import { Container } from "./styles";
+import styled from "styled-components";
+
+export const Container = styled.footer`
+  text-align: center;
+`;
 
 export default function Footer() {
   const {

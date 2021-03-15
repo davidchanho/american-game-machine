@@ -1,8 +1,12 @@
 import { useEffect, useState } from "react";
-import { IScrollToTop } from "./types";
+
+interface Props {
+  scrollpos: number | null;
+  visible: boolean;
+}
 
 const useScroll = () => {
-  const [scrollState, setScrollState] = useState<IScrollToTop>({
+  const [scrollState, setScrollState] = useState<Props>({
     scrollpos: null,
     visible: false,
   });

@@ -1,8 +1,25 @@
 import Image from "next/image";
 import React from "react";
-import { Col } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
+import styled from "styled-components";
 import NewsLetterForm from "./Form";
-import {Container} from "./styles";
+
+export const Container = styled(Row)`
+  display: flex;
+  justify-content: center;
+
+  .col {
+    h6 {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    h2,
+    h6 {
+      margin-bottom: 5px;
+    }
+  }
+`;
 
 function NewsLetter() {
   return (

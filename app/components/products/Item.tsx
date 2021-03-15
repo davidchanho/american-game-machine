@@ -1,14 +1,27 @@
 import Image from "next/image";
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { IProduct } from "./types";
 import SectionTitle from "../section-title";
 import Games from "./Games";
-import Container from "./Containter";
 import QuoteBtn from "./QuoteBtn";
 import Variants from "./Variants";
+import styled from "styled-components";
 
-function ProductItem({ label, variants, games, description, image }: IProduct) {
+const Container = styled.article`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+`;
+
+interface Props {
+  label: string;
+  variants: string[];
+  description: string;
+  games: string[];
+  image: string;
+}
+
+function Item({ label, variants, games, description, image }: Props) {
   return (
     <Container>
       <SectionTitle title={label} />
@@ -29,4 +42,4 @@ function ProductItem({ label, variants, games, description, image }: IProduct) {
   );
 }
 
-export default ProductItem;
+export default Item;

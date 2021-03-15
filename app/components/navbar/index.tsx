@@ -1,6 +1,6 @@
 import { Navbar as BsNavbar } from "react-bootstrap";
 import { useAppContext } from "../../context";
-import Nav from "../nav";
+import Nav from "./Nav";
 
 export default function Navbar() {
   const {
@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <BsNavbar bg="light" expand="lg">
       <BsNavbar.Brand href="/">{abbreviation}</BsNavbar.Brand>
-
+      
       <BsNavbar.Toggle aria-controls="navbar-nav" />
       <BsNavbar.Collapse id="navbar-nav">
         <Nav />

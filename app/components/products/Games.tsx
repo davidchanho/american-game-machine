@@ -1,6 +1,9 @@
 import React from "react";
 import { Card, CardDeck } from "react-bootstrap";
-import { GamesProps } from "./types";
+
+interface GamesProps {
+  games: string[];
+}
 
 function Games({ games }: GamesProps) {
   return (

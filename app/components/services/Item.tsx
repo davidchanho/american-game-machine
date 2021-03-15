@@ -1,11 +1,26 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import { IService } from "./types";
-import { Body, ItemContainer, Title } from "./styles";
+import styled from "styled-components";
 
-function Item({ icon, title, description }: IService) {
+interface Props {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+const Body = styled(Card.Body)`
+  text-align: center;
+`;
+
+const Title = styled(Card.Title)`
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: underline;
+`;
+
+function Item({ icon, title, description }: Props) {
   return (
-    <ItemContainer>
+    <Card>
       <Card.Img
         src={icon}
         alt={description}
@@ -14,7 +29,7 @@ function Item({ icon, title, description }: IService) {
       />
       <Title>{title}</Title>
       <Body>{description}</Body>
-    </ItemContainer>
+    </Card>
   );
 }
 

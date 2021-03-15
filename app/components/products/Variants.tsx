@@ -1,18 +1,29 @@
 import React from "react";
 import { ListGroup } from "react-bootstrap";
-import { VariantsProps } from "./types";
-import VariantsContainer from "./VariantsContainer";
-import VariantsItem from "./VariantsItem";
+import styled from "styled-components";
 
-function Variants({ variants }: VariantsProps) {
+const Container = styled(ListGroup)`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+`;
+
+interface Props {
+  variants: string[];
+}
+
+function Variants({ variants }: Props) {
   return (
-    <VariantsContainer>
+    <Container>
       {variants.map((variant) => {
         return (
-          <VariantsItem key={`category-variant-${variant}`} variant={variant} />
+          <ListGroup.Item key={`category-variant-${variant}`} variant={variant}>
+            {variant}
+          </ListGroup.Item>
         );
       })}
-    </VariantsContainer>
+    </Container>
   );
 }
 

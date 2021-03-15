@@ -1,8 +1,13 @@
 import React from "react";
+import { CardDeck } from "react-bootstrap";
+import styled from "styled-components";
 import { useAppContext } from "../../context";
 import SectionTitle from "../section-title";
 import Item from "./Item";
-import { Container } from "./styles";
+
+const Container = styled(CardDeck)`
+  margin: 0 auto;
+`;
 
 function Services() {
   const { services } = useAppContext();
