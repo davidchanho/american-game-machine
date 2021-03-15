@@ -1,22 +1,22 @@
 import { PropsWithChildren } from "react";
+import { Container } from "react-bootstrap";
+import styled from "styled-components";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import Navbar from "../components/navbar";
 import ScrollToTop from "../components/scroll-to-top";
-import { Container as BsContainer  } from "react-bootstrap";
-import styled from "styled-components";
 
 const Main = styled.main`
   min-height: 100vh;
   position: relative;
-`;
 
-const Container = styled(BsContainer)`
-  min-height: 75vh;
-  margin: 5vh auto;
-
-  section {
+  .container {
+    min-height: 75vh;
     margin: 5vh auto;
+
+    section {
+      min-height: 75vh;
+    }
   }
 `;
 

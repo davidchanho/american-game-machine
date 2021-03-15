@@ -16,22 +16,20 @@ interface Props {
 
 function Item({ label, variants, games, description, image }: Props) {
   return (
-    <article>
-      <SectionTitle title={label} />
+    <section>
+      <SectionTitle>{label} </SectionTitle>
       <Row>
         <Col md={6} sm={12}>
           <Image src={image} alt={label} aria-hidden={true} layout="fill" />
         </Col>
         <Col md={6} sm={12}>
-          <header>
-            <Variants variants={variants} />
-            <p>{description}</p>
-            <Games games={games} />
-          </header>
+          <Variants variants={variants} />
+          <p>{description}</p>
+          <Games games={games} />
           <QuoteBtn />
         </Col>
       </Row>
-    </article>
+    </section>
   );
 }
 

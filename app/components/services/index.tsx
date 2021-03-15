@@ -14,7 +14,7 @@ function Services() {
 
   return (
     <section>
-      <SectionTitle title="Services" />
+      <SectionTitle>Services</SectionTitle>
       <Container>
         {services.map((service) => {
           return <Item key={`services-${service.title}`} {...service} />;

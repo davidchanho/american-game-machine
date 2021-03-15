@@ -1,11 +1,11 @@
 import React from "react";
 import { Card, CardDeck } from "react-bootstrap";
 
-interface GamesProps {
+interface Props {
   games: string[];
 }
 
-function Games({ games }: GamesProps) {
+function Games({ games }: Props) {
   return (
     <CardDeck>
       {games?.map((game) => {

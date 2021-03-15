@@ -7,7 +7,7 @@ const SectionTitle = styled.h3`
   text-decoration: underline;
   font-weight: bold;
   font-size: clamp(1vw, 4vw, 10vw);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 `;
 
 export default SectionTitle;

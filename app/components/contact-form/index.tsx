@@ -17,7 +17,7 @@ function ContactForm() {
         <Form.Label>Name</Form.Label>
         <Form.Control
           type="text"
-          placeholder="John Doe"
+          placeholder="first and last name"
           onChange={onChange}
           value={form.name}
           name="name"
@@ -29,7 +29,7 @@ function ContactForm() {
         <Form.Label>Email address</Form.Label>
         <Form.Control
           type="email"
-          placeholder="John@email.com"
+          placeholder="email@email.com"
           onChange={onChange}
           value={form.email}
           name="email"

@@ -1,6 +1,5 @@
 import emailjs from "emailjs-com";
 import { ChangeEvent, FormEvent, useState } from "react";
-import { serviceId, templateId, userId } from "../../../secrets.json";
 
 const initialForm = {
   email: "",
@@ -23,14 +22,21 @@ function useContactForm() {
 
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    emailjs.sendForm(serviceId, templateId, "#contact-form", userId).then(
-      (result) => {
-        console.log(result)
-      },
-      (error) => {
-        console.log(error);
-      }
-    );
+    emailjs
+      .sendForm(
+        process.env.SERVICE_ID,
+        process.env.TEMPLATE_ID,
+        "#contact-form",
+        process.env.USER_ID
+      )
+      .then(
+        (result) => {
+          console.log(result);
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
     setForm(initialForm);
   };
 

@@ -9,8 +9,7 @@ function Accessories() {
 
   return (
     <section>
-      <SectionTitle title="Accessories" />
-
+      <SectionTitle>Accessories</SectionTitle>
       <CardDeck>
         {accessories.map((a) => {
           return <Item key={`accessories-${a}`} label={a} />;

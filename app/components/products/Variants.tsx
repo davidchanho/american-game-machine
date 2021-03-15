@@ -2,10 +2,8 @@ import React from "react";
 import { ListGroup as BsListGroup } from "react-bootstrap";
 import styled from "styled-components";
 
-const BsContainer = styled(BsListGroup)`
+const ListGroup = styled(BsListGroup)`
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   flex-direction: column;
 `;
 
@@ -15,15 +13,15 @@ interface Props {
 
 function Variants({ variants }: Props) {
   return (
-    <BsContainer>
+    <ListGroup>
       {variants.map((variant) => {
         return (
-          <BsListGroup.Item key={`category-variant-${variant}`} variant={variant}>
+          <ListGroup.Item key={`category-variant-${variant}`} variant={variant}>
             {variant}
-          </BsListGroup.Item>
+          </ListGroup.Item>
         );
       })}
-    </BsContainer>
+    </ListGroup>
   );
 }
 
