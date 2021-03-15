@@ -4,27 +4,29 @@ import { Col, Row } from "react-bootstrap";
 import styled from "styled-components";
 import NewsLetterForm from "./Form";
 
-export const Container = styled(Row)`
-  display: flex;
-  justify-content: center;
+export const Section = styled.section`
+  .row {
+    display: flex;
+    justify-content: center;
 
-  .col {
-    h6 {
-      font-weight: bold;
-      text-transform: uppercase;
-    }
+    .col {
+      h6 {
+        font-weight: bold;
+        text-transform: uppercase;
+      }
 
-    h2,
-    h6 {
-      margin-bottom: 5px;
+      h2,
+      h6 {
+        margin-bottom: 5px;
+      }
     }
   }
 `;
 
 function NewsLetter() {
   return (
-    <section>
-      <Container>
+    <Section>
+      <Row>
         <Col lg={6} md={12}>
           <h6>Subscribe to our newsletter</h6>
           <h2>
@@ -42,8 +44,8 @@ function NewsLetter() {
             layout="fill"
           />
         </Col>
-      </Container>
-    </section>
+      </Row>
+    </Section>
   );
 }
 

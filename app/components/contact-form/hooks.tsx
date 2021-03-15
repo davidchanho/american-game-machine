@@ -25,8 +25,10 @@ function useContactForm() {
     e.preventDefault();
     emailjs.sendForm(serviceId, templateId, "#contact-form", userId).then(
       (result) => {
+        console.log(result)
       },
       (error) => {
+        console.log(error);
       }
     );
     setForm(initialForm);

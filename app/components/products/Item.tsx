@@ -5,13 +5,6 @@ import SectionTitle from "../section-title";
 import Games from "./Games";
 import QuoteBtn from "./QuoteBtn";
 import Variants from "./Variants";
-import styled from "styled-components";
-
-const Container = styled.article`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-`;
 
 interface Props {
   label: string;
@@ -23,7 +16,7 @@ interface Props {
 
 function Item({ label, variants, games, description, image }: Props) {
   return (
-    <Container>
+    <article>
       <SectionTitle title={label} />
       <Row>
         <Col md={6} sm={12}>
@@ -38,7 +31,7 @@ function Item({ label, variants, games, description, image }: Props) {
           <QuoteBtn />
         </Col>
       </Row>
-    </Container>
+    </article>
   );
 }
 

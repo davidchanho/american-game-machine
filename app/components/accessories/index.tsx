@@ -1,8 +1,8 @@
 import React from "react";
 import { CardDeck } from "react-bootstrap";
 import { useAppContext } from "../../context";
-import Item from "./Item";
 import SectionTitle from "../section-title";
+import Item from "./Item";
 
 function Accessories() {
   const { accessories } = useAppContext();

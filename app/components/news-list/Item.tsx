@@ -1,6 +1,11 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import { Props } from "./types";
+
+interface Props {
+  title: string;
+  date: string;
+  body: string;
+}
 
 function Item({ title, date, body }: Props) {
   return (

@@ -1,5 +1,6 @@
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+import { createGlobalStyle } from "styled-components";
 
+const GlobalStyle = createGlobalStyle`
 html,
 body {
   padding: 0;
@@ -24,4 +25,6 @@ a {
     background-color: inherit;
   }
 }
+`;
 
+export default GlobalStyle;

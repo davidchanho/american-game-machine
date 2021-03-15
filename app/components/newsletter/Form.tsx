@@ -1,27 +1,27 @@
 import React from "react";
-import { Button, Form } from "react-bootstrap";
+import { Button, Form as BsForm } from "react-bootstrap";
 import useNewsLetterForm from "./hooks";
 
-function NewsLetterForm() {
+function Form() {
   const { email, onChange, onSubmit } = useNewsLetterForm();
 
   return (
-    <Form onSubmit={onSubmit}>
-      <Form.Group controlId="email">
-        <Form.Control
+    <BsForm onSubmit={onSubmit}>
+      <BsForm.Group controlId="email">
+        <BsForm.Control
           type="email"
           placeholder="john@email.com"
           onChange={onChange}
           value={email}
           name="email"
         />
-      </Form.Group>
+      </BsForm.Group>
 
       <Button variant="danger" type="submit">
         Subscribe
       </Button>
-    </Form>
+    </BsForm>
   );
 }
 
-export default NewsLetterForm;
+export default Form;

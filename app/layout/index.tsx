@@ -3,7 +3,7 @@ import Footer from "../components/footer";
 import Header from "../components/header";
 import Navbar from "../components/navbar";
 import ScrollToTop from "../components/scroll-to-top";
-import { Container } from "react-bootstrap";
+import { Container as BsContainer  } from "react-bootstrap";
 import styled from "styled-components";
 
 const Main = styled.main`
@@ -11,9 +11,13 @@ const Main = styled.main`
   position: relative;
 `;
 
-const Section = styled(Container)`
+const Container = styled(BsContainer)`
   min-height: 75vh;
   margin: 5vh auto;
+
+  section {
+    margin: 5vh auto;
+  }
 `;
 
 function Layout({ children }: PropsWithChildren<{}>) {
@@ -21,7 +25,7 @@ function Layout({ children }: PropsWithChildren<{}>) {
     <Main>
       <Header />
       <Navbar />
-      <Section>{children}</Section>
+      <Container>{children}</Container>
       <Footer />
       <ScrollToTop />
     </Main>

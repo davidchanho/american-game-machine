@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "react-bootstrap";
+import { Card as BsCard } from "react-bootstrap";
 import styled from "styled-components";
 
 interface Props {
@@ -8,14 +8,13 @@ interface Props {
   description: string;
 }
 
-const Body = styled(Card.Body)`
+const Card = styled(BsCard)`
   text-align: center;
-`;
 
-const Title = styled(Card.Title)`
-  text-align: center;
-  text-transform: capitalize;
-  text-decoration: underline;
+  &-title {
+    text-transform: capitalize;
+    text-decoration: underline;
+  }
 `;
 
 function Item({ icon, title, description }: Props) {
@@ -27,8 +26,8 @@ function Item({ icon, title, description }: Props) {
         title="https://storyset.com/"
         aria-hidden={true}
       />
-      <Title>{title}</Title>
-      <Body>{description}</Body>
+      <Card.Title>{title}</Card.Title>
+      <Card.Body>{description}</Card.Body>
     </Card>
   );
 }

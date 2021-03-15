@@ -1,9 +1,9 @@
 import React from "react";
-import { Button, Form } from "react-bootstrap";
+import { Button, Form as BsForm} from "react-bootstrap";
 import styled from "styled-components";
 import useContactForm from "./hooks";
 
-const Container = styled(Form)`
+const Form = styled(BsForm)`
   margin: auto;
   width: 75%;
 `;
@@ -12,7 +12,7 @@ function ContactForm() {
   const { form, onChange, onSubmit } = useContactForm();
 
   return (
-    <Container id="contact-form" onSubmit={onSubmit}>
+    <Form id="contact-form" onSubmit={onSubmit}>
       <Form.Group controlId="name">
         <Form.Label>Name</Form.Label>
         <Form.Control
@@ -87,7 +87,7 @@ function ContactForm() {
       <Button variant="primary" type="submit">
         Submit
       </Button>
-    </Container>
+    </Form>
   );
 }
 
