@@ -9,3 +9,11 @@ export interface VariantsProps {
 export interface VariantsItemProps {
   variant: string;
 }
+
+export interface IProduct {
+  label: string;
+  variants: string[];
+  description: string;
+  games: string[];
+  image: string;
+}

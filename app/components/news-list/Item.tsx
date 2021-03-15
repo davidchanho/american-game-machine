@@ -1,10 +1,10 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import { INews } from "../../types";
+import { Props } from "./types";
 
-function NewsItem({ title, date, body }: INews) {
+function Item({ title, date, body }: Props) {
   return (
-    <Card>
+    <Card className='border'>
       <Card.Header>
         <h3>{title}</h3>
       </Card.Header>
@@ -16,4 +16,4 @@ function NewsItem({ title, date, body }: INews) {
   );
 }
 
-export default NewsItem;
+export default Item;

@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import { Col } from "react-bootstrap";
-import NewsLetterForm from "../newsletter-form";
-import Container from "./Container";
+import NewsLetterForm from "./Form";
+import {Container} from "./styles";
 
 function NewsLetter() {
   return (

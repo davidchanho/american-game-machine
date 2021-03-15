@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Form } from "react-bootstrap";
-import Container from "./Container";
-import useContactForm from "./useContactForm";
+import { Container } from "./styles";
+import useContactForm from "./hooks";
 
 function ContactForm() {
   const { form, onChange, onSubmit } = useContactForm();

@@ -1,13 +1,11 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import { IService } from "../../types";
-import Body from "./Body";
-import Container from "./Container";
-import Title from "./Title";
+import { IService } from "./types";
+import { Body, ItemContainer, Title } from "./styles";
 
-function ServiceItem({ icon, title, description }: IService) {
+function Item({ icon, title, description }: IService) {
   return (
-    <Container>
+    <ItemContainer>
       <Card.Img
         src={icon}
         alt={description}
@@ -16,8 +14,8 @@ function ServiceItem({ icon, title, description }: IService) {
       />
       <Title>{title}</Title>
       <Body>{description}</Body>
-    </Container>
+    </ItemContainer>
   );
 }
 
-export default ServiceItem;
+export default Item;

@@ -1,12 +1,11 @@
+import { PropsWithChildren } from "react";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import Navbar from "../components/navbar";
 import ScrollToTop from "../components/scroll-to-top";
-import Main from "./Main";
-import { PropsWithChildren } from "react";
-import Section from "./Section";
+import { Main, Section } from "./styles";
 
-function MainLayout({children}: PropsWithChildren<{}>) {
+function Layout({ children }: PropsWithChildren<{}>) {
   return (
     <Main>
       <Header />
@@ -18,4 +17,4 @@ function MainLayout({children}: PropsWithChildren<{}>) {
   );
 }
 
-export default MainLayout;
+export default Layout;

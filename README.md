@@ -22,7 +22,9 @@
 ### Applications
 
 - Figma
+  - wire frame
 - Photoshop
+  - edit photos that I taken
 
 ### Other
 - SEO
@@ -31,3 +33,7 @@
 - Server Sided Rendering
 - Responsive Design
 - Mobile First Approach
+
+### Illustrations
+
+- Storyset

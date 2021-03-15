@@ -1,7 +1,7 @@
 import React from "react";
 import { CardDeck } from "react-bootstrap";
 import { useAppContext } from "../../context";
-import AccessoriesItem from "../accessories-item";
+import Item from "./Item";
 import SectionTitle from "../section-title";
 
 function Accessories() {
@@ -13,7 +13,7 @@ function Accessories() {
 
       <CardDeck>
         {accessories.map((a) => {
-          return <AccessoriesItem key={`accessories-${a}`} label={a} />;
+          return <Item key={`accessories-${a}`} label={a} />;
         })}
       </CardDeck>
     </section>

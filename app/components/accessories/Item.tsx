@@ -1,8 +1,8 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import { AccessoriesItemProps } from "./types";
+import { Props } from "./types";
 
-function AccessoriesItem({ label }: AccessoriesItemProps) {
+function Item({ label }: Props) {
   return (
     <Card>
       <Card.Img
@@ -13,4 +13,4 @@ function AccessoriesItem({ label }: AccessoriesItemProps) {
   );
 }
 
-export default AccessoriesItem;
+export default Item;

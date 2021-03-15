@@ -1,6 +1,6 @@
 import React from "react";
 import { useAppContext } from "../../context";
-import Container from "./Container";
+import { Container } from "./styles";
 
 export default function Footer() {
   const {

@@ -1,8 +1,7 @@
 import { Row } from "react-bootstrap";
 import styled from "styled-components";
 
-const Container = styled(Row)`
-  width: 75%;
+export const Container = styled(Row)`
   display: flex;
   justify-content: center;
 
@@ -18,5 +17,3 @@ const Container = styled(Row)`
     }
   }
 `;
-
-export default Container;

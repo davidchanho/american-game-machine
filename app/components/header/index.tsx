@@ -6,6 +6,7 @@ function Header() {
   const {
     companyInfo: { name },
   } = useAppContext();
+  
   return (
     <Head>
       <title>{name}</title>

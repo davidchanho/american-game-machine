@@ -1,7 +1,7 @@
 import React from "react";
 import { CardDeck } from "react-bootstrap";
 import { useAppContext } from "../../context";
-import NewsItem from "../news-item";
+import Item from "./Item";
 
 function News() {
   const { news } = useAppContext();
@@ -10,7 +10,7 @@ function News() {
     <section>
       <CardDeck>
         {news?.map((n) => {
-          return <NewsItem key={`news-item-${n.id}`} {...n} />;
+          return <Item key={`news-item-${n.id}`} {...n} />;
         })}
       </CardDeck>
     </section>

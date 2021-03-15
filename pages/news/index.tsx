@@ -1,12 +1,12 @@
 import React from "react";
 import NewsList from "../../app/components/news-list";
-import MainLayout from "../../app/layouts/MainLayout";
+import Layout from "../../app/layout";
 
 function News() {
   return (
-    <MainLayout>
+    <Layout>
       <NewsList />
-    </MainLayout>
+    </Layout>
   );
 }
 

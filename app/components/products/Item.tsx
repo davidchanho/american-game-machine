@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { IProduct } from "../../types";
+import { IProduct } from "./types";
 import SectionTitle from "../section-title";
 import Games from "./Games";
 import Container from "./Containter";

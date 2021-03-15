@@ -1,8 +1,8 @@
 import React from "react";
 import { useAppContext } from "../../context";
 import SectionTitle from "../section-title";
-import Service from "../service-item";
-import Container from "./Container";
+import Item from "./Item";
+import { Container } from "./styles";
 
 function Services() {
   const { services } = useAppContext();
@@ -12,7 +12,7 @@ function Services() {
       <SectionTitle title="Services" />
       <Container>
         {services.map((service) => {
-          return <Service key={`services-${service.title}`} {...service} />;
+          return <Item key={`services-${service.title}`} {...service} />;
         })}
       </Container>
     </section>

@@ -1,14 +1,14 @@
 import Accessories from "../app/components/accessories";
 import Product from "../app/components/products";
 import Services from "../app/components/services";
-import MainLayout from "../app/layouts/MainLayout";
+import Layout from "../app/layout";
 
 export default function Home() {
   return (
-    <MainLayout>
+    <Layout>
       <Product />
       <Accessories />
       <Services />
-    </MainLayout>
+    </Layout>
   );
 }

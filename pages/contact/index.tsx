@@ -2,11 +2,11 @@ import Image from "next/image";
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import ContactForm from "../../app/components/contact-form";
-import MainLayout from "../../app/layouts/MainLayout";
+import Layout from "../../app/layout";
 
 function Contact() {
   return (
-    <MainLayout>
+    <Layout>
       <Row>
         <Col md={6} sm={12}>
           <ContactForm />
@@ -20,7 +20,7 @@ function Contact() {
           />
         </Col>
       </Row>
-    </MainLayout>
+    </Layout>
   );
 }
 
