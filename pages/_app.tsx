@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppProvider } from '../app/context'
-import 'bootstrap/scss/bootstrap.scss'
+import 'bootstrap/dist/css/bootstrap.css'
 import GlobalStyle from '../styles';
 
 function MyApp({ Component, pageProps }) {

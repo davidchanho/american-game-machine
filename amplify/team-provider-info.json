@@ -1,0 +1,23 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-americangamemachine-dev-182706-authRole",
+            "UnauthRoleArn": "arn:aws:iam::832821663894:role/amplify-americangamemachine-dev-182706-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::832821663894:role/amplify-americangamemachine-dev-182706-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-americangamemachine-dev-182706-deployment",
+            "UnauthRoleName": "amplify-americangamemachine-dev-182706-unauthRole",
+            "StackName": "amplify-americangamemachine-dev-182706",
+            "StackId": "arn:aws:cloudformation:us-east-1:832821663894:stack/amplify-americangamemachine-dev-182706/93d1a9f0-85dd-11eb-aa71-0eaa1a5b8293",
+            "AmplifyAppId": "drojkn18xdvs7"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "drojkn18xdvs7",
+                    "type": "manual"
+                }
+            }
+        }
+    }
+}

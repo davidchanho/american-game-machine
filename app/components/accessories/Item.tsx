@@ -1,17 +1,16 @@
+import Image from "next/image";
 import React from "react";
 import { Card } from "react-bootstrap";
 
 interface Props {
   label: string;
+  img: string;
 }
 
-function Item({ label }: Props) {
+function Item({ label, img }: Props) {
   return (
-    <Card>
-      <Card.Img
-        src="https://via.placeholder.com/150"
-        alt={`image of ${label}`}
-      />
+    <Card className="w-100">
+      <Image src={img} alt={`image of ${label}`} width='300' height='300'/>
     </Card>
   );
 }

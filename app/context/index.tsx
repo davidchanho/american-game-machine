@@ -35,13 +35,17 @@ const contextState = {
       image: "/img/fishtables.png",
     },
   ],
-  accessories: ["chairs", "desks", ""],
+  accessories: [
+    { id: nanoid(), label: "chair", img: "/img/chair.png" },
+    { id: nanoid(), label: "chair2", img: "/img/chair.png" },
+    { id: nanoid(), label: "chair3", img: "/img/chair.png" },
+  ],
   services: [
     {
       icon: "/svg/repair.svg",
       title: "Repair",
       description:
-        "Stuck joysticks, blank screens, power troubles... Whatever it is, our technicians are here for you.",
+        "Stuck joysticks, blank screens, random shutdowns... whatever it is, our technicians are here for you.",
     },
     {
       icon: "/svg/store.svg",

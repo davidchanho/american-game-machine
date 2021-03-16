@@ -12,7 +12,7 @@ function Accessories() {
       <SectionTitle>Accessories</SectionTitle>
       <CardDeck>
         {accessories.map((a) => {
-          return <Item key={`accessories-${a}`} label={a} />;
+          return <Item key={`accessories-${a.id}`} {...a} />;
         })}
       </CardDeck>
     </section>
