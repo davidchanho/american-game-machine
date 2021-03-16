@@ -1,4 +1,3 @@
-import React from "react";
 import { CardDeck } from "react-bootstrap";
 import { useAppContext } from "../../context";
 import Item from "./Item";

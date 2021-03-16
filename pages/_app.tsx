@@ -1,4 +1,3 @@
-import React from 'react';
 import { AppProvider } from '../app/context'
 import 'bootstrap/dist/css/bootstrap.css'
 import GlobalStyle from '../styles';

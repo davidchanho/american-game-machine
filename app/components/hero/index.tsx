@@ -1,18 +1,15 @@
-import React from "react";
 import styled from "styled-components";
 
 const Section = styled.section`
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
-  background-image: url("/img/hero.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+ 
   hgroup {
+    text-align: center;
     background-color: white;
-    border: 10px double #ccc;
     padding: 14px 20px;
   }
 `;
@@ -22,7 +19,7 @@ function Hero() {
     <Section>
       <hgroup>
         <h1>American Game Machine</h1>
-        <h3>Sales & Service</h3>
+        <h4>Sales & Service</h4>
       </hgroup>
     </Section>
   );

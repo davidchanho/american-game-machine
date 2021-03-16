@@ -1,4 +1,3 @@
-import React from "react";
 import { CardDeck } from "react-bootstrap";
 import styled from "styled-components";
 import { useAppContext } from "../../context";

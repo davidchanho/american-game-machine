@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 import { Col, Row } from "react-bootstrap";
 import styled from "styled-components";
 import NewsLetterForm from "./Form";

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 import { Col, Row } from "react-bootstrap";
 import ContactForm from "../../app/components/contact-form";
 import Layout from "../../app/layout";

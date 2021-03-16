@@ -5,6 +5,7 @@
 ### Languages
 
 - HTML
+  - HTML Email Template
 - CSS
 - Javascript (Typescript)
 
@@ -12,9 +13,10 @@
 
 - React
   - Context and Hooks
-- Bootstrap & React Bootstrap
+- Bootstrap
+  - React Bootstrap
 - EmailJS - frontend email library/service used to send contact form to contact email.
-- Nanoid - uuid library used to give id to items.
+- Nanoid - UUID library used to generate unique ids.
 
 <details>
   <summary>
@@ -25,14 +27,11 @@
 
 <details>
   <summary>
-    Styled-Components
+    Styled-Components - stylize components via CSS-in-JS.
   </summary>
   <ul>
-  <li>
-    Used Styled-Components utilized to stylize each components, pages and layouts. 
-  </li>
     <li>
-    Extended with React-Bootstrap library.
+    Extend React-Bootstrap library.
   </li>
   <li>
     Props were passed into nav link to toggle active state.
@@ -49,23 +48,7 @@
 
 <details>
   <summary>
-   MDX
-  </summary>
-  <p>
-    A React Library that integrates with Markdown
-  </p>
-</details>
-
-<details>
-  <summary>
     Story Book
-  </summary>
-  
-</details>
-
-<details>
-  <summary>
-   Firebase
   </summary>
   
 </details>
@@ -74,19 +57,18 @@
 
 <details>
   <summary>
-    Figma
+    Figma 
   </summary>
-  
+  <ul>
+  <li>
+  Made site map, 
+  </li>
+  </ul>
 </details>
+
 <details>
   <summary>
     Adobe Photoshop
-  </summary>
-  
-</details>
-<details>
-  <summary>
-    Adobe Illustrator
   </summary>
   
 </details>
@@ -95,35 +77,18 @@
 
 <details>
   <summary>
-    recaptcha
-  </summary>
-  
-</details>
-
-<details>
-  <summary>
-    SEO
-  </summary>
-  
-</details>
-
-<details>
-  <summary>
-    Web Accessibility
-  </summary>
-  
-</details>
-
-<details>
-  <summary>
-    Server Sided Rendering (SSR)
-  </summary>
-  
-</details>
-
-<details>
-  <summary>
     Responsive Design with Mobile First Approach
+  </summary>
+  <ul>
+  <li>
+  Responsive Typography
+  </li>
+  </ul>
+</details>
+
+<details>
+  <summary>
+    Design Systems
   </summary>
   
 </details>

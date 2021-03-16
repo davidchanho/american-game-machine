@@ -1,4 +1,3 @@
-import React from "react";
 import { Card as BsCard } from "react-bootstrap";
 import styled from "styled-components";
 

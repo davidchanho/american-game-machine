@@ -1,4 +1,3 @@
-import React from "react";
 import { Card, CardDeck } from "react-bootstrap";
 
 interface Props {

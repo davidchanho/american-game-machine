@@ -1,6 +1,5 @@
-import React from "react";
-import { useAppContext } from "../../context";
 import styled from "styled-components";
+import { useAppContext } from "../../context";
 
 export const Container = styled.footer`
   text-align: center;

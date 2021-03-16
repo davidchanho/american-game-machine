@@ -3,6 +3,7 @@ import { Container } from "react-bootstrap";
 import styled from "styled-components";
 import Footer from "../components/footer";
 import Header from "../components/header";
+import Hero from "../components/hero";
 import Navbar from "../components/navbar";
 import ScrollToTop from "../components/scroll-to-top";
 

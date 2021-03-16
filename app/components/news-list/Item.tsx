@@ -1,4 +1,3 @@
-import React from "react";
 import { Card } from "react-bootstrap";
 
 interface Props {
@@ -9,7 +8,7 @@ interface Props {
 
 function Item({ title, date, body }: Props) {
   return (
-    <Card className='border'>
+    <Card className="border">
       <Card.Header>
         <h3>{title}</h3>
       </Card.Header>

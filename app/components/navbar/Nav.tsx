@@ -1,5 +1,3 @@
-import { nanoid } from "nanoid";
-import React from "react";
 import { Nav as BsNav } from "react-bootstrap";
 import styled from "styled-components";
 import NavLink from "./NavLink";

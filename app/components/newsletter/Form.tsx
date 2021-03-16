@@ -1,4 +1,3 @@
-import React from "react";
 import { Button, Form as BsForm } from "react-bootstrap";
 import useNewsLetterForm from "./hooks";
 

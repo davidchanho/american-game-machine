@@ -1,4 +1,3 @@
-import React from "react";
 import NewsList from "../../app/components/news-list";
 import Layout from "../../app/layout";
 

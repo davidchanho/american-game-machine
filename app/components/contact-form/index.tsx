@@ -1,5 +1,4 @@
-import React from "react";
-import { Button, Form as BsForm} from "react-bootstrap";
+import { Button, Form as BsForm } from "react-bootstrap";
 import styled from "styled-components";
 import useContactForm from "./hooks";
 
