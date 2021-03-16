@@ -27,21 +27,24 @@
   <summary>
     Styled-Components
   </summary>
-  <p>
+  <ul>
+  <li>
     Used Styled-Components utilized to stylize each components, pages and layouts. 
-  </p>
-    <p>
+  </li>
+    <li>
     Extended with React-Bootstrap library.
-  </p>
-  <p>
+  </li>
+  <li>
     Props were passed into nav link to toggle active state.
-  </p>
-  <p>
+  </li>
+  <li>
     createGlobalStyle was used to add global styling.
-  </p>
-  <p>
+  </li>
+  <li>
     withTheme and ThemeProvider were used to switch between theme and dark theme.
-  </p> 
+  </li> 
+   <ul>
+
 </details>
 
 <details>
