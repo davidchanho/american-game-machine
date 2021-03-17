@@ -41,7 +41,7 @@ const productsState: IProductState = {
       type: "machine",
       label: "fish tables",
       materials: [],
-      screens: ["65", "83"],
+      screens: ["65", "85"],
       overview: {
         numberOfPlayers: "10",
       },

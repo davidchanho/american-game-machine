@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Navbar as BsNavbar } from "react-bootstrap";
-import { useAppContext } from "../../context/context";
+import { useAppContext } from "../context";
 import Nav from "./Nav";
 
 export default function Navbar() {

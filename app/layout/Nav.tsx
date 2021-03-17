@@ -1,6 +1,6 @@
 import { Nav as BsNav } from "react-bootstrap";
 import styled from "styled-components";
-import { useAppContext } from "../../context";
+import { useAppContext } from "../context";
 import NavLink from "./NavLink";
 
 const Container = styled(BsNav)`

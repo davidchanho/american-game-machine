@@ -1,10 +1,10 @@
 import { PropsWithChildren } from "react";
 import { Container } from "react-bootstrap";
 import styled from "styled-components";
-import Footer from "../components/footer";
-import Header from "../components/header";
-import Navbar from "../components/navbar";
-import ScrollToTop from "../components/scroll-to-top";
+import Footer from "./Footer";
+import Header from "./Header";
+import Navbar from "./Navbar";
+import ScrollToTop from "./ScrollToTop";
 
 const Main = styled.main`
   min-height: 100vh;

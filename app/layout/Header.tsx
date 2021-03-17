@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useAppContext } from "../../context/context";
+import { useAppContext } from "../context/context";
 
 function Header() {
   const {
@@ -7,6 +7,7 @@ function Header() {
       company: { name },
     },
   } = useAppContext();
+  
   return (
     <Head>
       <title>{name}</title>
