@@ -1,5 +1,6 @@
 import { Nav as BsNav } from "react-bootstrap";
 import styled from "styled-components";
+import { useAppContext } from "../../context";
 import NavLink from "./NavLink";
 
 const Container = styled(BsNav)`
@@ -8,13 +9,19 @@ const Container = styled(BsNav)`
 `;
 
 function Nav() {
+  const {
+    state: { links },
+  } = useAppContext();
+
   return (
     <Container>
-      <NavLink href="/">Home</NavLink>
-      <NavLink href="/photos">Photos</NavLink>
-      <NavLink href="/news">News</NavLink>
-      <NavLink href="/contact">Contact</NavLink>
-      <NavLink href="/auth">Auth</NavLink>
+      {links.map(({ href, label }) => {
+        return (
+          <NavLink key={`nav-link-${label}`} href={href}>
+            {label}
+          </NavLink>
+        );
+      })}
     </Container>
   );
 }

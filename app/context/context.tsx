@@ -1,16 +1,16 @@
 import { nanoid } from "nanoid";
 import { createContext, useContext, useReducer } from "react";
-import accessories from "./accessories";
+import app from "./app";
 import company from "./company";
 import news, { INews } from "./news";
 import products, { IProduct } from "./products";
 import services from "./services";
 
 const contextState = {
+  ...app,
   ...company,
   ...news,
   ...products,
-  ...accessories,
   ...services,
 };
 

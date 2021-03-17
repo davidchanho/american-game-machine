@@ -6,7 +6,7 @@ interface Props {
 }
 
 function Materials({ materials }: Props) {
-  if (materials.length === 0) {
+  if (materials?.length === 0) {
     return null;
   }
 
@@ -14,7 +14,7 @@ function Materials({ materials }: Props) {
     <>
       <p>Material Type</p>
       <Options horizontal>
-        {materials.map((m) => {
+        {materials?.map((m) => {
           return (
             <OptionsItem key={`material-item-${m}`}>
               <Image src={`/img/${m}.jpg`} layout="fill" />

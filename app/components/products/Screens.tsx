@@ -10,7 +10,7 @@ function Screens({ screens }: Props) {
     <>
       <p>Screen Sizes</p>
       <Options horizontal>
-        {screens.map((m) => {
+        {screens?.map((m) => {
           return (
             <OptionsItem key={`screen-size-item-${m}`}>
               <Image src={`/svg/${m}screen.svg`} layout="fill" />

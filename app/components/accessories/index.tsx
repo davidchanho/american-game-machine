@@ -4,7 +4,13 @@ import Section from "../_shared/section";
 import AccessoriesItem from "./AccessoriesItem";
 
 function Accessories() {
-  const { state: {accessories} } = useAppContext();
+  const {
+    state: { products },
+  } = useAppContext();
+
+  const accessories = products.filter(
+    (product) => product.type === "accessories"
+  );
 
   return (
     <Section label="Accessories">

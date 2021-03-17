@@ -16,7 +16,7 @@ const Gallery = styled(Slider)`
   width: 75%;
   margin: 0 auto;
   background-color: lightgrey;
-  
+
   div {
     width: 100%;
     height: 100%;
