@@ -9,7 +9,7 @@ import Overview from "./Overview";
 import QuoteBtn from "./QuoteBtn";
 import Screens from "./Screens";
 
-function Item({
+function ProductItem({
   label,
   materials,
   overview,
@@ -17,7 +17,7 @@ function Item({
   games,
   description,
   image,
-}: IProduct) {  
+}: IProduct) {
   return (
     <MultiItemContainer>
       <Card>
@@ -35,11 +35,11 @@ function Item({
         <Games games={games} />
         <Screens screens={screens} />
         <Materials materials={materials} />
-        <Overview />
+        <Overview {...overview} />
         <QuoteBtn />
       </Card>
     </MultiItemContainer>
   );
 }
 
-export default Item;
+export default ProductItem;

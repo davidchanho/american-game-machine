@@ -1,22 +1,29 @@
-import { VariantContainer, VariantItem } from "./styles";
-import Image from 'next/image'
+import Image from "next/image";
+import { Options, OptionsItem } from "./styles";
 
 interface Props {
   materials: string[];
 }
 
-function Materials({materials}: Props) {
-    return (
-      <VariantContainer horizontal>
+function Materials({ materials }: Props) {
+  if (materials.length === 0) {
+    return null;
+  }
+
+  return (
+    <>
+      <p>Material Type</p>
+      <Options horizontal>
         {materials.map((m) => {
           return (
-            <VariantItem key={`material-item-${m}`}>
+            <OptionsItem key={`material-item-${m}`}>
               <Image src={`/img/${m}.jpg`} layout="fill" />
-            </VariantItem>
+            </OptionsItem>
           );
         })}
-      </VariantContainer>
-    );
+      </Options>
+    </>
+  );
 }
 
-export default Materials
+export default Materials;

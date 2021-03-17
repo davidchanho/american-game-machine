@@ -1,5 +1,5 @@
 import { useAppContext } from "../../context";
-import ProductItem from "./Item";
+import ProductItem from "./ProductItem";
 
 function Products() {
   const { products } = useAppContext();

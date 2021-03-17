@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Card } from "react-bootstrap";
 import { IAccessory } from "../../context/accessories";
 
-function Item({ label, img }: IAccessory) {
+function AccessoriesItem({ label, img }: IAccessory) {
   return (
     <Card>
       <Image src={img} alt={`image of ${label}`} width="300" height="300" />
@@ -10,4 +10,4 @@ function Item({ label, img }: IAccessory) {
   );
 }
 
-export default Item;
+export default AccessoriesItem;

@@ -1,13 +1,14 @@
 import React from "react";
 import { Table } from "react-bootstrap";
+import { IOverview } from "../../context/products";
 
-function Overview() {
+function Overview({ numberOfPlayers }: IOverview) {
   return (
     <Table>
       <tbody>
         <tr>
           <th>Number of Players</th>
-          <td>6</td>
+          <td>{numberOfPlayers}</td>
         </tr>
       </tbody>
     </Table>

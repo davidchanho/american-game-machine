@@ -1,7 +1,7 @@
 import { Card } from "react-bootstrap";
 import { INews } from "../../context/news";
 
-function Item({ title, date, body }: INews) {
+function NewsItem({ title, date, body }: INews) {
   return (
     <Card className="border">
       <Card.Header>
@@ -15,4 +15,4 @@ function Item({ title, date, body }: INews) {
   );
 }
 
-export default Item;
+export default NewsItem;

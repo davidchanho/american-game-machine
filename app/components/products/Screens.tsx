@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { VariantContainer, VariantItem } from "./styles";
+import { Options, OptionsItem } from "./styles";
 
 interface Props {
   screens: string[];
@@ -7,15 +7,18 @@ interface Props {
 
 function Screens({ screens }: Props) {
   return (
-    <VariantContainer horizontal>
-      {screens.map((m) => {
-        return (
-          <VariantItem key={`screen-size-item-${m}`}>
-            <Image src={`/svg/${m}screen.svg`} layout="fill" />
-          </VariantItem>
-        );
-      })}
-    </VariantContainer>
+    <>
+      <p>Screen Sizes</p>
+      <Options horizontal>
+        {screens.map((m) => {
+          return (
+            <OptionsItem key={`screen-size-item-${m}`}>
+              <Image src={`/svg/${m}screen.svg`} layout="fill" />
+            </OptionsItem>
+          );
+        })}
+      </Options>
+    </>
   );
 }
 

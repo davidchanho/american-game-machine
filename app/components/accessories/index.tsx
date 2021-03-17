@@ -1,7 +1,7 @@
 import React from "react";
 import { useAppContext } from "../../context";
 import Section from "../_shared/section";
-import Item from "./Item";
+import AccessoriesItem from "./AccessoriesItem";
 
 function Accessories() {
   const { accessories } = useAppContext();
@@ -9,7 +9,7 @@ function Accessories() {
   return (
     <Section label="Accessories">
       {accessories.map((a) => {
-        return <Item key={`accessories-${a.id}`} {...a} />;
+        return <AccessoriesItem key={`accessories-${a.id}`} {...a} />;
       })}
     </Section>
   );
