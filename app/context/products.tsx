@@ -8,8 +8,8 @@ export interface IProduct {
   id: string;
   label: string;
   description: string;
-  screenSize: string[];
-  material: string[];
+  screens: string[];
+  materials: string[];
   overview: IOverview;
   games: string[];
   image: string;
@@ -24,8 +24,8 @@ const productsState: IProductState = {
     {
       id: nanoid(),
       label: "stand ups",
-      material: ["wood", "metal"],
-      screenSize: ["43"],
+      materials: ["wood", "metal"],
+      screens: ["43"],
       overview: {
         numberOfPlayers: "1",
       },
@@ -36,8 +36,8 @@ const productsState: IProductState = {
     {
       id: nanoid(),
       label: "fish tables",
-      material: [],
-      screenSize: ["65", "83"],
+      materials: [],
+      screens: ["65", "83"],
       overview: {
         numberOfPlayers: "10",
       },

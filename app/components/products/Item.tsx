@@ -1,57 +1,44 @@
 import Image from "next/image";
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { IProduct } from "../../context/products";
-import SectionTitle from "../section-title";
+import MultiItemContainer from "../_shared/multi-item-container";
 import Games from "./Games";
+import Materials from "./Materials";
 import Overview from "./Overview";
 import QuoteBtn from "./QuoteBtn";
-import { Material, MaterialItem } from "./styles";
+import Screens from "./Screens";
 
 function Item({
   label,
-  material,
+  materials,
   overview,
-  screenSize,
+  screens,
   games,
   description,
   image,
-}: IProduct) {
+}: IProduct) {  
   return (
-    <section>
-      <SectionTitle>{label} </SectionTitle>
-      <Row>
-        <Col md={6} sm={12}>
-          <Image src={image} alt={label} aria-hidden={true} layout="fill" />
-        </Col>
-        <Col md={6} sm={12}>
-          <p>{description}</p>
-          <Games games={games} />
-          <Material>
-            <MaterialItem>
-              {screenSize.map((s) => {
-                return (
-                  <MaterialItem key={s}>
-                    <Image src={`/svg/${s}screen.svg`} layout="fill" />
-                  </MaterialItem>
-                );
-              })}
-            </MaterialItem>
-          </Material>
-          <Material>
-            {material.map((m) => {
-              return (
-                <MaterialItem key={m}>
-                  <Image src={`/img/${m}.jpg`} layout="fill" />
-                </MaterialItem>
-              );
-            })}
-          </Material>
-          <Overview />
-          <QuoteBtn />
-        </Col>
-      </Row>
-    </section>
+    <MultiItemContainer>
+      <Card>
+        <Image
+          src={image}
+          alt={label}
+          aria-hidden={true}
+          width="100%"
+          height="100%"
+        />
+      </Card>
+      <Card>
+        <h3 className="text-capitalize">{label}</h3>
+        <p>{description}</p>
+        <Games games={games} />
+        <Screens screens={screens} />
+        <Materials materials={materials} />
+        <Overview />
+        <QuoteBtn />
+      </Card>
+    </MultiItemContainer>
   );
 }
 

@@ -4,7 +4,7 @@ import { IAccessory } from "../../context/accessories";
 
 function Item({ label, img }: IAccessory) {
   return (
-    <Card className="w-100">
+    <Card>
       <Image src={img} alt={`image of ${label}`} width="300" height="300" />
     </Card>
   );

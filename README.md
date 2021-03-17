@@ -7,6 +7,7 @@
 - HTML
   - HTML Email Template
 - CSS
+  - media queries
 - Javascript (Typescript)
 
 ### Framework & Libraries

@@ -1,25 +1,17 @@
-import { CardDeck } from "react-bootstrap";
-import styled from "styled-components";
+import React from "react";
 import { useAppContext } from "../../context";
-import SectionTitle from "../section-title";
-import Item from "./Item";
-
-const Container = styled(CardDeck)`
-  margin: 0 auto;
-`;
+import Section from "../_shared/section";
+import Service from "./Service";
 
 function Services() {
   const { services } = useAppContext();
 
   return (
-    <section>
-      <SectionTitle>Services</SectionTitle>
-      <Container>
-        {services.map((service) => {
-          return <Item key={`services-${service.title}`} {...service} />;
-        })}
-      </Container>
-    </section>
+    <Section label="Services">
+      {services.map((service) => {
+        return <Service key={`services-${service.title}`} {...service} />;
+      })}
+    </Section>
   );
 }
 

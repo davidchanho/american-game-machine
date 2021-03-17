@@ -11,7 +11,7 @@ const Card = styled(BsCard)`
   }
 `;
 
-function Item({ icon, title, description }: IService) {
+function Service({ icon, title, description }: IService) {
   return (
     <Card>
       <Card.Img
@@ -26,4 +26,4 @@ function Item({ icon, title, description }: IService) {
   );
 }
 
-export default Item;
+export default Service;

@@ -1,15 +1,13 @@
 import { ListGroup } from "react-bootstrap";
 import styled from "styled-components";
 
-export const Material = styled(ListGroup)`
+export const VariantContainer = styled(ListGroup)`
   width: 100%;
   height: 80px;
   margin: 10px 0;
-  display: flex;
-  flex-direction: row;
 `;
 
-export const MaterialItem = styled(ListGroup.Item)`
+export const VariantItem = styled(ListGroup.Item)`
   width: 80px;
   height: 80px;
   padding: 0;
