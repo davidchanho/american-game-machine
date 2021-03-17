@@ -1,19 +1,22 @@
 import Image from "next/image";
+import React from "react";
 import { Col, Row } from "react-bootstrap";
+import { IProduct } from "../../context/products";
 import SectionTitle from "../section-title";
 import Games from "./Games";
+import Overview from "./Overview";
 import QuoteBtn from "./QuoteBtn";
-import Variants from "./Variants";
+import { Material, MaterialItem } from "./styles";
 
-interface Props {
-  label: string;
-  variants: string[];
-  description: string;
-  games: string[];
-  image: string;
-}
-
-function Item({ label, variants, games, description, image }: Props) {
+function Item({
+  label,
+  material,
+  overview,
+  screenSize,
+  games,
+  description,
+  image,
+}: IProduct) {
   return (
     <section>
       <SectionTitle>{label} </SectionTitle>
@@ -22,9 +25,29 @@ function Item({ label, variants, games, description, image }: Props) {
           <Image src={image} alt={label} aria-hidden={true} layout="fill" />
         </Col>
         <Col md={6} sm={12}>
-          <Variants variants={variants} />
           <p>{description}</p>
           <Games games={games} />
+          <Material>
+            <MaterialItem>
+              {screenSize.map((s) => {
+                return (
+                  <MaterialItem key={s}>
+                    <Image src={`/svg/${s}screen.svg`} layout="fill" />
+                  </MaterialItem>
+                );
+              })}
+            </MaterialItem>
+          </Material>
+          <Material>
+            {material.map((m) => {
+              return (
+                <MaterialItem key={m}>
+                  <Image src={`/img/${m}.jpg`} layout="fill" />
+                </MaterialItem>
+              );
+            })}
+          </Material>
+          <Overview />
           <QuoteBtn />
         </Col>
       </Row>

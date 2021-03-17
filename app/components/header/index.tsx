@@ -3,7 +3,7 @@ import { useAppContext } from "../../context";
 
 function Header() {
   const {
-    companyInfo: { name },
+    company: { name },
   } = useAppContext();
 
   return (

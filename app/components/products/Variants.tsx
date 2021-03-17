@@ -20,6 +20,7 @@ function Variants({ variants }: Props) {
           </ListGroup.Item>
         );
       })}
+      
     </ListGroup>
   );
 }

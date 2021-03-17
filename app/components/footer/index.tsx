@@ -7,7 +7,7 @@ export const Container = styled.footer`
 
 export default function Footer() {
   const {
-    companyInfo: { name },
+    company: { name },
   } = useAppContext();
 
   return <Container>{name}™ 2021</Container>;

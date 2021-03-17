@@ -70,7 +70,23 @@
   <summary>
     Adobe Photoshop
   </summary>
-  
+    <ul>
+  <li>
+  Cleaned up Icon made by a supplier.
+  <li>
+
+  <ul>
+</details>
+
+<details>
+  <summary>
+    Adobe Illustrator
+  </summary>
+  <ul>
+  <li>
+  Customized FlatIcon svg ie. full screen icon.
+  <li>
+  <ul>
 </details>
 
 ### Other
@@ -93,6 +109,7 @@
   
 </details>
 
-### Illustrations
+### Assets
 
-- [Storyset](https://storyset.com/)
+- [Illustrations by Storyset](https://storyset.com/)
+- [Icons by FlatIcon](https://www.flaticon.com/)
