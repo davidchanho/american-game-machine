@@ -1,7 +1,7 @@
 import { useAppContext } from "../../context/context";
 import ProductItem from "./ProductItem";
 
-function Products() {
+function ProductsList() {
   const {
     state: { products },
   } = useAppContext();
@@ -17,4 +17,4 @@ function Products() {
   );
 }
 
-export default Products;
+export default ProductsList;
