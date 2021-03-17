@@ -1,32 +1,16 @@
-import { AppContext, AppProvider } from '../context/context'
-import 'bootstrap/dist/css/bootstrap.css'
-import "../node_modules/slick-carousel/slick/slick.css";
+import "bootstrap/dist/css/bootstrap.css";
+import { AppProvider } from "../context/context";
 import "../node_modules/slick-carousel/slick/slick-theme.css";
-import GlobalStyle from '../utils/Global';
-import { ContextDevTool } from "react-context-devtool";
+import "../node_modules/slick-carousel/slick/slick.css";
+import GlobalStyle from "../utils/Global";
 
 function MyApp({ Component, pageProps }) {
   return (
     <AppProvider>
-      {(values) => {
-        if (window._REACT_CONTEXT_DEVTOOL) {
-          window._REACT_CONTEXT_DEVTOOL({
-            id: "uniqContextId",
-            displayName: "Context Display Name",
-            values,
-          });
-        }
-        return null;
-      }}
-      <ContextDevTool
-        context={AppContext}
-        id="uniqContextId"
-        displayName="Context Display Name"
-      />
       <Component {...pageProps} />
       <GlobalStyle />
     </AppProvider>
   );
 }
 
-export default MyApp
+export default MyApp;

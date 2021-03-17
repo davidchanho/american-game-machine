@@ -1,8 +1,9 @@
 import Image from "next/image";
 import React from "react";
 import { Card } from "react-bootstrap";
-import { IProduct } from "../../context/products";
-import MultiItemContainer from "../shared/multi-item-container";
+import { IProduct } from "../../../context";
+import MultiItemContainer from "../../shared/multi-item-container";
+
 import Games from "./Games";
 import Materials from "./Materials";
 import Overview from "./Overview";

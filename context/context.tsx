@@ -1,5 +1,6 @@
 import { nanoid } from "nanoid";
-import { createContext, useContext, useReducer } from "react";
+import React, { createContext, useContext, useReducer } from "react";
+import { ContextDevTool } from "react-context-devtool";
 import app from "./app";
 import company from "./company";
 import news, { INews } from "./news";
@@ -26,6 +27,21 @@ export function AppProvider({ children }) {
 
   return (
     <AppContext.Provider value={{ state, dispatch }}>
+      {(values) => {
+        if (window._REACT_CONTEXT_DEVTOOL) {
+          window._REACT_CONTEXT_DEVTOOL({
+            id: "amg-id",
+            displayName: "American Game Machine Context",
+            values,
+          });
+        }
+        return null;
+      }}
+      <ContextDevTool
+        context={AppContext}
+        id="amg-id"
+        displayName="American Game Machine Context"
+      />
       {children}
     </AppContext.Provider>
   );

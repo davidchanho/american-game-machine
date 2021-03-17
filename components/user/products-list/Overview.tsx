@@ -1,6 +1,6 @@
 import React from "react";
 import { Table } from "react-bootstrap";
-import { IOverview } from "../../context/products";
+import { IOverview } from "../../../context";
 
 function Overview({ numberOfPlayers }: IOverview) {
   return (
