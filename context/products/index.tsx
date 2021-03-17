@@ -104,14 +104,6 @@ const { products } = productsState;
 export const filterProducts = (key: string, value: string) =>
   products.filter((product) => product[key] === value);
 
-export const productsByTypes = _.uniq(
-  products.map((product) => product["type"])
-);
-
-export const productByCategories = _.uniq(
-  products.map((product) => product["category"])
-);
-
 export const filterProductsByKey = (key: string) => {
   return _.uniq(products.map((product) => product[key]));
 };

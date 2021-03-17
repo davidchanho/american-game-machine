@@ -18,7 +18,8 @@ function CatalogFilter({ catalogKey, handleClick }: Props) {
               custom
               inline
               label={item}
-              type="checkbox"
+              type="radio"
+              name={`${catalogKey}`}
               id={`${catalogKey}-${item}`}
               onClick={() => handleClick(item)}
             />
