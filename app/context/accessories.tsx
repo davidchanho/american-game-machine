@@ -1,6 +1,6 @@
 import { nanoid } from "nanoid";
 
-interface IAccessory {
+export interface IAccessory {
   id: string;
   label: string;
   img: string;

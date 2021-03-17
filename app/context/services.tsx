@@ -1,6 +1,6 @@
 import { nanoid } from "nanoid";
 
-interface IService {
+export interface IService {
   id: string;
   icon: string;
   title: string;

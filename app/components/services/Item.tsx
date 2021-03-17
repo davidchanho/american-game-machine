@@ -1,11 +1,6 @@
 import { Card as BsCard } from "react-bootstrap";
 import styled from "styled-components";
-
-interface Props {
-  icon: string;
-  title: string;
-  description: string;
-}
+import { IService } from "../../context/services";
 
 const Card = styled(BsCard)`
   text-align: center;
@@ -16,7 +11,7 @@ const Card = styled(BsCard)`
   }
 `;
 
-function Item({ icon, title, description }: Props) {
+function Item({ icon, title, description }: IService) {
   return (
     <Card>
       <Card.Img

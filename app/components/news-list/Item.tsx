@@ -1,12 +1,7 @@
 import { Card } from "react-bootstrap";
+import { INews } from "../../context/news";
 
-interface Props {
-  title: string;
-  date: string;
-  body: string;
-}
-
-function Item({ title, date, body }: Props) {
+function Item({ title, date, body }: INews) {
   return (
     <Card className="border">
       <Card.Header>

@@ -1,10 +1,10 @@
-interface ICompanyInfo {
+interface ICompany {
   name: string;
   logo: string;
 }
 
 interface ICompanyState {
-  company: ICompanyInfo;
+  company: ICompany;
 }
 
 const companyState: ICompanyState = {

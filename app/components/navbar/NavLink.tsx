@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import styled from "styled-components";
+import {MouseEvent} from 'react'
 
 interface Props {
   isActive: boolean;
@@ -20,7 +21,7 @@ export const Anchor = styled.a<Props>`
 function NavLink({ children, href }) {
   const router = useRouter();
 
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleClick = (e: MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     router.push(href);
   };

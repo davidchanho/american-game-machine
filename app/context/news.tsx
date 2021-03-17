@@ -1,6 +1,6 @@
 import { nanoid } from "nanoid";
 
-interface INews {
+export interface INews {
   id: string;
   title: string;
   date: string;
