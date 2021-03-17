@@ -2,7 +2,7 @@ import _ from "lodash";
 import React, { useState } from "react";
 import { Card, CardColumns, Form, ListGroup } from "react-bootstrap";
 import styled from "styled-components";
-import { useAppContext } from "../../context";
+import { IProduct, useAppContext } from "../../context";
 
 const Container = styled.section`
   display: flex;
@@ -35,8 +35,8 @@ function Catalog() {
     setFilter(filter);
   };
 
-  const types: any[] = _.uniq(products.map((product) => product["type"]));
-  const categories: any[] = _.uniq(
+  const types: IProduct[] = _.uniq(products.map((product) => product["type"]));
+  const categories: IProduct[] = _.uniq(
     products.map((product) => product["category"])
   );
 
@@ -79,12 +79,13 @@ function Catalog() {
             </Form.Group>
           </Form>
         </ListGroup.Item>
-        <ListGroup.Item>asd</ListGroup.Item>
-        <ListGroup.Item>asd</ListGroup.Item>
       </ListGroup>
       <CardColumns>
         {products
           .filter((product) => {
+            if (!filter) {
+              return true;
+            }
             if (filter !== product.category && filter !== product.type) {
               return false;
             }
