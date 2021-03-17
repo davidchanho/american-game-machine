@@ -4,10 +4,16 @@ import { IService } from "../../context/services";
 
 const Card = styled(BsCard)`
   text-align: center;
+  padding: 15px;
 
-  &-title {
+  .card-title {
     text-transform: capitalize;
     text-decoration: underline;
+    margin-top: 5px;
+  }
+  .card-body {
+    padding: 0;
+    height: 120px;
   }
 `;
 
