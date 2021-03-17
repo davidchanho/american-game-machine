@@ -1,5 +1,5 @@
-import React from "react";
-import { Card, ListGroup } from "react-bootstrap";
+import React, { useState } from "react";
+import { Card, CardColumns, Form, ListGroup } from "react-bootstrap";
 import styled from "styled-components";
 import { useAppContext } from "../../context";
 
@@ -15,10 +15,11 @@ const Container = styled.section`
   }
 
   aside {
-    width: 25%;
+    min-width: 25%;
+    max-width: 25%;
   }
   body {
-    width: 75%;
+    max-width: 75%;
   }
 `;
 
@@ -27,21 +28,95 @@ function Catalog() {
     state: { products },
   } = useAppContext();
 
+  const [filter, setFilter] = useState("");
+
+  const [productsState, setProductsState] = useState([]);
+
+  const onClick = (filter) => {
+    setFilter(filter);
+  };
+
   return (
     <Container>
-      <aside>
-        <ListGroup>
-          <ListGroup.Item>asd</ListGroup.Item>
-          <ListGroup.Item>asd</ListGroup.Item>
-          <ListGroup.Item>asd</ListGroup.Item>
-          <ListGroup.Item>asd</ListGroup.Item>
-        </ListGroup>
-      </aside>
-      <body>
-        {products.map((product) => (
-          <Card>{product.label}</Card>
-        ))}
-      </body>
+      <ListGroup as="aside">
+        <ListGroup.Item>
+          <Form>
+            <Form.Label>Types</Form.Label>
+            <Form.Group>
+              <Form.Check
+                custom
+                inline
+                label="machines"
+                type="checkbox"
+                id="types-1"
+                onClick={() => onClick("machines")}
+              />
+              <Form.Check
+                custom
+                inline
+                label="accessories"
+                type="checkbox"
+                id="types-2"
+                onClick={() => onClick("accessories")}
+              />
+            </Form.Group>
+          </Form>
+        </ListGroup.Item>
+        <ListGroup.Item>
+          <Form>
+            <Form.Label>Categories</Form.Label>
+            <Form.Group>
+              <Form.Check
+                custom
+                inline
+                label="stand ups"
+                type="checkbox"
+                id="category-1"
+                onClick={() => onClick("standups")}
+              />
+              <Form.Check
+                custom
+                inline
+                label="fish tables"
+                type="checkbox"
+                id="category-2"
+                onClick={() => onClick("fishtables")}
+              />
+              <Form.Check
+                custom
+                inline
+                label="chairs"
+                type="checkbox"
+                id="category-3"
+                onClick={() => onClick("chairs")}
+              />
+              <Form.Check
+                custom
+                inline
+                label="desks"
+                type="checkbox"
+                id="category-4"
+                onClick={() => onClick("desks")}
+              />
+            </Form.Group>
+          </Form>
+        </ListGroup.Item>
+        <ListGroup.Item>asd</ListGroup.Item>
+        <ListGroup.Item>asd</ListGroup.Item>
+      </ListGroup>
+      <CardColumns>
+        {products
+          .filter((product) => {
+            if (filter !== product.category && filter !== product.type) {
+              return false;
+            }
+       
+            return true;
+          })
+          .map((product) => (
+            <Card>{product.label}</Card>
+          ))}
+      </CardColumns>
     </Container>
   );
 }

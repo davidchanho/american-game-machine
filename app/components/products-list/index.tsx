@@ -10,9 +10,11 @@ function ProductsList() {
 
   return (
     <>
-      {machines.map((product) => (
-        <ProductItem key={`product-item-${product.label}`} {...product} />
-      ))}
+      {machines.map((product) => {
+        return (
+          <ProductItem key={`product-item-${product.label}`} {...product} />
+        );
+      })}
     </>
   );
 }

@@ -15,7 +15,6 @@ export default function Navbar() {
       <BsNavbar.Brand href="/">
         <Image src={logo} width={30} height={30} />
       </BsNavbar.Brand>
-
       <BsNavbar.Toggle aria-controls="navbar-nav" />
       <BsNavbar.Collapse id="navbar-nav">
         <Nav />

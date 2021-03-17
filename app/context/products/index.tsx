@@ -1,12 +1,27 @@
 import { nanoid } from "nanoid";
 
+const IMachine = "machines";
+const IAccessories = "accessories";
+type IType = typeof IMachine | typeof IAccessories;
+const IStandups = "standups";
+const IFishtables = "fishtables";
+const IChairs = "chairs";
+const IDesks = "desks";
+
+type ICategory =
+  | typeof IStandups
+  | typeof IFishtables
+  | typeof IChairs
+  | typeof IDesks;
+
 export interface IOverview {
   numberOfPlayers: string;
 }
 
 export interface IProduct {
   id: string;
-  type: "machine" | "accessories";
+  type: IType;
+  category?: ICategory;
   label: string;
   description: string;
   screens?: string[];
@@ -25,7 +40,8 @@ const productsState: IProductState = {
   products: [
     {
       id: nanoid(),
-      type: "machine",
+      type: IMachine,
+      category: IStandups,
       label: "stand ups",
       materials: ["wood", "metal"],
       screens: ["43"],
@@ -38,7 +54,8 @@ const productsState: IProductState = {
     },
     {
       id: nanoid(),
-      type: "machine",
+      type: IMachine,
+      category: IFishtables,
       label: "fish tables",
       materials: [],
       screens: ["65", "85"],
@@ -51,7 +68,8 @@ const productsState: IProductState = {
     },
     {
       id: nanoid(),
-      type: "accessories",
+      type: IAccessories,
+      category: IChairs,
       label: "chair",
       description: "",
       color: ["red", "black"],
@@ -59,7 +77,8 @@ const productsState: IProductState = {
     },
     {
       id: nanoid(),
-      type: "accessories",
+      type: IAccessories,
+      category: IChairs,
       label: "chair2",
       description: "",
       color: [],
@@ -67,8 +86,9 @@ const productsState: IProductState = {
     },
     {
       id: nanoid(),
-      type: "accessories",
-      label: "chair3",
+      type: IAccessories,
+      category: IDesks,
+      label: "desk",
       description: "",
       color: [],
       image: "/img/chair.png",
@@ -77,3 +97,27 @@ const productsState: IProductState = {
 };
 
 export default productsState;
+
+export const selectMachines = productsState.products.filter(
+  (product) => product.type === IMachine
+);
+
+export const selectAccessories = productsState.products.filter(
+  (product) => product.type === IAccessories
+);
+
+export const selectDesks = productsState.products.filter(
+  (product) => product.category === IDesks
+);
+
+export const selectChairs = productsState.products.filter(
+  (product) => product.category === IChairs
+);
+
+export const selectStandups = productsState.products.filter(
+  (product) => product.category === IStandups
+);
+
+export const selectFishtables = productsState.products.filter(
+  (product) => product.category === IFishtables
+);

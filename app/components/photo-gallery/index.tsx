@@ -12,7 +12,11 @@ const settings = {
   lazyLoad: true,
 };
 
-const Gallery = styled(Slider)`
+interface Props {
+  width: number;
+}
+
+const Gallery = styled(Slider)<Props>`
   width: 75%;
   margin: 0 auto;
   background-color: lightgrey;
@@ -26,8 +30,8 @@ const Gallery = styled(Slider)`
     img {
       height: auto;
       width: auto;
-      max-width: 480px;
-      max-height: 480px;
+      max-width: ${(props) => `${props.width}px`};
+      max-height: ${(props) => `${props.width * 1.5}px`};
     }
   }
 
@@ -43,7 +47,7 @@ const Gallery = styled(Slider)`
 
 function PhotoGallery() {
   return (
-    <Gallery settings={settings}>
+    <Gallery settings={settings} width={360}>
       <img src="/img/fullMachineLiteUp.jpg" alt="First slide" />
       <img src="/img/bottomMachineLiteUp.jpg" alt="Second slide" />
       <img src="/img/logoOnMachines.jpg" alt="Third slide" />

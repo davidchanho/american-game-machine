@@ -3,18 +3,13 @@ import styled from "styled-components";
 import { useAppContext } from "../context";
 import NavLink from "./NavLink";
 
-const Container = styled(BsNav)`
-  margin-left: auto;
-  display: inline-flex;
-`;
-
 function Nav() {
   const {
     state: { links },
   } = useAppContext();
 
   return (
-    <Container>
+    <BsNav>
       {links.map(({ href, label }) => {
         return (
           <NavLink key={`nav-link-${label}`} href={href}>
@@ -22,7 +17,7 @@ function Nav() {
           </NavLink>
         );
       })}
-    </Container>
+    </BsNav>
   );
 }
 
