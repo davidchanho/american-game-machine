@@ -23,8 +23,8 @@
 - EmailJS - frontend email library/service used to send contact form to contact email.
 - Nanoid - UUID library used to generate unique ids.
 
-<details style="color:blue">
-  <summary>
+<details >
+  <summary style="color:blue">
     Next JS
   </summary>
   
