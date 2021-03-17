@@ -16,13 +16,19 @@ const Gallery = styled(Slider)`
   width: 75%;
   margin: 0 auto;
   background-color: lightgrey;
-  text-align: center;
-
-  img {
-    height: auto;
-    width: auto;
-    max-width: 480px;
-    max-height: 480px;
+  
+  div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      height: auto;
+      width: auto;
+      max-width: 480px;
+      max-height: 480px;
+    }
   }
 
   .slick-prev {
