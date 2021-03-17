@@ -1,8 +1,9 @@
+import _ from "lodash";
 import { nanoid } from "nanoid";
 
-const IMachine = "machines";
-const IAccessories = "accessories";
-type IType = typeof IMachine | typeof IAccessories;
+export const IMachines = "machines";
+export const IAccessories = "accessories";
+type IType = typeof IMachines | typeof IAccessories;
 const IStandups = "standups";
 const IFishtables = "fishtables";
 const IChairs = "chairs";
@@ -26,7 +27,7 @@ export interface IProduct {
   description: string;
   screens?: string[];
   materials?: string[];
-  color?: string[];
+  colors?: string[];
   games?: string[];
   overview?: IOverview;
   image: string;
@@ -40,7 +41,7 @@ const productsState: IProductState = {
   products: [
     {
       id: nanoid(),
-      type: IMachine,
+      type: IMachines,
       category: IStandups,
       label: "stand ups",
       materials: ["wood", "metal"],
@@ -54,7 +55,7 @@ const productsState: IProductState = {
     },
     {
       id: nanoid(),
-      type: IMachine,
+      type: IMachines,
       category: IFishtables,
       label: "fish tables",
       materials: [],
@@ -72,7 +73,7 @@ const productsState: IProductState = {
       category: IChairs,
       label: "chair",
       description: "",
-      color: ["red", "black"],
+      colors: ["red", "black"],
       image: "/img/chair.png",
     },
     {
@@ -81,7 +82,7 @@ const productsState: IProductState = {
       category: IChairs,
       label: "chair2",
       description: "",
-      color: [],
+      colors: [],
       image: "/img/chair.png",
     },
     {
@@ -90,7 +91,7 @@ const productsState: IProductState = {
       category: IDesks,
       label: "desk",
       description: "",
-      color: [],
+      colors: [],
       image: "/img/chair.png",
     },
   ],
@@ -98,26 +99,19 @@ const productsState: IProductState = {
 
 export default productsState;
 
-export const selectMachines = productsState.products.filter(
-  (product) => product.type === IMachine
+const { products } = productsState;
+
+export const filterProducts = (key: string, value: string) =>
+  products.filter((product) => product[key] === value);
+
+export const productsByTypes = _.uniq(
+  products.map((product) => product["type"])
 );
 
-export const selectAccessories = productsState.products.filter(
-  (product) => product.type === IAccessories
+export const productByCategories = _.uniq(
+  products.map((product) => product["category"])
 );
 
-export const selectDesks = productsState.products.filter(
-  (product) => product.category === IDesks
-);
-
-export const selectChairs = productsState.products.filter(
-  (product) => product.category === IChairs
-);
-
-export const selectStandups = productsState.products.filter(
-  (product) => product.category === IStandups
-);
-
-export const selectFishtables = productsState.products.filter(
-  (product) => product.category === IFishtables
-);
+export const filterProductsByKey = (key: string) => {
+  return _.uniq(products.map((product) => product[key]));
+};

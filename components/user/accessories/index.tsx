@@ -1,16 +1,10 @@
 import React from "react";
-import { useAppContext } from "../../../context/context";
+import { filterProducts, IAccessories } from "../../../context";
 import Section from "../../shared/section";
 import AccessoriesItem from "./AccessoriesItem";
 
 function Accessories() {
-  const {
-    state: { products },
-  } = useAppContext();
-
-  const accessories = products.filter(
-    (product) => product.type === "accessories"
-  );
+  const accessories = filterProducts("type", IAccessories);
 
   return (
     <Section label="Accessories">

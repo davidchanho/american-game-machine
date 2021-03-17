@@ -1,12 +1,8 @@
-import { useAppContext } from "../../../context";
+import { filterProducts, IMachines } from "../../../context";
 import ProductItem from "./ProductItem";
 
 function ProductsList() {
-  const {
-    state: { products },
-  } = useAppContext();
-
-  const machines = products.filter((product) => product.type === "machine");
+  const machines = filterProducts("type", IMachines);
 
   return (
     <>

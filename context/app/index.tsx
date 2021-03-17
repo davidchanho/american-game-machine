@@ -13,7 +13,7 @@ const appState: IAppState = {
     { href: "/photos", label: "Photos" },
     { href: "/news", label: "News" },
     { href: "/contact", label: "Contact" },
-    // { href: "auth", label: "Admin" },
+    { href: "/admin", label: "Admin" },
   ],
 };
 

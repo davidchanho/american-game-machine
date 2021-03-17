@@ -1,3 +1,4 @@
+import produce from "immer";
 import { nanoid } from "nanoid";
 import React, { createContext, useContext, useReducer } from "react";
 import { ContextDevTool } from "react-context-devtool";
@@ -66,55 +67,59 @@ type IAction =
       payload: IProduct;
     };
 
-export const reducer = (state = contextState, action: IAction) => {
-  switch (action.type) {
-    case "CREATE_NEWS":
-      return {
-        ...state,
-        news: [
-          ...state.news,
+export const reducer = (state = contextState, action: IAction) =>
+  produce(state, (draft) => {
+    switch (action.type) {
+      case "CREATE_NEWS":
+        draft.news = [
+          ...draft.news,
           {
             id: nanoid(),
             title: action.payload.title,
             body: action.payload.body,
             date: new Date().toDateString(),
           },
-        ],
-      };
-    case "DELETE_NEWS":
-      return {
-        ...state,
-        news: [...state.news.filter((news) => news.id !== action.payload.id)],
-      };
-    case "UPDATE_NEWS":
-      return {
-        ...state,
-      };
-    case "CREATE_PRODUCT":
-      return {
-        ...state,
-        products: {
-          ...state.products,
-          id: nanoid(),
-          label: action.payload.label,
-          description: action.payload.description,
-          screens: action.payload.screens,
-          materials: action.payload.materials,
-          overview: {
-            numberOfPlayers: action.payload.overview.numberOfPlayers,
+        ];
+        return draft;
+      case "DELETE_NEWS":
+        draft.news = [
+          ...draft.news.filter((news) => news.id !== action.payload.id),
+        ];
+        return draft;
+      case "UPDATE_NEWS":
+        return {
+          ...state,
+        };
+      case "CREATE_PRODUCT":
+        draft.products = [
+          ...draft.products,
+          {
+            id: nanoid(),
+            type: action.payload.type,
+            label: action.payload.label,
+            description: action.payload.description,
+            screens: action.payload.screens,
+            materials: action.payload.materials,
+            colors: action.payload.colors,
+            overview: {
+              numberOfPlayers: action.payload.overview.numberOfPlayers,
+            },
+            games: action.payload.games,
+            image: action.payload.image,
           },
-          games: action.payload.games,
-          image: action.payload.image,
-        },
-      };
-    case "DELETE_PRODUCT":
-      return [
-        ...state.products.filter((product) => product.id !== action.payload.id),
-      ];
-    default:
-      return state;
-  }
-};
+        ];
+        return draft;
+      case "DELETE_PRODUCT":
+        draft.products = [
+          ...draft.products.filter(
+            (product) => product.id !== action.payload.id
+          ),
+        ];
+        return draft;
+      default:
+        return draft;
+    }
+  });
 
 export function useAppContext() {
   return useContext(AppContext);
