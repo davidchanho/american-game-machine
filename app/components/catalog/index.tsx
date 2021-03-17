@@ -1,3 +1,4 @@
+import _ from "lodash";
 import React, { useState } from "react";
 import { Card, CardColumns, Form, ListGroup } from "react-bootstrap";
 import styled from "styled-components";
@@ -30,11 +31,14 @@ function Catalog() {
 
   const [filter, setFilter] = useState("");
 
-  const [productsState, setProductsState] = useState([]);
-
   const onClick = (filter) => {
     setFilter(filter);
   };
+
+  const types: any[] = _.uniq(products.map((product) => product["type"]));
+  const categories: any[] = _.uniq(
+    products.map((product) => product["category"])
+  );
 
   return (
     <Container>
@@ -43,22 +47,17 @@ function Catalog() {
           <Form>
             <Form.Label>Types</Form.Label>
             <Form.Group>
-              <Form.Check
-                custom
-                inline
-                label="machines"
-                type="checkbox"
-                id="types-1"
-                onClick={() => onClick("machines")}
-              />
-              <Form.Check
-                custom
-                inline
-                label="accessories"
-                type="checkbox"
-                id="types-2"
-                onClick={() => onClick("accessories")}
-              />
+              {types.map((type) => (
+                <Form.Check
+                  custom
+                  inline
+                  label={type}
+                  type="checkbox"
+                  id={`types-${type}`}
+                  key={`types-${type}`}
+                  onClick={() => onClick(type)}
+                />
+              ))}
             </Form.Group>
           </Form>
         </ListGroup.Item>
@@ -66,38 +65,17 @@ function Catalog() {
           <Form>
             <Form.Label>Categories</Form.Label>
             <Form.Group>
-              <Form.Check
-                custom
-                inline
-                label="stand ups"
-                type="checkbox"
-                id="category-1"
-                onClick={() => onClick("standups")}
-              />
-              <Form.Check
-                custom
-                inline
-                label="fish tables"
-                type="checkbox"
-                id="category-2"
-                onClick={() => onClick("fishtables")}
-              />
-              <Form.Check
-                custom
-                inline
-                label="chairs"
-                type="checkbox"
-                id="category-3"
-                onClick={() => onClick("chairs")}
-              />
-              <Form.Check
-                custom
-                inline
-                label="desks"
-                type="checkbox"
-                id="category-4"
-                onClick={() => onClick("desks")}
-              />
+              {categories.map((category) => (
+                <Form.Check
+                  custom
+                  inline
+                  label={category}
+                  type="checkbox"
+                  id={`category-${category}`}
+                  key={`category-${category}`}
+                  onClick={() => onClick(category)}
+                />
+              ))}
             </Form.Group>
           </Form>
         </ListGroup.Item>
@@ -110,7 +88,6 @@ function Catalog() {
             if (filter !== product.category && filter !== product.type) {
               return false;
             }
-       
             return true;
           })
           .map((product) => (
