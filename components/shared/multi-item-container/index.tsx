@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "../../../utils";
 
 const MultiItemContainer = styled.div`
   width: 100%;
@@ -10,7 +11,7 @@ const MultiItemContainer = styled.div`
     width: 100%;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: ${breakpoints["md"]}) {
     flex-direction: column;
   }
 `;

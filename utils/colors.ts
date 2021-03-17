@@ -7,7 +7,7 @@ export const blue = {
 };
 
 export const green = {
-  100: "#529e66",
+  100: "#62ff6b",
   200: "#367b48",
   300: "#276738",
 };
@@ -31,4 +31,8 @@ export const neutral = {
   400: "#737581",
   500: "#4a4b53",
   600: "#000000",
+};
+
+export const brand = {
+  100: "#6B62FF",
 };

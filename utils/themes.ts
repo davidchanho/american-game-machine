@@ -1,4 +1,4 @@
-import breakpoints from "./breakpoints";
+import { breakpoints } from "./breakpoints";
 import { blue, neutral } from "./colors";
 import { primaryFont } from "./typography";
 
