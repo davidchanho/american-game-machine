@@ -1,5 +1,5 @@
 import { Card } from "react-bootstrap";
-import { INews } from "../../context/news";
+import { INews } from "../../../context/news";
 
 import styled from 'styled-components'
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { useAppContext } from "../../context/context";
-import Section from "../_shared/section";
+import Section from "../shared/section";
 import Service from "./Service";
 
 function Services() {

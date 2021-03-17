@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Card as BsCard } from "react-bootstrap";
 import styled from "styled-components";
-import { IProduct } from "../../context";
+import { IProduct } from "../../../context";
 
 const Card = styled(BsCard)`
   border: 1px solid black;

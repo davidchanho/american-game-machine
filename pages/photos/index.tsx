@@ -1,6 +1,6 @@
 import React from 'react'
-import PhotoGallery from '../../app/components/photo-gallery'
-import Layout from '../../app/layout'
+import Layout from '../../components/shared/layout'
+import PhotoGallery from '../../components/user/photo-gallery'
 
 function Photos() {
     return (

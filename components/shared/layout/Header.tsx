@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useAppContext } from "../context/context";
+import { useAppContext } from "../../../context";
 
 function Header() {
   const {

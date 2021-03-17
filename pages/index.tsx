@@ -1,8 +1,8 @@
-import Accessories from "../app/components/accessories";
-import Hero from "../app/components/hero";
-import Products from "../app/components/products-list";
-import Services from "../app/components/services";
-import Layout from "../app/layout";
+import Accessories from "../components/user/accessories";
+import Hero from "../components/user/hero";
+import Products from "../components/products-list";
+import Services from "../components/services";
+import Layout from "../components/layout";
 
 export default function Home() {
   return (

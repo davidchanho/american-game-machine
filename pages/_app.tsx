@@ -1,4 +1,4 @@
-import { AppContext, AppProvider } from '../app/context/context'
+import { AppContext, AppProvider } from '../context/context'
 import 'bootstrap/dist/css/bootstrap.css'
 import "../node_modules/slick-carousel/slick/slick.css";
 import "../node_modules/slick-carousel/slick/slick-theme.css";

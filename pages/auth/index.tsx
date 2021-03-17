@@ -1,12 +1,12 @@
 import React from "react";
 import { Col, Nav, Row, Tab } from "react-bootstrap";
-import AuthNewsList from "../../app/components/_auth/auth-news-list";
-import NewsForm from "../../app/components/_auth/news-form";
-import PhotoForm from "../../app/components/_auth/photo-form";
-import ProductForm from "../../app/components/_auth/product-form";
-import Layout from "../../app/layout";
+import AdminNewsList from "../../components/admin/admin-news-list";
+import NewsForm from "../../components/admin/news-form";
+import PhotoForm from "../../components/admin/photo-form";
+import ProductForm from "../../components/admin/product-form";
+import Layout from "../../components/shared/layout";
 
-function Auth() {
+function Admin() {
   return (
     <Layout>
       <Tab.Container id="left-tabs-example" defaultActiveKey="first">
@@ -28,7 +28,7 @@ function Auth() {
             <Tab.Content>
               <Tab.Pane eventKey="first">
                 <NewsForm />
-                <AuthNewsList />
+                <AdminNewsList />
               </Tab.Pane>
               <Tab.Pane eventKey="second">
                 <ProductForm />
@@ -44,4 +44,4 @@ function Auth() {
   );
 }
 
-export default Auth;
+export default Admin;

@@ -42,17 +42,20 @@
   <li>
     withTheme and ThemeProvider were used to switch between theme and dark theme.
   </li> 
+   <li>
+    keyframes to make reusable animations
+  </li>
    <ul>
 
 </details>
 
 <details>
   <summary>
-    Lodash
+    Lodash - JS utility library to help work with arrays
   </summary>
   <ul>
   <li>
-
+    used _.uniq to get unique keys for the products category
   </li>
   </ul>
 </details>

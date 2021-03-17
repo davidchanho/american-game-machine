@@ -1,8 +1,9 @@
 import _ from "lodash";
 import React, { useState } from "react";
-import { Card, CardColumns, Form, ListGroup } from "react-bootstrap";
+import { Form, ListGroup } from "react-bootstrap";
 import styled from "styled-components";
-import { IProduct, useAppContext } from "../../context";
+import { IProduct, useAppContext } from "../../../context";
+import CatalogItem from "./CatalogItem";
 
 const Container = styled.section`
   display: flex;
@@ -22,6 +23,12 @@ const Container = styled.section`
   body {
     max-width: 75%;
   }
+`;
+
+const Grid = styled.section`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 `;
 
 function Catalog() {
@@ -80,7 +87,7 @@ function Catalog() {
           </Form>
         </ListGroup.Item>
       </ListGroup>
-      <CardColumns>
+      <Grid>
         {products
           .filter((product) => {
             if (!filter) {
@@ -92,9 +99,9 @@ function Catalog() {
             return true;
           })
           .map((product) => (
-            <Card>{product.label}</Card>
+            <CatalogItem {...product} />
           ))}
-      </CardColumns>
+      </Grid>
     </Container>
   );
 }

@@ -1,5 +1,6 @@
-import NewsList from "../../app/components/news-list";
-import Layout from "../../app/layout";
+import React from "react";
+import Layout from "../../components/shared/layout";
+import NewsList from "../../components/user/news-list";
 
 function News() {
   return (

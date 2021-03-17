@@ -2,7 +2,7 @@ import React from "react";
 import { Button, ListGroup } from "react-bootstrap";
 import { useAppContext } from "../../../context";
 
-function AuthNewsList() {
+function AdminNewsList() {
   const {
     state: { news },
     dispatch,
@@ -40,4 +40,4 @@ function AuthNewsList() {
   );
 }
 
-export default AuthNewsList;
+export default AdminNewsList;

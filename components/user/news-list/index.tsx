@@ -1,5 +1,5 @@
 import { CardDeck } from "react-bootstrap";
-import { useAppContext } from "../../context/context";
+import { useAppContext } from "../../../context/context";
 import NewsItem from "./NewsItem";
 
 function News() {
