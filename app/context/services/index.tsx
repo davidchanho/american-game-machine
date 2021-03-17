@@ -7,7 +7,7 @@ export interface IService {
   description: string;
 }
 
-interface IServiceState {
+export interface IServiceState {
   services: IService[];
 }
 

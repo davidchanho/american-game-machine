@@ -15,7 +15,7 @@ export interface IProduct {
   image: string;
 }
 
-interface IProductState {
+export interface IProductState {
   products: IProduct[];
 }
 

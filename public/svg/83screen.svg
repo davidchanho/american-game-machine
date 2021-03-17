@@ -5,8 +5,9 @@
 <style type="text/css">
 	.st0{fill:#303C42;}
 	.st1{fill:url(#SVGID_1_);}
-	.st2{font-family:'MyriadPro-Regular';}
-	.st3{font-size:64px;}
+	.st2{enable-background:new    ;}
+	.st3{font-family:'MyriadPro-Regular';}
+	.st4{font-size:64px;}
 </style>
 <g>
 	<path class="st0" d="M160,0H10.7C4.8,0,0,4.8,0,10.7V160c0,5.9,4.8,10.7,10.7,10.7s10.7-4.8,10.7-10.7V21.3H160
@@ -28,5 +29,5 @@
 	c-5.9,0-10.7,4.8-10.7,10.7s4.8,10.7,10.7,10.7h149.3c5.9,0,10.7-4.8,10.7-10.7V309.3C469.3,303.4,464.6,298.7,458.7,298.7z
 	 M160,448H21.3V309.3c0-5.9-4.8-10.7-10.7-10.7S0,303.4,0,309.3v149.3c0,5.9,4.8,10.7,10.7,10.7H160c5.9,0,10.7-4.8,10.7-10.7
 	C170.7,452.8,165.9,448,160,448z"/>
-<text transform="matrix(1 0 0 1 191.2437 253.4507)" class="st2 st3">83”</text>
+<text transform="matrix(1 0 0 1 190.4911 215.0345)" class="st2"><tspan x="0" y="0" class="st3 st4">43”</tspan><tspan x="-52" y="76.8" class="st3 st4">Curved</tspan></text>
 </svg>

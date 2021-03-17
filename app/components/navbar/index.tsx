@@ -1,12 +1,14 @@
 import Image from "next/image";
 import { Navbar as BsNavbar } from "react-bootstrap";
-import { useAppContext } from "../../context";
+import { useAppContext } from "../../context/context";
 import Nav from "./Nav";
 
 export default function Navbar() {
-  const {
-    company: { logo },
-  } = useAppContext();
+   const {
+     state: {
+       company: { logo },
+     },
+   } = useAppContext();
   
   return (
     <BsNavbar bg="light" expand="lg">

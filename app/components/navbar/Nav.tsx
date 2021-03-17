@@ -11,8 +11,10 @@ function Nav() {
   return (
     <Container>
       <NavLink href="/">Home</NavLink>
+      <NavLink href="/photos">Photos</NavLink>
       <NavLink href="/news">News</NavLink>
       <NavLink href="/contact">Contact</NavLink>
+      <NavLink href="/auth">Auth</NavLink>
     </Container>
   );
 }

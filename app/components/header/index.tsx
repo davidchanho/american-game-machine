@@ -1,11 +1,12 @@
 import Head from "next/head";
-import { useAppContext } from "../../context";
+import { useAppContext } from "../../context/context";
 
 function Header() {
   const {
-    company: { name },
+    state: {
+      company: { name },
+    },
   } = useAppContext();
-
   return (
     <Head>
       <title>{name}</title>

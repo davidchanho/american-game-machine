@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { useAppContext } from "../../context";
+import { useAppContext } from "../../context/context";
 
 export const Container = styled.footer`
   text-align: center;
@@ -7,7 +7,7 @@ export const Container = styled.footer`
 
 export default function Footer() {
   const {
-    company: { name },
+    state: {company: { name }},
   } = useAppContext();
 
   return <Container>{name}™ 2021</Container>;

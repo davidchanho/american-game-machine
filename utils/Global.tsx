@@ -1,5 +1,5 @@
-import { createGlobalStyle } from "styled-components";
 import { normalize } from "polished";
+import { createGlobalStyle } from "styled-components";
 import { primaryFont } from "./typography";
 
 const GlobalStyle = createGlobalStyle`

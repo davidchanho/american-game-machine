@@ -6,7 +6,7 @@ export interface IAccessory {
   img: string;
 }
 
-interface IAccessoriesState {
+export interface IAccessoriesState {
   accessories: IAccessory[];
 }
 

@@ -1,6 +1,7 @@
+import { Jumbotron } from "react-bootstrap";
 import styled from "styled-components";
 
-const Section = styled.section`
+const Section = styled(Jumbotron)`
   height: 80vh;
   display: flex;
   align-items: center;

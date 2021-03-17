@@ -3,7 +3,7 @@ interface ICompany {
   logo: string;
 }
 
-interface ICompanyState {
+export interface ICompanyState {
   company: ICompany;
 }
 

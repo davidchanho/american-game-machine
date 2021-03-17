@@ -1,8 +1,11 @@
-import { useAppContext } from "../../context";
+import { useAppContext } from "../../context/context";
 import ProductItem from "./ProductItem";
 
 function Products() {
-  const { products } = useAppContext();
+
+    const {
+      state: {products},
+    } = useAppContext();
 
   return (
     <>

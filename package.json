@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start"
   },
@@ -17,9 +17,14 @@
     "polished": "^4.1.1",
     "react": "17.0.1",
     "react-bootstrap": "^1.5.2",
+    "react-context-devtool": "^2.0.3",
     "react-dom": "17.0.1",
     "react-icons": "^4.2.0",
+    "react-select": "^4.2.1",
+    "react-slick": "^0.28.1",
     "react-spring": "^8.0.27",
+    "slick": "^1.12.2",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^5.2.1"
   },
   "devDependencies": {

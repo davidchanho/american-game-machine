@@ -1,10 +1,11 @@
 import { CardDeck } from "react-bootstrap";
-import { useAppContext } from "../../context";
+import { useAppContext } from "../../context/context";
 import NewsItem from "./NewsItem";
 
 function News() {
-  const { news } = useAppContext();
-
+  const {
+    state: { news },
+  } = useAppContext();
   return (
     <section>
       <CardDeck>

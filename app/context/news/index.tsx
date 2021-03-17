@@ -7,7 +7,7 @@ export interface INews {
   body: string;
 }
 
-interface INewsState {
+export interface INewsState {
   news: INews[];
 }
 
