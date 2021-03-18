@@ -34,9 +34,8 @@ function Hero() {
         American Game Machine helps businesses get started, stay well
         maintained, and <mark>grow</mark>.
       </h3>
-      <Image
+      <img
         src="/svg/growth.svg"
-        layout="fixed"
         width="300px"
         height="300px"
       />

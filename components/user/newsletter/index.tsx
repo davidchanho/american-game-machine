@@ -35,12 +35,11 @@ function NewsLetter() {
           <NewsLetterForm />
         </Col>
         <Col lg={6} md={12}>
-          <Image
+          <img
             src="/svg/newsletter.svg"
             alt="picture of envelopes"
             aria-hidden={true}
             title="https://storyset.com/"
-            layout="fill"
           />
         </Col>
       </Row>

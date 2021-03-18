@@ -13,7 +13,7 @@ function Screens({ screens }: Props) {
         {screens?.map((m) => {
           return (
             <OptionsItem key={`screen-size-item-${m}`}>
-              <Image src={`/svg/${m}screen.svg`} layout="fill" />
+              <img src={`/svg/${m}screen.svg`} />
             </OptionsItem>
           );
         })}

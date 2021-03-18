@@ -12,11 +12,10 @@ function Contact() {
           <ContactForm />
         </Col>
         <Col md={6} sm={12}>
-          <Image
+          <img
             src="/svg/contact.svg"
             alt="contact us to get a quote"
             aria-hidden="true"
-            layout="fill"
           />
         </Col>
       </Row>

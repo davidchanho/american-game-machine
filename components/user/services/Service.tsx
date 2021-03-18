@@ -1,6 +1,7 @@
 import { Card as BsCard } from "react-bootstrap";
 import styled from "styled-components";
-import { IService } from "../../context/services";
+import { IService } from "../../../context";
+
 
 const Card = styled(BsCard)`
   text-align: center;

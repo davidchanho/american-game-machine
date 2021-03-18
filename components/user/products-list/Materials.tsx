@@ -17,7 +17,7 @@ function Materials({ materials }: Props) {
         {materials?.map((m) => {
           return (
             <OptionsItem key={`material-item-${m}`}>
-              <Image src={`/img/${m}.jpg`} layout="fill" />
+              <img src={`/img/${m}.jpg`}/>
             </OptionsItem>
           );
         })}

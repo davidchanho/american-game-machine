@@ -47,7 +47,9 @@ const Gallery = styled(Slider)<Props>`
 
 function PhotoGallery() {
   return (
-    <Gallery settings={settings} width={360}>
+    <Gallery
+      width={360}
+    >
       <img src="/img/fullMachineLiteUp.jpg" alt="First slide" />
       <img src="/img/bottomMachineLiteUp.jpg" alt="Second slide" />
       <img src="/img/logoOnMachines.jpg" alt="Third slide" />

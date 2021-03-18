@@ -22,7 +22,7 @@ function ProductItem({
   return (
     <MultiItemContainer>
       <Card>
-        <Image
+        <img
           src={image}
           alt={label}
           aria-hidden={true}

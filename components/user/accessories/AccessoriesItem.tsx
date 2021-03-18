@@ -39,7 +39,7 @@ const Card = styled(BsCard)`
 function AccessoriesItem({ label, image }: IProduct) {
   return (
     <Card>
-      <Image src={image} alt={`image of ${label}`} width="300" height="300" />
+      <img src={image} alt={`image of ${label}`} width="300" height="300" />
     </Card>
   );
 }
