@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../../components/shared/layout'
+import Layout from '../../components/user/layout'
 import PhotoGallery from '../../components/user/photo-gallery'
 
 function Photos() {

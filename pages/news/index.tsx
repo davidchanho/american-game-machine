@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../../components/shared/layout";
+import Layout from "../../components/user/layout";
 import NewsList from "../../components/user/news-list";
 
 function News() {

@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import styled from "styled-components";
-import useScroll from "./hook";
+import useScroll from "./useScroll";
 
 interface Props {
   visible: boolean;
