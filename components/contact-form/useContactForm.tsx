@@ -9,6 +9,24 @@ const initialForm = {
   message: "",
 };
 
+const sendEmail = () => {
+  emailjs
+    .sendForm(
+      process.env.SERVICE_ID,
+      process.env.TEMPLATE_ID,
+      "#contact-form",
+      process.env.USER_ID
+    )
+    .then(
+      (result) => {
+        console.log(result);
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
+};
+
 function useContactForm() {
   const [form, setForm] = useState(initialForm);
 
@@ -22,21 +40,7 @@ function useContactForm() {
 
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        process.env.SERVICE_ID,
-        process.env.TEMPLATE_ID,
-        "#contact-form",
-        process.env.USER_ID
-      )
-      .then(
-        (result) => {
-          console.log(result);
-        },
-        (error) => {
-          console.log(error);
-        }
-      );
+    sendEmail();
     setForm(initialForm);
   };
 
