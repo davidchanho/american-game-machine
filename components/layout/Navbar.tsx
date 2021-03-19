@@ -1,14 +1,8 @@
 import { Navbar as BsNavbar } from "react-bootstrap";
-import { useAppContext } from "../../context";
+import { logo } from "../../context";
 import Nav from "./Nav";
 
 export default function Navbar() {
-  const {
-    state: {
-      company: { logo },
-    },
-  } = useAppContext();
-
   return (
     <BsNavbar bg="light" expand="lg">
       <BsNavbar.Brand href="/">

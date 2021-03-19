@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Options, OptionsItem } from "./styles";
 
 interface Props {
@@ -12,12 +11,12 @@ function Materials({ materials }: Props) {
 
   return (
     <>
-      <p>Material Type</p>
+      <p>Cabinet Material</p>
       <Options horizontal>
         {materials?.map((m) => {
           return (
             <OptionsItem key={`material-item-${m}`}>
-              <img src={`/img/${m}.jpg`}/>
+              <img src={m} alt={m} className="w-100" aria-hidden="true" />
             </OptionsItem>
           );
         })}

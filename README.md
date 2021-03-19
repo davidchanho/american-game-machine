@@ -8,6 +8,9 @@
   - HTML Email Template
 - CSS
   - media queries
+  - grid
+  - flexbox
+  - animation
 - Javascript (Typescript)
 
 ### Framework & Libraries

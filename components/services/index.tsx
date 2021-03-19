@@ -1,14 +1,9 @@
 import React from "react";
-import { useAppContext } from "../../context";
+import { services } from "../../context";
 import Section from "../section";
-
 import Service from "./Service";
 
 function Services() {
-    const {
-      state: {services },
-    } = useAppContext();
-    
   return (
     <Section label="Services">
       {services.map((service) => {

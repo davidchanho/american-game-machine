@@ -1,6 +1,6 @@
 import { Button, Form as BsForm } from "react-bootstrap";
 import styled from "styled-components";
-import useContactForm from "./hooks";
+import useContactForm from "./useContactForm";
 
 const Form = styled(BsForm)`
   margin: auto;

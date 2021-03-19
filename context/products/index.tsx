@@ -35,7 +35,8 @@ export interface IProduct {
 
 export interface IProductState {
   products: IProduct[];
-  loadingProducts: boolean;
+  loading: boolean;
+  error: string;
 }
 
 const productsState: IProductState = {
@@ -45,13 +46,17 @@ const productsState: IProductState = {
       type: IMachines,
       category: IStandups,
       label: "stand ups",
-      materials: ["wood", "metal"],
-      screens: ["43"],
+      materials: ["/img/wood.jpg", "/img/metal.jpg"],
+      screens: ["/svg/43screen.svg"],
       overview: {
         numberOfPlayers: "1",
       },
       description: "",
-      games: [],
+      games: [
+        "/img/golden-century.jpg",
+        "/img/autumn-moon.jpg",
+        "/img/panda-magic.jpg",
+      ],
       image: "/img/standups.png",
     },
     {
@@ -60,7 +65,7 @@ const productsState: IProductState = {
       category: IFishtables,
       label: "fish tables",
       materials: [],
-      screens: ["65", "85"],
+      screens: ["/svg/65screen.svg", "/svg/85screen.svg"],
       overview: {
         numberOfPlayers: "10",
       },
@@ -96,12 +101,13 @@ const productsState: IProductState = {
       image: "/img/chair.png",
     },
   ],
-  loadingProducts: false
+  loading: false,
+  error: ''
 };
 
 export default productsState;
 
-const { products } = productsState;
+export const products = productsState.products;
 
 export const filterProducts = (key: string, value: string) =>
   products.filter((product) => product[key] === value);

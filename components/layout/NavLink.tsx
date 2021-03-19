@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { MouseEvent } from "react";
 import styled from "styled-components";
-import { primary } from "../../utils";
+import { secondary } from "../../utils";
 
 interface Props {
   isActive: boolean;
@@ -11,13 +11,12 @@ export const Anchor = styled.a<Props>`
   margin: 0 5px;
 
   border-bottom: ${({ isActive }) =>
-    isActive ? `3px solid ${primary[100]}` : ""};
-  color: ${({ isActive }) => (isActive ? primary[100] : "")};
+    isActive ? `3px solid ${secondary[100]}` : ""};
+  color: ${({ isActive }) => (isActive ? secondary[100] : "")};
 
   &:hover {
     text-decoration: none;
-    border-bottom: 3px solid ${primary[100]};
-    color: ${primary[100]};
+    color: ${secondary[100]};
   }
 `;
 

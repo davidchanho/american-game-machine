@@ -1,7 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import { IProduct } from "../../context";
-import MultiItemContainer from "../multi-item-container";
 import Games from "./Games";
 import Materials from "./Materials";
 import Overview from "./Overview";
@@ -18,17 +17,18 @@ function ProductItem({
   image,
 }: IProduct) {
   return (
-    <MultiItemContainer>
-      <Card>
-        <img
+    <Card className="w-100 d-flex flex-row">
+      <Card.Header>
+        <Card.Img
           src={image}
           alt={label}
           aria-hidden={true}
           width="100%"
           height="100%"
         />
-      </Card>
-      <Card>
+      </Card.Header>
+
+      <Card.Body>
         <h3 className="text-capitalize">{label}</h3>
         <p>{description}</p>
         <Games games={games} />
@@ -36,8 +36,8 @@ function ProductItem({
         <Materials materials={materials} />
         <Overview {...overview} />
         <QuoteBtn />
-      </Card>
-    </MultiItemContainer>
+      </Card.Body>
+    </Card>
   );
 }
 

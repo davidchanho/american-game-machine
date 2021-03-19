@@ -1,12 +1,8 @@
 import { Nav as BsNav } from "react-bootstrap";
-import { useAppContext } from "../../context";
+import { links } from "../../context";
 import NavLink from "./NavLink";
 
 function Nav() {
-  const {
-    state: { links },
-  } = useAppContext();
-
   return (
     <BsNav>
       {links.map(({ href, label }) => {

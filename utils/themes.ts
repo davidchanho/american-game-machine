@@ -9,7 +9,7 @@ const theme = {
 
 export const defaultTheme = {
   ...theme,
-
+  
 };
 
 export const darkTheme = {

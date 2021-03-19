@@ -1,16 +1,10 @@
 import Head from "next/head";
-import { useAppContext } from "../../context";
+import { companyName } from "../../context";
 
 function Header() {
-  const {
-    state: {
-      company: { name },
-    },
-  } = useAppContext();
-  
   return (
     <Head>
-      <title>{name}</title>
+      <title>{companyName}</title>
       <link rel="icon" href="/favicon.ico" />
       <link
         rel="apple-touch-icon"

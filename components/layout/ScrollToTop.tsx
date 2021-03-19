@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import styled from "styled-components";
+import { primary } from "../../utils";
 import useScroll from "./useScroll";
 
 interface Props {
@@ -17,6 +18,7 @@ const Container = styled.span`
   bottom: 0;
 
   .btn {
+    background-color: ${primary["100"]};
     width: 48px;
     height: 48px;
     display: flex;
@@ -28,10 +30,10 @@ const Container = styled.span`
 
 function ScrollToTop() {
   const { visible, scrollTop } = useScroll();
-  
+
   return (
     <Container visible={visible}>
-      <Button variant="primary" onClick={scrollTop}>
+      <Button onClick={scrollTop}>
         <AiOutlineArrowUp />
       </Button>
     </Container>

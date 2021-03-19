@@ -5,12 +5,23 @@ interface Props {
 }
 
 function Games({ games }: Props) {
+  if (games?.length === 0) {
+    return null;
+  }
   return (
-    <CardDeck>
-      {games?.map((game) => {
-        return <Card key={game}>{game}</Card>;
-      })}
-    </CardDeck>
+    <>
+      <p>Games</p>
+
+      <CardDeck>
+        {games?.map((game) => {
+          return (
+            <Card key={game}>
+              <img src={game} alt={`game-${game}`} />
+            </Card>
+          );
+        })}
+      </CardDeck>
+    </>
   );
 }
 

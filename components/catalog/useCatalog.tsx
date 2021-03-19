@@ -1,11 +1,7 @@
 import { useState } from "react";
-import { useAppContext } from "../../context";
+import { products } from "../../context";
 
 const useCatalog = () => {
-  const {
-    state: { products },
-  } = useAppContext();
-
   const [filter, setFilter] = useState("");
 
   const onClick = (filter: string) => {
