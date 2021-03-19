@@ -1,13 +1,13 @@
-import React from 'react'
-import Layout from '../../components/user/layout'
-import PhotoGallery from '../../components/user/photo-gallery'
+import React from "react";
+import Layout from "../../components//layout";
+import PhotoGallery from "../../components//photo-gallery";
 
 function Photos() {
-    return (
-        <Layout>
-            <PhotoGallery/>
-        </Layout>
-    )
+  return (
+    <Layout>
+      <PhotoGallery />
+    </Layout>
+  );
 }
 
-export default Photos
+export default Photos;

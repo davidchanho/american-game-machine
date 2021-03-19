@@ -1,9 +1,9 @@
 import React from "react";
-import Layout from "../components/user/layout";
-import Accessories from "../components/user/accessories";
-import Hero from "../components/user/hero";
-import ProductsList from "../components/user/products-list";
-import Services from "../components/user/services";
+import Hero from "../components//hero";
+import Layout from "../components//layout";
+import ProductsList from "../components//products-list";
+import Services from "../components//services";
+import Accessories from "../components/accessories";
 
 export default function Home() {
   return (

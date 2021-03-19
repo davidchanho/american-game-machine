@@ -1,6 +1,6 @@
 import React from "react";
-import Layout from "../../components/user/layout";
-import Catalog from "../../components/user/catalog";
+import Catalog from "../../components//catalog";
+import Layout from "../../components//layout";
 
 function Products() {
   return (

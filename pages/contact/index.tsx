@@ -1,8 +1,7 @@
-import Image from "next/image";
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import Layout from "../../components/user/layout";
-import ContactForm from "../../components/user/contact-form";
+import Layout from "../../components//layout";
+import ContactForm from "../../components/contact-form";
 
 function Contact() {
   return (

@@ -35,6 +35,7 @@ export interface IProduct {
 
 export interface IProductState {
   products: IProduct[];
+  loadingProducts: boolean;
 }
 
 const productsState: IProductState = {
@@ -95,6 +96,7 @@ const productsState: IProductState = {
       image: "/img/chair.png",
     },
   ],
+  loadingProducts: false
 };
 
 export default productsState;

@@ -9,6 +9,7 @@ export interface INews {
 
 export interface INewsState {
   news: INews[];
+  loadingNews: boolean;
 }
 
 const newsState: INewsState = {
@@ -21,6 +22,7 @@ const newsState: INewsState = {
         "We are proud to serve The Triangle area, Charlotte Metropolitan Area and beyond!",
     },
   ],
+  loadingNews: false,
 };
 
 export default newsState;
