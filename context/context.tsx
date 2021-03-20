@@ -2,7 +2,6 @@ import React, { createContext, useContext } from "react";
 import { ContextDevTool } from "react-context-devtool";
 import linksState from "./links";
 import photosState from "./photos";
-import productsState from "./products";
 import serviceState from "./services";
 
 export const appState = {
@@ -11,7 +10,6 @@ export const appState = {
   ...linksState,
   ...serviceState,
   ...photosState,
-  ...productsState,
 };
 
 export const AppContext = createContext(appState);

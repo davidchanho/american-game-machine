@@ -8,5 +8,3 @@ export const services = appState.services;
 
 export const photos = appState.photos;
 export const photo = appState.photo;
-
-export const products = appState.products;
