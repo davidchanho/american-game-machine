@@ -20,7 +20,7 @@ const useScroll = () => {
 
   const handleScroll = () => {
     const currentScrollPos = window.pageYOffset;
-    const hidden = currentScrollPos < 250;
+    const hidden = currentScrollPos > 250;
 
     setScrollState({
       scrollpos: currentScrollPos,
