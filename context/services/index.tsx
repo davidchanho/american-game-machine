@@ -13,8 +13,8 @@ const serviceState: IServicesState = {
         "Ever dreamed of becoming a small business owner? We provide store setup services that get you up and running in no time.",
     },
     {
-      src: "/svg/repair.svg",
-      title: "Repair",
+      src: "/svg/maintenance.svg",
+      title: "Maintenance",
       description:
         "Stuck joysticks, blank screens, random shutdowns... whatever it is, our technicians are here for you.",
     },

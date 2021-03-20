@@ -1,15 +1,14 @@
-import Image from "next/image";
 import React from "react";
 import ContactForm from "../../components/contact-form";
-import Layout from "../../components/_shared/layout";
-import { Container } from "./styles";
+import Container from "./styles";
 
 function Contact() {
   return (
-    <Layout>
+    <>
+      <h1>Contact Us</h1>
       <Container>
         <ContactForm />
-        <Image
+        <img
           src="/svg/contact.svg"
           alt="contact us to get a quote"
           aria-hidden="true"
@@ -17,7 +16,7 @@ function Contact() {
           height={400}
         />
       </Container>
-    </Layout>
+    </>
   );
 }
 

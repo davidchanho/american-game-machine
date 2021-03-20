@@ -1,14 +1,18 @@
+import "normalize.css/normalize.css";
 import "bootstrap/dist/css/bootstrap.css";
 import { ThemeProvider } from "styled-components";
 import { AppProvider } from "../context/context";
 import { theme } from "../utils";
 import GlobalStyle from "../utils/Global";
+import Layout from "../components/_shared/layout";
 
 function MyApp({ Component, pageProps }) {
   return (
     <AppProvider>
       <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
         <GlobalStyle />
       </ThemeProvider>
     </AppProvider>

@@ -4,7 +4,6 @@ import { Navbar as BsNavbar } from "react-bootstrap";
 import { logo } from "../../../context";
 import Nav from "../nav";
 import { Container } from "./styles";
-import Image from "next/image";
 
 export default function Navbar() {
   const router = useRouter();
@@ -12,7 +11,7 @@ export default function Navbar() {
   return (
     <Container expand="lg">
       <BsNavbar.Brand href="/">
-        <Image src={logo} width={30} height={30} alt="logo" />
+        <img src={logo} width={30} height={30} alt="logo" />
       </BsNavbar.Brand>
       <BsNavbar.Toggle aria-controls="navbar-nav" />
       <BsNavbar.Collapse id="navbar-nav">

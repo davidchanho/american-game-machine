@@ -20,7 +20,6 @@
 - Bootstrap
   - React Bootstrap
 - EmailJS - frontend email library/service used to send contact form to contact email.
-- Nanoid - UUID library used to generate unique ids.
 
 <details >
   <summary >

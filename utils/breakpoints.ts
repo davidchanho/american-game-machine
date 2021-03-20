@@ -1,6 +1,6 @@
-export const breakpoints = {
-  xsm: "400px",
-  sm: "576px",
-  md: "768px",
-  lg: "992px",
-};
+export enum Breakpoints {
+  xs = "400px",
+  sm = "576px",
+  md = "768px",
+  lg = "992px",
+}

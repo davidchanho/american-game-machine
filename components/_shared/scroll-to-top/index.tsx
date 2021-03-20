@@ -8,7 +8,7 @@ function ScrollToTop() {
 
   return (
     <Container>
-      <Button onClick={scrollTop} hidden={hidden} aria-label='Scroll up'>
+      <Button onClick={scrollTop} hidden={hidden} aria-label="Scroll up">
         <AiOutlineArrowUp />
       </Button>
     </Container>

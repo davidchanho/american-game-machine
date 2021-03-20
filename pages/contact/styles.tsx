@@ -1,7 +1,6 @@
 import styled from "styled-components";
-import { breakpoints } from "../../utils";
 
-export const Container = styled.section`
+const Container = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,7 +12,7 @@ export const Container = styled.section`
     display: block;
   }
 
-  @media (max-width: ${breakpoints["lg"]}) {
+  @media (max-width: ${(props) => props.theme.breakpoints.lg}) {
     flex-direction: column;
 
     img {
@@ -22,3 +21,5 @@ export const Container = styled.section`
     }
   }
 `;
+
+export default Container

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import {Card} from "./styles";
 import { Props } from "./types";
@@ -6,7 +5,7 @@ import { Props } from "./types";
 function Service({ src, alt, title, description }: Props) {
   return (
     <Card>
-      <Image
+      <img
         src={src}
         alt={alt}
         title={title}

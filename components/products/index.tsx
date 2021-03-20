@@ -4,15 +4,15 @@ function Products() {
   return (
     <div>
       <section>
-        <h3>Stand Ups</h3>
+        <h2>Stand Ups</h2>
         <p></p>
       </section>
       <section>
-        <h3>Fish Tables</h3>
+        <h2>Fish Tables</h2>
         <p></p>
       </section>
       <section>
-        <h3>Accessories</h3>
+        <h2>Accessories</h2>
         <p>We also sell chairs and desks.</p>
       </section>
     </div>

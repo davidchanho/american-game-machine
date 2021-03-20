@@ -1,11 +1,8 @@
-import { normalize } from "polished";
 import { createGlobalStyle } from "styled-components";
-import { breakpoints } from "./breakpoints";
-import { primaryFont } from "./typography";
+import { Breakpoints } from "./breakpoints";
+import { Fonts } from "./fonts";
 
 const GlobalStyle = createGlobalStyle`
-${normalize()}
-
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -17,7 +14,7 @@ html {
 
 body {
   margin: 0;
-  font-family: ${primaryFont};
+  font-family: ${Fonts.primary};
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -31,7 +28,7 @@ main {
 }
 
 .card-deck {
- @media (max-width: ${breakpoints["md"]}) {
+ @media (max-width: ${Breakpoints.md}) {
   flex-direction: column;
  }
 }
