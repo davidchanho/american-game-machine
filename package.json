@@ -9,17 +9,8 @@
     "export": "next export"
   },
   "dependencies": {
-    "@mdx-js/loader": "^1.6.22",
-    "@next/mdx": "^10.0.8",
-    "@react-firebase/auth": "^0.2.10",
-    "@types/lodash": "^4.14.168",
-    "@types/react-slick": "^0.23.4",
     "bootstrap": "^4.6.0",
     "emailjs-com": "^2.6.4",
-    "firebase": "^8.3.0",
-    "firebase-functions": "^3.13.2",
-    "immer": "^8.0.2",
-    "lodash": "^4.17.21",
     "nanoid": "^3.1.22",
     "next": "10.0.8",
     "polished": "^4.1.1",
@@ -28,11 +19,6 @@
     "react-context-devtool": "^2.0.3",
     "react-dom": "17.0.1",
     "react-icons": "^4.2.0",
-    "react-select": "^4.2.1",
-    "react-slick": "^0.28.1",
-    "react-spring": "^8.0.27",
-    "slick": "^1.12.2",
-    "slick-carousel": "^1.8.1",
     "styled-components": "^5.2.1"
   },
   "devDependencies": {
