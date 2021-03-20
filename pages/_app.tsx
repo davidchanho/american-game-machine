@@ -3,8 +3,8 @@ import "react-inner-image-zoom/lib/InnerImageZoom/styles.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ThemeProvider } from "styled-components";
 import { AppProvider } from "../context/context";
-import { theme } from "../utils";
-import GlobalStyle from "../utils/Global";
+import { theme } from "../styles";
+import GlobalStyle from "../styles/Global";
 import Layout from "../components/_shared/layout";
 
 function MyApp({ Component, pageProps }) {
