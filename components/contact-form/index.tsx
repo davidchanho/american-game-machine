@@ -13,7 +13,6 @@ function ContactForm() {
         <Form.Label>Name</Form.Label>
         <Form.Control
           type="text"
-          placeholder="first and last name"
           onChange={onChange}
           value={form.name}
           name="name"
@@ -25,7 +24,6 @@ function ContactForm() {
         <Form.Label>Email address</Form.Label>
         <Form.Control
           type="email"
-          placeholder="email@email.com"
           onChange={onChange}
           value={form.email}
           name="email"
@@ -38,11 +36,10 @@ function ContactForm() {
         <Form.Label>Phone Number</Form.Label>
         <Form.Control
           type="tel"
-          placeholder="123-4567"
           onChange={onChange}
           value={form.phone}
           name="phone"
-          pattern="[0-9]{3}-[0-9]{4}"
+          pattern="[0-9]{3}[0-9]{3}-[0-9]{4}"
           required
           min={6}
         />
@@ -70,7 +67,6 @@ function ContactForm() {
         <Form.Label>Message</Form.Label>
         <Form.Control
           as="textarea"
-          placeholder="What can we help you with?"
           onChange={onChange}
           value={form.message}
           name="message"
@@ -80,9 +76,7 @@ function ContactForm() {
         />
       </Form.Group>
       <Recaptcha />
-      <Button type="submit">
-        Submit
-      </Button>
+      <Button type="submit">Submit</Button>
     </Form>
   );
 }

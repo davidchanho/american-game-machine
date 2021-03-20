@@ -14,6 +14,7 @@
   "dependencies": {
     "bootstrap": "^4.6.0",
     "emailjs-com": "^2.6.4",
+    "firebase": "^8.3.1",
     "next": "10.0.8",
     "next-compose-plugins": "^2.2.1",
     "next-optimized-images": "^2.6.2",
@@ -23,6 +24,7 @@
     "react-dom": "17.0.1",
     "react-google-recaptcha-v3": "^1.8.0",
     "react-icons": "^4.2.0",
+    "react-inner-image-zoom": "^2.0.1",
     "styled-components": "^5.2.1"
   },
   "devDependencies": {

@@ -7,16 +7,16 @@ import {
 function Recaptcha() {
   const [token, setToken] = useState("");
 
+  const handleVerify = (token: string) => {
+    setToken(token);
+  }
+
   return (
     <GoogleReCaptchaProvider
       reCaptchaKey={process.env.reCaptcha}
       useEnterprise={true}
     >
-      <GoogleReCaptcha
-        onVerify={(token) => {
-          setToken(token);
-        }}
-      />
+      <GoogleReCaptcha onVerify={handleVerify} />
     </GoogleReCaptchaProvider>
   );
 }
