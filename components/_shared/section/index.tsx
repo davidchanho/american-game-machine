@@ -1,19 +1,8 @@
-import React, { ReactNode } from "react";
-import SectionTitle from "./SectionTitle";
-import MultiItemContainer from "../multi-item-container";
+import React, { PropsWithChildren } from "react";
+import { Container } from "./styles";
 
-interface Props {
-  label: string;
-  children: ReactNode[];
-}
-
-function Section({ label, children }: Props) {
-  return (
-    <section>
-      <SectionTitle>{label}</SectionTitle>
-      <MultiItemContainer>{children}</MultiItemContainer>
-    </section>
-  );
+function Section({ children }: PropsWithChildren<{}>) {
+  return <Container>{children}</Container>;
 }
 
 export default Section;

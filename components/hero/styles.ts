@@ -8,6 +8,7 @@ export const HeroContainer = styled(Jumbotron)`
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 0 0 50px 50px;
 
   h3 {
     margin: 0;
@@ -28,17 +29,10 @@ export const HeroContainer = styled(Jumbotron)`
   }
 
   @media (max-width: ${breakpoints["md"]}) {
-    h3 {
-      width: 20%;
-      margin-right: 20px;
-    }
-  }
-
-  @media (max-width: ${breakpoints["sm"]}) {
     flex-direction: column;
 
     h3 {
-      width: 60%;
+      width: 50%;
       margin-bottom: 20px;
     }
   }

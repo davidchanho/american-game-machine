@@ -1,37 +1,7 @@
 import _ from "lodash";
 import { nanoid } from "nanoid";
+import { IProduct, IMachines, IAccessories, IChairs, IDesks, IFishtables, IStandups } from "../types";
 
-export const IMachines = "machines";
-export const IAccessories = "accessories";
-type IType = typeof IMachines | typeof IAccessories;
-const IStandups = "standups";
-const IFishtables = "fishtables";
-const IChairs = "chairs";
-const IDesks = "desks";
-
-type ICategory =
-  | typeof IStandups
-  | typeof IFishtables
-  | typeof IChairs
-  | typeof IDesks;
-
-export interface IOverview {
-  numberOfPlayers: string;
-}
-
-export interface IProduct {
-  id: string;
-  type: IType;
-  category?: ICategory;
-  label: string;
-  description: string;
-  screens?: string[];
-  materials?: string[];
-  colors?: string[];
-  games?: string[];
-  overview?: IOverview;
-  image: string;
-}
 
 export interface IProductState {
   products: IProduct[];
@@ -108,10 +78,3 @@ const productsState: IProductState = {
 export default productsState;
 
 export const products = productsState.products;
-
-export const filterProducts = (key: string, value: string) =>
-  products.filter((product) => product[key] === value);
-
-export const filterProductsByKey = (key: string) => {
-  return _.uniq(products.map((product) => product[key]));
-};

@@ -1,5 +1,6 @@
 import { normalize } from "polished";
 import { createGlobalStyle } from "styled-components";
+import { breakpoints } from "./breakpoints";
 import { primaryFont } from "./typography";
 
 const GlobalStyle = createGlobalStyle`
@@ -27,6 +28,18 @@ main {
 
 .card {
   border: 0;
+}
+
+.card-deck {
+ @media (max-width: ${breakpoints["md"]}) {
+  flex-direction: column;
+ }
+}
+
+.btn {
+  &:disabled {
+    cursor: not-allowed;
+  }
 }
 `;
 

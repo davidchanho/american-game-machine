@@ -1,15 +1,19 @@
 import React from "react";
+import { CardDeck } from "react-bootstrap";
 import { services } from "../../context";
 import DescriptionCard from "../_shared/card/description-card";
-import Section from "../_shared/section";
+import SectionTitle from "../_shared/section-title";
 
 function Services() {
   return (
-    <Section label="Services">
-      {services.map((service) => {
-        return <DescriptionCard key={`service-${service.id}`} {...service} />;
-      })}
-    </Section>
+    <section>
+      <SectionTitle>Services</SectionTitle>
+      <CardDeck>
+        {services.map((service) => {
+          return <DescriptionCard key={`service-${service.title}`} {...service} />;
+        })}
+      </CardDeck>
+    </section>
   );
 }
 

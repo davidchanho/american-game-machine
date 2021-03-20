@@ -1,15 +1,18 @@
 import React from "react";
+import { CardColumns } from "react-bootstrap";
 import { photos } from "../../context";
 import ImgCard from "../_shared/card/img-card";
-import Gallery from "./styles";
+import Section from "../_shared/section";
 
 function PhotoGallery() {
   return (
-    <Gallery>
-      {photos.map(({ id, src }) => {
-        return <ImgCard key={id} src={src} />;
-      })}
-    </Gallery>
+    <Section>
+      <CardColumns>
+        {photos.map(({ id, src }) => {
+          return <ImgCard key={id} src={src} />;
+        })}
+      </CardColumns>
+    </Section>
   );
 }
 

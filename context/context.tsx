@@ -1,28 +1,24 @@
-import produce from "immer";
-import React, { createContext, useContext, useReducer } from "react";
+import React, { createContext, useContext } from "react";
 import { ContextDevTool } from "react-context-devtool";
-import app from "./app";
-import news, { INews } from "./news";
-import products, { IProduct } from "./products";
+import linksState from "./links";
+import photosState from "./photos";
+import productsState from "./products";
+import serviceState from "./services";
 
-const contextState = {
-  app,
-  news,
-  products,
+export const appState = {
+  name: "American Game Machine",
+  logo: "/svg/logo.svg",
+  ...linksState,
+  ...serviceState,
+  ...photosState,
+  ...productsState,
 };
 
-export const AppContext = createContext<{
-  state: any;
-  dispatch: React.Dispatch<any>;
-}>({
-  state: contextState,
-  dispatch: () => null,
-});
-export function AppProvider({ children }) {
-  const [state, dispatch] = useReducer(reducer, contextState);
+export const AppContext = createContext(appState);
 
+export function AppProvider({ children }) {
   return (
-    <AppContext.Provider value={{ state, dispatch }}>
+    <AppContext.Provider value={appState}>
       {(values) => {
         if (window._REACT_CONTEXT_DEVTOOL) {
           window._REACT_CONTEXT_DEVTOOL({
@@ -42,49 +38,6 @@ export function AppProvider({ children }) {
     </AppContext.Provider>
   );
 }
-
-enum ActionTypes {
-  LOADING_NEWS = "LOADING_NEWS",
-  LOADING_NEWS_SUCCESSFUL = "LOADING_NEWS_SUCCESSFUL",
-  LOADING_NEWS_ERROR = "LOADING_NEWS_ERROR",
-  LOADING_PRODUCTS = "LOADING_PRODUCTS",
-  LOADING_PRODUCTS_SUCCESSFUL = "LOADING_PRODUCTS_SUCCESSFUL",
-  LOADING_PRODUCTS_ERROR = "LOADING_PRODUCTS_ERROR",
-}
-
-type IAction =
-  | { type: ActionTypes.LOADING_NEWS }
-  | { type: ActionTypes.LOADING_NEWS_SUCCESSFUL; payload: INews[] }
-  | { type: ActionTypes.LOADING_NEWS_ERROR }
-  | { type: ActionTypes.LOADING_PRODUCTS }
-  | { type: ActionTypes.LOADING_PRODUCTS_SUCCESSFUL; payload: IProduct[] }
-  | { type: ActionTypes.LOADING_PRODUCTS_ERROR };
-
-export const reducer = (state = contextState, action: IAction) =>
-  produce(state, (draft) => {
-    switch (action.type) {
-      case ActionTypes.LOADING_NEWS:
-        draft.news.loading = true;
-        return draft;
-      case ActionTypes.LOADING_NEWS_SUCCESSFUL:
-        draft.news.news = action.payload;
-        return draft;
-      case ActionTypes.LOADING_NEWS_ERROR:
-        draft.news.loading = true;
-        return draft;
-      case ActionTypes.LOADING_PRODUCTS:
-        draft.products.loading = true;
-        return draft;
-      case ActionTypes.LOADING_PRODUCTS_SUCCESSFUL:
-        draft.products.products = action.payload;
-        return draft;
-      case ActionTypes.LOADING_PRODUCTS_ERROR:
-        draft.products.loading = true;
-        return draft;
-      default:
-        return draft;
-    }
-  });
 
 export function useAppContext() {
   return useContext(AppContext);
