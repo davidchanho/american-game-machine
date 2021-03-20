@@ -4,11 +4,11 @@ import { Button, Container } from "./styles";
 import useScroll from "./useScroll";
 
 function ScrollToTop() {
-  const { visible, scrollTop } = useScroll();
+  const { hidden, scrollTop } = useScroll();
 
   return (
     <Container>
-      <Button onClick={scrollTop} visible={visible}>
+      <Button onClick={scrollTop} hidden={hidden} aria-label='Scroll up'>
         <AiOutlineArrowUp />
       </Button>
     </Container>

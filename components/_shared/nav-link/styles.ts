@@ -1,18 +1,22 @@
-import { Props } from "./types";
 import styled from "styled-components";
-import { secondary } from "../../../utils";
+
+interface Props {
+  isActive: boolean;
+}
 
 export const Anchor = styled.a<Props>`
   margin: 0 5px;
   font-weight: bold;
   border-bottom: ${({ isActive }) =>
-    isActive ? `3px solid ${secondary[100]}` : "white"};
-  color: ${({ isActive, isHomePage }) =>
-    isActive ? secondary[100] : isHomePage ? "white" : "black"};
+    isActive
+      ? `3px solid  ${(props) => props.theme.colors.secondary}`
+      : "white"};
+  color: ${({ isActive }) =>
+    isActive ? `${(props) => props.theme.colors.secondary}` : "black"};
 
   &:hover {
     font-weight: bold;
     text-decoration: none;
-    color: ${secondary[100]};
+    color: ${(props) => props.theme.colors.secondary};
   }
 `;

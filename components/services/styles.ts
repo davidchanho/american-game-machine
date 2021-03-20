@@ -1,7 +1,7 @@
-import { Card } from "react-bootstrap";
+import { Card as BsCard } from "react-bootstrap";
 import styled from "styled-components";
 
-export const Container = styled(Card)`
+export const Card = styled(BsCard)`
   text-align: center;
   padding: 15px;
 

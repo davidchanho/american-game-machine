@@ -12,4 +12,5 @@ export interface IService {
 export interface IPhoto {
   id: string;
   src: string;
+  alt: string;
 }

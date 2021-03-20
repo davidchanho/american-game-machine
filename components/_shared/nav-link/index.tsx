@@ -4,7 +4,6 @@ import { Anchor } from "./styles";
 
 function NavLink({ children, href }) {
   const router = useRouter();
-  let isHomePage = router.pathname === "/";
 
   const handleClick = (e: MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
@@ -16,7 +15,6 @@ function NavLink({ children, href }) {
       href={href}
       onClick={handleClick}
       isActive={router.pathname === href}
-      isHomePage={isHomePage}
     >
       {children}
     </Anchor>

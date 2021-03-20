@@ -1,7 +1,7 @@
 import React from "react";
 import { CardDeck } from "react-bootstrap";
 import { services } from "../../context";
-import DescriptionCard from "../_shared/card/description-card";
+import Service from "./Service";
 import SectionTitle from "../_shared/section-title";
 
 function Services() {
@@ -10,7 +10,7 @@ function Services() {
       <SectionTitle>Services</SectionTitle>
       <CardDeck>
         {services.map((service) => {
-          return <DescriptionCard key={`service-${service.title}`} {...service} />;
+          return <Service key={`service-${service.title}`} {...service} />;
         })}
       </CardDeck>
     </section>

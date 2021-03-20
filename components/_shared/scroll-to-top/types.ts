@@ -1,3 +1,3 @@
 export interface Props {
-  visible: boolean;
+  hidden: boolean;
 }

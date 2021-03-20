@@ -1,6 +1,5 @@
 import { Button as BsButton } from "react-bootstrap";
 import styled from "styled-components";
-import { primary } from "../../../utils";
 import { Props } from "./types";
 
 export const Container = styled.span`
@@ -13,11 +12,11 @@ export const Container = styled.span`
 `;
 
 export const Button = styled(BsButton)<Props>`
-  background-color: ${primary["100"]};
+  background-color: ${props => props.theme.colors.primary};
   width: 48px;
   height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
-  visibility: ${({ visible }) => (visible ? "visible" : "hidden")};
+  visibility: ${({ hidden }) => (hidden ? "hidden" : undefined)};
 `;

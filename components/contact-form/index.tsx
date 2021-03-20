@@ -1,4 +1,6 @@
+import React from "react";
 import { Button, Form } from "react-bootstrap";
+import Recaptcha from "./Recaptcha";
 import useContactForm from "./useContactForm";
 
 function ContactForm() {
@@ -76,7 +78,7 @@ function ContactForm() {
           required
         />
       </Form.Group>
-
+      <Recaptcha />
       <Button variant="primary" type="submit">
         Submit
       </Button>

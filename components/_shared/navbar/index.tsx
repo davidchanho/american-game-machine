@@ -4,15 +4,15 @@ import { Navbar as BsNavbar } from "react-bootstrap";
 import { logo } from "../../../context";
 import Nav from "../nav";
 import { Container } from "./styles";
+import Image from "next/image";
 
 export default function Navbar() {
   const router = useRouter();
-  let isHomePage = router.pathname === "/";
 
   return (
-    <Container expand="lg" isHomePage={isHomePage}>
+    <Container expand="lg">
       <BsNavbar.Brand href="/">
-        <img src={logo} width={30} height={30} />
+        <Image src={logo} width={30} height={30} alt="logo" />
       </BsNavbar.Brand>
       <BsNavbar.Toggle aria-controls="navbar-nav" />
       <BsNavbar.Collapse id="navbar-nav">

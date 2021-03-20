@@ -6,6 +6,9 @@ todo.md
 /archived
 /.pnp
 .pnp.js
+/stories
+.storybook
+/components/_shared/**/*.stories.tsx
 
 # testing
 /coverage
