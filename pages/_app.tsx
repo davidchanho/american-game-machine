@@ -1,5 +1,4 @@
 import "normalize.css/normalize.css";
-import "react-inner-image-zoom/lib/InnerImageZoom/styles.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ThemeProvider } from "styled-components";
 import { AppProvider } from "../context/context";
