@@ -1,12 +1,12 @@
 import Image from "next/image";
 import React from "react";
-import { Container } from "./styles";
+import Card from "../card";
 
 function ImgCard({ src, alt }) {
   return (
-    <Container>
+    <Card>
       <Image src={src} alt={alt} width={300} height={300} />
-    </Container>
+    </Card>
   );
 }
 

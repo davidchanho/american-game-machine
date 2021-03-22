@@ -49,6 +49,11 @@ main {
   margin: 0 auto;
 } 
 
+img {
+     width: 100%;
+      display: block;
+}
+
 .card {
   border: 0;
 }
