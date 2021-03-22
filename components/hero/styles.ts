@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 export const HeroContainer = styled(Jumbotron)`
   background-color: ${(props) => props.theme.colors.primary};
-  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,6 +11,7 @@ export const HeroContainer = styled(Jumbotron)`
   h1 {
     margin: 0;
     width: 25%;
+    color: ${(props) => props.theme.colors.white};
 
     span {
       font-weight: bold;
@@ -19,7 +19,7 @@ export const HeroContainer = styled(Jumbotron)`
     }
 
     mark {
-      background-color: ${(props) => props.theme.colors.accent};
+      background-color: ${(props) => props.theme.colors.success};
     }
   }
 

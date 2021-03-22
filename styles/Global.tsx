@@ -18,29 +18,30 @@ body {
   font-family: ${TypeFace.primary};
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
   h1 {
-    font-size: ${Fonts.h1}
+    font-size: ${Fonts.h1};
   }
   h2 {
-    font-size: ${Fonts.h2}
+    font-size: ${Fonts.h2};
   }
   h3 {
-    font-size: ${Fonts.h3}
+    font-size: ${Fonts.h3};
   }
   h4 {
-    font-size: ${Fonts.h4}
+    font-size: ${Fonts.h4};
   }
   h5 {
-    font-size: ${Fonts.h5}
+    font-size: ${Fonts.h5};
   }
   h6 {
-    font-size: ${Fonts.h6}
+    font-size: ${Fonts.h6};
   }
   p {
-    font-size: ${Fonts.p}
+    font-size: ${Fonts.p};
   }
   small {
-    font-size: ${Fonts.small}
+    font-size: ${Fonts.small};
   }
 }
 

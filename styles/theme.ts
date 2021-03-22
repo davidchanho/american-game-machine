@@ -5,8 +5,11 @@ export const theme = {
   colors: {
     primary: Colors.primary,
     secondary: Colors.secondary,
-    accent: Colors.accent,
+    success: Colors.success,
     other: Colors.other,
+    white: Colors.white,
+    danger: Colors.danger,
+    warning: Colors.warning,
   },
   breakpoints: {
     xs: Breakpoints.xs,
