@@ -6,7 +6,6 @@ const SectionTitle = styled.h3`
   text-transform: capitalize;
   text-decoration: underline;
   font-weight: bold;
-  font-size: clamp(1vw, 4vw, 10vw);
   margin-bottom: 2rem;
 `;
 

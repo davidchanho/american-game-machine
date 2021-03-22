@@ -1,4 +1,3 @@
-import { Fonts } from ".";
 import { Breakpoints } from "./breakpoints";
 import Colors from "./colors";
 
@@ -15,7 +14,4 @@ export const theme = {
     md: Breakpoints.md,
     lg: Breakpoints.lg,
   },
-  fonts : {
-    primary: Fonts.primary
-  }
 };
