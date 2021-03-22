@@ -14,8 +14,8 @@ function Contact() {
             src="/svg/contact.svg"
             alt="contact us to get a quote"
             aria-hidden="true"
-            width={400}
-            height={400}
+            width={800}
+            height={800}
           />
         </section>
       </Container>

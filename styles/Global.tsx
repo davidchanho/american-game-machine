@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import { Breakpoints } from "./breakpoints";
-import { Fonts } from "./fonts";
 import { TypeFace } from "./typeFace";
+import { TypeScale } from "./typeScale";
 
 const GlobalStyle = createGlobalStyle`
 html {
@@ -20,28 +20,28 @@ body {
   -moz-osx-font-smoothing: grayscale;
   
   h1 {
-    font-size: ${Fonts.h1};
+    font-size: ${TypeScale.h1};
   }
   h2 {
-    font-size: ${Fonts.h2};
+    font-size: ${TypeScale.h2};
   }
   h3 {
-    font-size: ${Fonts.h3};
+    font-size: ${TypeScale.h3};
   }
   h4 {
-    font-size: ${Fonts.h4};
+    font-size: ${TypeScale.h4};
   }
   h5 {
-    font-size: ${Fonts.h5};
+    font-size: ${TypeScale.h5};
   }
   h6 {
-    font-size: ${Fonts.h6};
+    font-size: ${TypeScale.h6};
   }
   p {
-    font-size: ${Fonts.p};
+    font-size: ${TypeScale.p};
   }
   small {
-    font-size: ${Fonts.small};
+    font-size: ${TypeScale.small};
   }
 }
 
