@@ -11,7 +11,7 @@ export const HeroContainer = styled(Jumbotron)`
 
   h1 {
     margin: 0;
-    width: 18%;
+    width: 25%;
 
     span {
       font-weight: bold;

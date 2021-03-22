@@ -10,7 +10,7 @@ function PhotoGallery() {
       <h1>Photo Gallery</h1>
       <CardColumns>
         {photos.map((photo) => {
-          return <InnerImageZoom key={photo.id} {...photo} />;
+          return <InnerImageZoom key={photo.id} {...photo} zoomScale={1.2} />;
         })}
       </CardColumns>
     </Section>
