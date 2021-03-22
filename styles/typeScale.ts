@@ -1,4 +1,4 @@
-export enum Fonts {
+export enum TypeScale {
   h1 = "2rem",
   h2 = "1.8rem",
   h3 = "1.6rem",

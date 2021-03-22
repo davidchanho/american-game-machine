@@ -8,7 +8,7 @@ const Container = styled(BsContainer)`
     align-items: center;
     justify-content: center;
     img {
-      width: 50%;
+      width: 100%;
       display: block;
     }
   }
@@ -25,4 +25,4 @@ const Container = styled(BsContainer)`
   }
 `;
 
-export default Container
+export default Container;
