@@ -1,8 +1,8 @@
 import React from "react";
 import { CardColumns } from "react-bootstrap";
 import { photos } from "../../context";
-import ImgCard from "../_shared/img-card";
 import Section from "../_shared/section";
+import InnerImageZoom from "react-inner-image-zoom";
 
 function PhotoGallery() {
   return (
@@ -10,7 +10,7 @@ function PhotoGallery() {
       <h1>Photo Gallery</h1>
       <CardColumns>
         {photos.map((photo) => {
-          return <ImgCard key={photo.id} {...photo} />;
+          return <InnerImageZoom key={photo.id} {...photo} />;
         })}
       </CardColumns>
     </Section>
