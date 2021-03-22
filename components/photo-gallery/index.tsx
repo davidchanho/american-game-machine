@@ -1,18 +1,26 @@
 import React from "react";
-import { CardColumns } from "react-bootstrap";
-import { photos } from "../../context";
-import Section from "../_shared/section";
 import InnerImageZoom from "react-inner-image-zoom";
+import { photos } from "../../context";
+import Grid from "../_shared/grid";
+import Section from "../_shared/section";
 
 function PhotoGallery() {
   return (
     <Section>
       <h1>Photo Gallery</h1>
-      <CardColumns>
+      <Grid>
         {photos.map((photo) => {
-          return <InnerImageZoom key={photo.id} {...photo} zoomScale={1.2} />;
+          return (
+            <InnerImageZoom
+              {...photo}
+              key={photo.id}
+              zoomScale={1.2}
+              width={600}
+              height={600}
+            />
+          );
         })}
-      </CardColumns>
+      </Grid>
     </Section>
   );
 }
