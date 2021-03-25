@@ -3,7 +3,7 @@ import ContactForm from "../../components/contact-form";
 import Container from "./styles";
 import Image from "next/image";
 
-function Contact() {
+function ContactPage() {
   return (
     <>
       <Container>
@@ -23,4 +23,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default ContactPage;

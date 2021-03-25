@@ -1,8 +1,8 @@
 import React from "react";
 import PhotoGallery from "../../components//photo-gallery";
 
-function Photos() {
+function PhotosPage() {
   return <PhotoGallery />;
 }
 
-export default Photos;
+export default PhotosPage;

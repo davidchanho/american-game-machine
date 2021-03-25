@@ -1,10 +1,13 @@
+/* 
+/ @type scale: Major Second
+*/
 export enum TypeScale {
-  h1 = "2rem",
-  h2 = "1.8rem",
-  h3 = "1.6rem",
-  h4 = "1.4rem",
-  h5 = "1.2rem",
-  h6 = "1rem",
-  p = "0.8rem",
-  small = "0.4rem",
+  header1 = "1.802rem",
+  header2 = "1.602rem",
+  header3 = "1.424rem",
+  header4 = "1.266rem",
+  header5 = "1.125rem",
+  paragraph = "1rem",
+  helper = "0.889rem",
+  copyright = "0.79rem",
 }

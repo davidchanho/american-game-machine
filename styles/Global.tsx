@@ -20,28 +20,30 @@ body {
   -moz-osx-font-smoothing: grayscale;
   
   h1 {
-    font-size: ${TypeScale.h1};
+    font-size: ${TypeScale.header1};
   }
   h2 {
-    font-size: ${TypeScale.h2};
+    font-size: ${TypeScale.header2};
   }
   h3 {
-    font-size: ${TypeScale.h3};
+    font-size: ${TypeScale.header3};
   }
   h4 {
-    font-size: ${TypeScale.h4};
+    font-size: ${TypeScale.header4};
   }
   h5 {
-    font-size: ${TypeScale.h5};
-  }
-  h6 {
-    font-size: ${TypeScale.h6};
+    font-size: ${TypeScale.header5};
   }
   p {
-    font-size: ${TypeScale.p};
+    font-size: ${TypeScale.paragraph};
+
+    &.helper {
+      font-size: ${TypeScale.helper};
+    }
   }
+ 
   small {
-    font-size: ${TypeScale.small};
+    font-size: ${TypeScale.copyright};
   }
 }
 

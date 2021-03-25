@@ -1,4 +1,5 @@
 import React, { PropsWithChildren } from "react";
+import { companyName } from "../../../context";
 import Footer from "../footer";
 import Head from "../head";
 import Navbar from "../navbar";
@@ -11,7 +12,7 @@ function Layout({ children }: PropsWithChildren<{}>) {
       <Head />
       <Navbar />
       {children}
-      <Footer />
+      <Footer>{companyName}™ 2021</Footer>
       <ScrollToTop />
     </Main>
   );

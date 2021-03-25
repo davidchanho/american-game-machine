@@ -7,19 +7,14 @@ export const HeroContainer = styled(Jumbotron)`
   align-items: center;
   justify-content: center;
   border-radius: 0 0 50px 50px;
+  color: ${(props) => props.theme.colors.white};
 
   h1 {
-    margin: 0;
-    width: 25%;
-    color: ${(props) => props.theme.colors.white};
+    width: 20%;
 
     span {
-      font-weight: bold;
       text-decoration: underline;
-    }
-
-    mark {
-      background-color: ${(props) => props.theme.colors.success};
+      font-weight: bold;
     }
   }
 
