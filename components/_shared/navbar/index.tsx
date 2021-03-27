@@ -1,14 +1,11 @@
-import { useRouter } from "next/router";
+import Image from "next/image";
 import React from "react";
 import { Navbar as BsNavbar } from "react-bootstrap";
 import { logo } from "../../../context";
 import Nav from "../nav";
 import { Container } from "./styles";
-import Image from "next/image";
 
 export default function Navbar() {
-  const router = useRouter();
-
   return (
     <Container expand="lg">
       <BsNavbar.Brand href="/">

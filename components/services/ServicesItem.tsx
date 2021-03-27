@@ -1,9 +1,9 @@
-import React from "react";
-import {Card} from "./styles";
-import { Props } from "./types";
 import Image from "next/image";
+import React from "react";
+import { Card } from "./styles";
+import { Props } from "./types";
 
-function Service({ src, alt, title, description }: Props) {
+function ServicesItem({ src, alt, title, description }: Props) {
   return (
     <Card>
       <Image
@@ -20,4 +20,4 @@ function Service({ src, alt, title, description }: Props) {
   );
 }
 
-export default Service;
+export default ServicesItem;

@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactForm renders correctly 1`] = `
+<div
+  className="sc-gsTCUz cgQglz container"
+>
+  <h1>
+    Photo Gallery
+  </h1>
+  <div
+    className="sc-bdfBwQ dNJOoc card-columns"
+  >
+    <figure
+      className="iiz  "
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onMouseMove={null}
+      onTouchStart={[Function]}
+      style={
+        Object {
+          "width": 600,
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "paddingTop": null,
+          }
+        }
+      >
+        <img
+          alt="full image of stand up with lights turned on."
+          className="iiz__img  "
+          height={600}
+          src="/img/fullMachine.webp"
+          style={
+            Object {
+              "transition": "linear 0ms opacity 0ms, linear 150ms visibility 0ms",
+            }
+          }
+          width={600}
+        />
+      </div>
+      <span
+        className="iiz__btn iiz__hint"
+      />
+    </figure>
+    <figure
+      className="iiz  "
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onMouseMove={null}
+      onTouchStart={[Function]}
+      style={
+        Object {
+          "width": 600,
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "paddingTop": null,
+          }
+        }
+      >
+        <img
+          alt="closer look of stand up with lights turned on."
+          className="iiz__img  "
+          height={600}
+          src="/img/bottomMachine.webp"
+          style={
+            Object {
+              "transition": "linear 0ms opacity 0ms, linear 150ms visibility 0ms",
+            }
+          }
+          width={600}
+        />
+      </div>
+      <span
+        className="iiz__btn iiz__hint"
+      />
+    </figure>
+    <figure
+      className="iiz  "
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onMouseMove={null}
+      onTouchStart={[Function]}
+      style={
+        Object {
+          "width": 600,
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "paddingTop": null,
+          }
+        }
+      >
+        <img
+          alt="close up of our logo on the stand ups."
+          className="iiz__img  "
+          height={600}
+          src="/img/logoOnMachines.webp"
+          style={
+            Object {
+              "transition": "linear 0ms opacity 0ms, linear 150ms visibility 0ms",
+            }
+          }
+          width={600}
+        />
+      </div>
+      <span
+        className="iiz__btn iiz__hint"
+      />
+    </figure>
+    <figure
+      className="iiz  "
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onMouseMove={null}
+      onTouchStart={[Function]}
+      style={
+        Object {
+          "width": 600,
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "paddingTop": null,
+          }
+        }
+      >
+        <img
+          alt="a long line of our machines being assembled."
+          className="iiz__img  "
+          height={600}
+          src="/img/machinesAssembly.webp"
+          style={
+            Object {
+              "transition": "linear 0ms opacity 0ms, linear 150ms visibility 0ms",
+            }
+          }
+          width={600}
+        />
+      </div>
+      <span
+        className="iiz__btn iiz__hint"
+      />
+    </figure>
+  </div>
+</div>
+`;
