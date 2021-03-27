@@ -1,10 +1,11 @@
-import { Nav as BsNav } from "react-bootstrap";
+import React from "react";
 import { links } from "../../../context";
 import NavLink from "../nav-link";
+import { Container } from "./styles";
 
 function Nav() {
   return (
-    <BsNav>
+    <Container>
       {links.map(({ href, label }) => {
         return (
           <NavLink key={`nav-link-${label}`} href={href}>
@@ -12,7 +13,7 @@ function Nav() {
           </NavLink>
         );
       })}
-    </BsNav>
+    </Container>
   );
 }
 

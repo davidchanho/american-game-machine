@@ -6,9 +6,9 @@ export interface ILinkState {
 
 const linksState: ILinkState = {
   links: [
-    { href: "/", label: "Home" },
-    { href: "/photos", label: "Photos" },
-    { href: "/contact", label: "Contact" },
+    { href: "/", label: "home" },
+    { href: "/photos", label: "photos" },
+    { href: "/contact", label: "contact" },
   ],
 };
 
