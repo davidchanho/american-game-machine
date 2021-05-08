@@ -1,7 +1,12 @@
 import React from "react";
-import { links } from "../../context";
 import NavLink from "../nav-link";
 import { Container } from "./styles";
+
+const links = [
+  { href: "/", label: "home" },
+  { href: "/photos", label: "photos" },
+  { href: "/contact", label: "contact" },
+];
 
 function Nav() {
   return (

@@ -1,4 +1,8 @@
-import { IPhoto } from "../types";
+export interface IPhoto {
+  id: string;
+  src: string;
+  alt: string;
+}
 
 export interface IPhotoState {
   photos: IPhoto[];
