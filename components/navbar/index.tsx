@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Navbar as BsNavbar } from "react-bootstrap";
-import { logo } from "../../../context";
+import { logo } from "../../context";
 import Nav from "../nav";
 import { Container } from "./styles";
 

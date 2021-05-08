@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { companyName } from "../../context";
+import { companyName } from "../../../../context";
 import { HeroContainer } from "./styles";
 
 function Hero() {

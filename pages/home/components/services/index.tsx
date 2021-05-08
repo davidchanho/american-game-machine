@@ -1,8 +1,8 @@
 import React from "react";
 import { CardDeck } from "react-bootstrap";
-import { services } from "../../context";
+import SectionTitle from "../../../../components/section-title";
+import { services } from "../../../../context";
 import Service from "./ServicesItem";
-import SectionTitle from "../_shared/section-title";
 
 function Services() {
   return (

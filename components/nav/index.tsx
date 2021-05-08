@@ -1,5 +1,5 @@
 import React from "react";
-import { links } from "../../../context";
+import { links } from "../../context";
 import NavLink from "../nav-link";
 import { Container } from "./styles";
 

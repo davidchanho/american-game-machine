@@ -1,10 +1,10 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import ErrorPage from "./404";
+import App from ".";
 
-describe("ErrorPage", () => {
+describe("App", () => {
   it("renders correctly", () => {
-    const tree = renderer.create(<ErrorPage />).toJSON();
+    const tree = renderer.create(<App />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

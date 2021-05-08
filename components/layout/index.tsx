@@ -1,5 +1,5 @@
 import React, { PropsWithChildren } from "react";
-import { companyName } from "../../../context";
+import { companyName } from "../../context";
 import Footer from "../footer";
 import Head from "../head";
 import Navbar from "../navbar";

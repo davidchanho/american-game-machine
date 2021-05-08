@@ -1,6 +1,6 @@
 import React from "react";
 import {  Form } from "react-bootstrap";
-import Button from "../_shared/button";
+import Button from "../../../../components/button";
 import Recaptcha from "./Recaptcha";
 import useContactForm from "./useContactForm";
 
