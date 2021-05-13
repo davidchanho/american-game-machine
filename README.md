@@ -20,13 +20,8 @@
 - Bootstrap
   - React Bootstrap
 - EmailJS - frontend email library/service used to send contact form to contact email.
+- Next JS
 
-<details >
-  <summary >
-    Next JS
-  </summary>
-  
-</details>
 <details>
   <summary>
     Styled-Components - stylize components via CSS-in-JS.
@@ -49,24 +44,6 @@
   </li>
    <ul>
 
-</details>
-
-<details>
-  <summary>
-    Lodash - JS utility library to help work with arrays
-  </summary>
-  <ul>
-  <li>
-    used _.uniq to get unique keys for the products category
-  </li>
-  </ul>
-</details>
-
-<details>
-  <summary>
-    Story Book
-  </summary>
-  
 </details>
 
 ### Applications

@@ -1,10 +1,10 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import SectionTitle from ".";
+import Hero from ".";
 
-describe("SectionTitle", () => {
+describe("Hero", () => {
   it("renders correctly", () => {
-    const tree = renderer.create(<SectionTitle />).toJSON();
+    const tree = renderer.create(<Hero />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

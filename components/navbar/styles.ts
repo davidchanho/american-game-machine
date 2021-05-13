@@ -1,6 +1,7 @@
-import { Navbar as BsNavbar } from "react-bootstrap";
+import { Navbar } from "react-bootstrap";
 import styled from "styled-components";
 
-export const Container = styled(BsNavbar)`
-  background-color: ${props => props.theme.colors.white};
+export const Container = styled(Navbar)`
+  background-color: inherit;
+  color: inherit;
 `;

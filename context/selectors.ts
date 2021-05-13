@@ -2,4 +2,5 @@ import { appState } from "./context";
 
 export const companyName = appState.companyName;
 
-export const photos = appState.photos;
+export const photoMachines = appState.machines;
+export const photoGames = appState.games;

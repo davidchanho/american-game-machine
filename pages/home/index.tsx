@@ -1,17 +1,14 @@
 import React from "react";
-import { Container } from "react-bootstrap";
-import Hero from "./components/hero";
-import Products from "./components/products";
-import Services from "./components/services";
+import Hero from "./hero";
+import Products from "./products";
+import Services from "./services";
 
 export default function HomePage() {
   return (
     <>
       <Hero />
-      <Container>
-        <Products />
-        <Services />
-      </Container>
+      <Products />
+      <Services />
     </>
   );
 }

@@ -1,13 +1,12 @@
-import { Card as BsCard } from "react-bootstrap";
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
-export const Card = styled(BsCard)`
-  text-align: center;
+export const Card = styled(motion.div)`
   padding: 15px;
-
+  background-color: inherit;
+  color: ${(props) => props.theme.colors.white};
   .card-title {
     text-transform: capitalize;
-    text-decoration: underline;
     margin-top: 5px;
   }
 

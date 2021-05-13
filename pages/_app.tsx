@@ -11,12 +11,12 @@ import GlobalStyle from "../styles/Global";
 function MyApp({ Component, pageProps }) {
   return (
     <AppProvider>
-      <ThemeProvider theme={theme}>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-        <GlobalStyle />
-      </ThemeProvider>
+        <ThemeProvider theme={theme}>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+          <GlobalStyle />
+        </ThemeProvider>
     </AppProvider>
   );
 }

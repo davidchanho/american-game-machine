@@ -10,6 +10,7 @@ export const theme = {
     white: Colors.white,
     danger: Colors.danger,
     warning: Colors.warning,
+    dark: Colors.dark,
   },
   breakpoints: {
     xs: Breakpoints.xs,

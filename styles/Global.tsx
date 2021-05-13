@@ -4,6 +4,7 @@ import { TypeFace } from "./typeFace";
 import { TypeScale } from "./typeScale";
 
 const GlobalStyle = createGlobalStyle`
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -20,21 +21,27 @@ body {
   -moz-osx-font-smoothing: grayscale;
   
   h1 {
+    font-weight: 700;
     font-size: ${TypeScale.header1};
   }
   h2 {
+    font-weight: 700;
     font-size: ${TypeScale.header2};
   }
   h3 {
+    font-weight: 700;
     font-size: ${TypeScale.header3};
   }
   h4 {
+    font-weight: 700;
     font-size: ${TypeScale.header4};
   }
   h5 {
+    font-weight: 700;
     font-size: ${TypeScale.header5};
   }
   p {
+    font-weight: 500;
     font-size: ${TypeScale.paragraph};
 
     &.helper {
@@ -43,6 +50,7 @@ body {
   }
  
   small {
+    font-weight: 500;
     font-size: ${TypeScale.copyright};
   }
 }

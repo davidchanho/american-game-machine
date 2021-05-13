@@ -1,3 +1,3 @@
 export enum TypeFace {
-  primary = 'OpenSans, sans-serif',
+  primary = "'Lato', sans-serif",
 }
