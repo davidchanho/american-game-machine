@@ -1,7 +1,7 @@
 import React from "react";
 import InnerImageZoom from "react-inner-image-zoom";
 import { photoMachines } from "../../context";
-import Grid from "./grid";
+import Grid from "../../components/photos/grid";
 
 function PhotosPage() {
   return (

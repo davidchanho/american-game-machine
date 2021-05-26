@@ -1,17 +1,23 @@
 import { createGlobalStyle } from "styled-components";
-import { Breakpoints } from "./breakpoints";
-import { TypeFace } from "./typeFace";
-import { TypeScale } from "./typeScale";
+import Breakpoints from "./breakpoints";
+import Colors from "./colors";
+import TypeScale from "./type-scale";
+import TypeWeight from "./type-weight";
+import TypeFace from "./type-face";
+import reset from './reset'
 
 const GlobalStyle = createGlobalStyle`
+${reset}
 
 html {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: ${TypeScale.paragraph};
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
+  color: ${Colors.white};
+  background-color: ${Colors.dark};
 }
 
 body {
@@ -21,28 +27,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
   
   h1 {
-    font-weight: 700;
+    font-weight: ${TypeWeight.bold};
     font-size: ${TypeScale.header1};
   }
   h2 {
-    font-weight: 700;
+    font-weight:  ${TypeWeight.bold};
     font-size: ${TypeScale.header2};
   }
   h3 {
-    font-weight: 700;
+    font-weight:  ${TypeWeight.bold};
     font-size: ${TypeScale.header3};
   }
   h4 {
-    font-weight: 700;
+    font-weight:  ${TypeWeight.bold};
     font-size: ${TypeScale.header4};
   }
   h5 {
-    font-weight: 700;
+    font-weight:  ${TypeWeight.bold};
     font-size: ${TypeScale.header5};
   }
   p {
-    font-weight: 500;
+    font-weight:  ${TypeWeight.regular};
     font-size: ${TypeScale.paragraph};
+    margin: 0;
 
     &.helper {
       font-size: ${TypeScale.helper};
@@ -50,7 +57,7 @@ body {
   }
  
   small {
-    font-weight: 500;
+    font-weight:  ${TypeWeight.regular};
     font-size: ${TypeScale.copyright};
   }
 }
@@ -60,8 +67,7 @@ main {
 } 
 
 img {
-     width: 100%;
-      display: block;
+  display: block;
 }
 
 .card {
