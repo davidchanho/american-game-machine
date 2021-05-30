@@ -1,65 +1,25 @@
 import { createGlobalStyle } from "styled-components";
 import Breakpoints from "./breakpoints";
 import Colors from "./colors";
-import TypeScale from "./type-scale";
-import TypeWeight from "./type-weight";
 import TypeFace from "./type-face";
-import reset from './reset'
 
 const GlobalStyle = createGlobalStyle`
-${reset}
 
 html {
   box-sizing: border-box;
-  font-size: ${TypeScale.paragraph};
+  scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
-  color: ${Colors.white};
-  background-color: ${Colors.dark};
 }
 
 body {
   margin: 0;
   font-family: ${TypeFace.primary};
+  color: ${Colors.dark};
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
-  h1 {
-    font-weight: ${TypeWeight.bold};
-    font-size: ${TypeScale.header1};
-  }
-  h2 {
-    font-weight:  ${TypeWeight.bold};
-    font-size: ${TypeScale.header2};
-  }
-  h3 {
-    font-weight:  ${TypeWeight.bold};
-    font-size: ${TypeScale.header3};
-  }
-  h4 {
-    font-weight:  ${TypeWeight.bold};
-    font-size: ${TypeScale.header4};
-  }
-  h5 {
-    font-weight:  ${TypeWeight.bold};
-    font-size: ${TypeScale.header5};
-  }
-  p {
-    font-weight:  ${TypeWeight.regular};
-    font-size: ${TypeScale.paragraph};
-    margin: 0;
-
-    &.helper {
-      font-size: ${TypeScale.helper};
-    }
-  }
- 
-  small {
-    font-weight:  ${TypeWeight.regular};
-    font-size: ${TypeScale.copyright};
-  }
 }
 
 main {
@@ -70,21 +30,37 @@ img {
   display: block;
 }
 
-.card {
-  border: 0;
+.title {
+  font-size: 62px;
+  padding: 0;
+  margin: 0;
 }
 
 .card-deck {
+margin: 3rem auto;
+
  @media (max-width: ${Breakpoints.md}) {
   flex-direction: column;
  }
+}
+
+.card-header {
+  background-color: inherit;
+  border-bottom: none;
 }
 
 .btn {
   &:disabled {
     cursor: not-allowed;
   }
+  &:hover {
+    background-color: #ccc;
+    color: white;
+    transition: background-color 1s ease-in-out, color 1s ease-in-out;
+  }
 }
+
+
 `;
 
 export default GlobalStyle;

@@ -1,13 +1,15 @@
 import React from "react";
-import OpacityContainer from "../../shared/opacity-container";
+import { Card } from "react-bootstrap";
 import { Props } from "./types";
 
 function ServicesItem({ title, description }: Props) {
   return (
-    <OpacityContainer> 
-      <h1>{title}</h1>
-      <p>{description}</p>
-    </OpacityContainer>
+    <Card className="p-3 text-center d-flex align-items-center justify-content-center">
+      <Card.Header>
+        <h2>{title}</h2>
+      </Card.Header>
+      <Card.Body>{description}</Card.Body>
+    </Card>
   );
 }
 

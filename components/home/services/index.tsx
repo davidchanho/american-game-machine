@@ -22,11 +22,14 @@ const services = [
 
 function Services() {
   return (
-    <CardDeck>
-      {services.map((service) => {
-        return <ServiceItem key={`service-${service.title}`} {...service} />;
-      })}
-    </CardDeck>
+    <>
+      <h3>Services</h3>
+      <CardDeck>
+        {services.map((service) => {
+          return <ServiceItem key={`service-${service.title}`} {...service} />;
+        })}
+      </CardDeck>
+    </>
   );
 }
 

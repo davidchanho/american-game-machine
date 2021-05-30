@@ -1,9 +1,7 @@
 import React, { createContext, useContext } from "react";
-import photosState from "./photos";
 
 export const appState = {
   companyName: "American Game Machine",
-  ...photosState,
 };
 
 export const AppContext = createContext(appState);

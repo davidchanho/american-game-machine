@@ -1,30 +1,26 @@
+import Image from "next/image";
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import OpacityContainer from "../../shared/opacity-container";
 
 function Products() {
   return (
     <Row className="w-100">
-      <Col md={4} sm={12}>
-        <OpacityContainer>
+      <Col md={6} sm={12}>
+        <Image
+          src="/img/machines/standups.png"
+          alt="standups"
+          layout="responsive"
+          width={620}
+          height={820}
+        />
+      </Col>
+      <Col md={6} sm={12}>
+        <div>
           <h2>Stand Ups</h2>
-          <p>43" flat screen</p>
+          <p>43" Flat Screen</p>
           <p>Metal Cabinet</p>
-        </OpacityContainer>
-      </Col>
-      <Col md={4} sm={12}>
-        <OpacityContainer>
-          <h2>Fish Tables</h2>
-          <p>Skill Games</p>
-          <p>63" & 85" screens</p>
-        </OpacityContainer>
-      </Col>
-      <Col md={4} sm={12}>
-        <OpacityContainer>
-          <h2>Accessories</h2>
-          <p>Chairs</p>
-          <p>Desks</p>
-        </OpacityContainer>
+          <p>Vibrant LED Lights</p>
+        </div>
       </Col>
     </Row>
   );

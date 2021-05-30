@@ -1,6 +1,6 @@
 import NHead from "next/head";
 import React from "react";
-import { companyName } from "../../context";
+import { companyName } from "../../../context";
 
 function Head() {
   return (

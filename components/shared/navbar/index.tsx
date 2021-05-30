@@ -1,20 +1,14 @@
-import Image from "next/image";
 import React from "react";
-import { Container, Navbar as BsNavbar, NavItem } from "react-bootstrap";
+import { Container, Navbar as BsNavbar } from "react-bootstrap";
+import Brand from "./Brand";
 import Nav from "./Nav";
 
 export default function Navbar() {
   return (
-    <BsNavbar expand="lg">
+    <BsNavbar className="position-absolute w-100">
       <Container>
-        <BsNavbar.Brand href="/">
-          <Image className='bg-white p-1 rounded' src="/svg/logo.svg" alt="logo" width={30} height={30} />
-        </BsNavbar.Brand>
-        <NavItem className="font-weight-bold">American Game Machine</NavItem>
-        <BsNavbar.Toggle aria-controls="navbar-nav" />
-        <BsNavbar.Collapse id="navbar-nav">
-          <Nav />
-        </BsNavbar.Collapse>
+        <Brand />
+        <Nav />
       </Container>
     </BsNavbar>
   );
