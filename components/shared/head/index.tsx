@@ -5,7 +5,14 @@ import { companyName } from "../../../context";
 function Head() {
   return (
     <NHead>
-      <title>{companyName} - Arcade Machines sales and service</title>
+      <meta charSet="utf-8" />
+      <title>
+        {companyName} - Arcade Machines sales and business solutions
+      </title>
+      <meta
+        name="description"
+        content="We provide stand ups and fish tables for sale or lease, repair, consulting and store setup. We are located conveniently in Greensboro, NC."
+      />
       <link rel="icon" href="/favicon.ico" />
       <link
         rel="apple-touch-icon"

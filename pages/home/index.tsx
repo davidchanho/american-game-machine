@@ -8,7 +8,6 @@ export default function HomePage() {
     <>
       <Products />
       <Services />
-      <h3 id='contact'>Contact Us</h3>
       <ContactForm />
     </>
   );

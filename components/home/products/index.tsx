@@ -1,28 +1,26 @@
-import Image from "next/image";
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import Product from "./Product";
+
+const products = [
+  {
+    id: "product-1",
+    name: "standups",
+    details: ["43 inch Flat Screen", "Metal Cabinet", "Vibrant LED Lights"],
+  },
+  {
+    id: "product-2",
+    name: "fishtables",
+    details: ["68 inch Flat Screen", "Metal Cabinet", "Vibrant LED Lights"],
+  },
+];
 
 function Products() {
   return (
-    <Row className="w-100">
-      <Col md={6} sm={12}>
-        <Image
-          src="/img/machines/standups.png"
-          alt="standups"
-          layout="responsive"
-          width={620}
-          height={820}
-        />
-      </Col>
-      <Col md={6} sm={12}>
-        <div>
-          <h2>Stand Ups</h2>
-          <p>43" Flat Screen</p>
-          <p>Metal Cabinet</p>
-          <p>Vibrant LED Lights</p>
-        </div>
-      </Col>
-    </Row>
+    <>
+      {products.map(({ id, name, details }) => (
+        <Product key={id} name={name} details={details} />
+      ))}
+    </>
   );
 }
 

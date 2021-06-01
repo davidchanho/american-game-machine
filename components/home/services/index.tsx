@@ -1,5 +1,6 @@
 import React from "react";
 import { CardDeck } from "react-bootstrap";
+import SectionTitle from "../../shared/section-title";
 import ServiceItem from "./ServicesItem";
 
 const services = [
@@ -23,7 +24,7 @@ const services = [
 function Services() {
   return (
     <>
-      <h3>Services</h3>
+      <SectionTitle section="services" />
       <CardDeck>
         {services.map((service) => {
           return <ServiceItem key={`service-${service.title}`} {...service} />;

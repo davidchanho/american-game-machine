@@ -1,8 +1,8 @@
 import React from "react";
-import { Container } from "./styles";
+import { Nav as BsNav } from "react-bootstrap";
+import { NavContainer } from "./styles";
 
 const links = [
-  { href: "/", label: "home" },
   { href: "/#standups", label: "standups" },
   { href: "/#fishtables", label: "fishtables" },
   { href: "/#services", label: "services" },
@@ -11,15 +11,15 @@ const links = [
 
 function Nav() {
   return (
-    <Container>
+    <NavContainer className="bg-dark">
       {links.map(({ href, label }) => {
         return (
-          <a key={`nav-link-${label}`} href={href}>
+          <BsNav.Link key={`nav-link-${label}`} href={href}>
             {label}
-          </a>
+          </BsNav.Link>
         );
       })}
-    </Container>
+    </NavContainer>
   );
 }
 

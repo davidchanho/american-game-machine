@@ -2,14 +2,21 @@ import React from "react";
 import { Container, Navbar as BsNavbar } from "react-bootstrap";
 import Brand from "./Brand";
 import Nav from "./Nav";
+import { NavbarContainer } from "./styles";
 
 export default function Navbar() {
   return (
-    <BsNavbar className="position-absolute w-100">
+    <NavbarContainer className="w-100" expand="md" variant="dark">
       <Container>
         <Brand />
-        <Nav />
+        <BsNavbar.Toggle
+          className="text-white"
+          aria-controls="responsive-navbar-nav"
+        />
+        <BsNavbar.Collapse id="responsive-navbar-nav">
+          <Nav />
+        </BsNavbar.Collapse>
       </Container>
-    </BsNavbar>
+    </NavbarContainer>
   );
 }

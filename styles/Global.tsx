@@ -4,7 +4,6 @@ import Colors from "./colors";
 import TypeFace from "./type-face";
 
 const GlobalStyle = createGlobalStyle`
-
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -32,16 +31,36 @@ img {
 
 .title {
   font-size: 62px;
-  padding: 0;
-  margin: 0;
+}
+
+.card {
+  background-color: inherit;
+  max-height: 320px;
+  max-width: 420px;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
 }
 
 .card-deck {
-margin: 3rem auto;
+  margin: 3rem auto;
 
- @media (max-width: ${Breakpoints.md}) {
+ @media (max-width: ${Breakpoints.lg}) {
   flex-direction: column;
  }
+}
+
+.anchor > span {
+  display: block;
+  position: relative;
+  top: -80px;
+  visibility: hidden;
+}
+
+.card {
+  border: 0;
 }
 
 .card-header {
@@ -50,17 +69,37 @@ margin: 3rem auto;
 }
 
 .btn {
-  &:disabled {
-    cursor: not-allowed;
-  }
+  border-radius: 0;
+  font-weight: bold;
+
   &:hover {
     background-color: #ccc;
     color: white;
-    transition: background-color 1s ease-in-out, color 1s ease-in-out;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+
+  @media (max-width: ${Breakpoints.md}) {
+    width: 100%;
   }
 }
 
+.hide-desktop {
+  display: none;
+  @media (max-width: ${Breakpoints.md}) {
+    display: block;
+  }
+}
 
+.hide-mobile {
+  display: block;
+  @media (max-width: ${Breakpoints.md}) {
+    display: none;
+  }
+}
+
+p {
+  margin: 0;
+}
 `;
 
 export default GlobalStyle;

@@ -4,7 +4,7 @@ import { Props } from "./types";
 
 function ServicesItem({ title, description }: Props) {
   return (
-    <Card className="p-3 text-center d-flex align-items-center justify-content-center">
+    <Card className="p-3 text-center d-flex align-items-center justify-content-center shadow-sm">
       <Card.Header>
         <h2>{title}</h2>
       </Card.Header>
