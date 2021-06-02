@@ -5,4 +5,4 @@ const Breakpoints = {
   lg: "992px",
 };
 
-export default Breakpoints
+export default Breakpoints;

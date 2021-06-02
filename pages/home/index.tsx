@@ -1,5 +1,5 @@
 import React from "react";
-import ContactForm from "../../components/home/contact-form";
+import Contact from "../../components/home/contact";
 import Products from "../../components/home/products";
 import Services from "../../components/home/services";
 
@@ -8,7 +8,7 @@ export default function HomePage() {
     <>
       <Products />
       <Services />
-      <ContactForm />
+      <Contact />
     </>
   );
 }

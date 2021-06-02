@@ -3,8 +3,7 @@ import { Nav as BsNav } from "react-bootstrap";
 import { NavContainer } from "./styles";
 
 const links = [
-  { href: "/#standups", label: "standups" },
-  { href: "/#fishtables", label: "fishtables" },
+  { href: "/#products", label: "products" },
   { href: "/#services", label: "services" },
   { href: "/#contact", label: "contact" },
 ];

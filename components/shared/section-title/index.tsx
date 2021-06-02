@@ -8,7 +8,7 @@ function SectionTitle({ section }: Props) {
   return (
     <h3 className="anchor text-capitalize">
       <span id={section} />
-      <h3>{section}</h3>
+      <h3 className="text-center">{section}</h3>
     </h3>
   );
 }

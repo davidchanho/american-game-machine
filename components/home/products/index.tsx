@@ -1,4 +1,5 @@
 import React from "react";
+import SectionTitle from "../../shared/section-title";
 import Product from "./Product";
 
 const products = [
@@ -16,11 +17,12 @@ const products = [
 
 function Products() {
   return (
-    <>
+    <section>
+      <SectionTitle section="products" />
       {products.map(({ id, name, details }) => (
         <Product key={id} name={name} details={details} />
       ))}
-    </>
+    </section>
   );
 }
 

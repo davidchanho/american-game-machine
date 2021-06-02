@@ -1,38 +1,32 @@
 import Image from "next/image";
 import React from "react";
-import { Button, Col, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import Navbar from "../../shared/navbar";
+import HeroHeader from "./HeroHeader";
 import Container from "./styles";
 
 function Hero() {
   return (
-    <Container className="vh-100 p-0 rounded-0 text-white bg-dark">
+    <Container className="h-100 p-0 rounded-0 text-white bg-dark">
       <Navbar />
-      <Row noGutters className="w-100 d-flex align-items-center">
-        <Col lg={{ span: 4, offset: 1 }} xs={12}>
-          <header className="header">
-            <h1 className="title">Great Machines.</h1>
-            <h1 className="title">Great Times.</h1>
-            <h2 className="my-5">
-              Amusement machines sales and business solutions that meet your
-              needs.
-            </h2>
-            <a href="/#contact">
-              <Button variant="light">Contact Us</Button>
-            </a>
-          </header>
-        </Col>
-        <Col lg={7} xs={12}>
-          <Image
-            className="img"
-            src="/img/machines/hero-banner.png"
-            alt="hero banner"
-            layout="responsive"
-            width={745}
-            height={655}
-          />
-        </Col>
-      </Row>
+      <div className="backdrop bg-dark w-100 h-100 hide-mobile" />
+      <div className="w-100 h-100">
+        <Row noGutters className="d-flex align-items-center">
+          <Col sm={{ span: 4, offset: 1 }} xs={11}>
+            <HeroHeader />
+          </Col>
+          <Col sm={7} xs={11}>
+            <Image
+              className="img"
+              src="/img/machines/hero-banner.png"
+              alt="hero banner"
+              layout="responsive"
+              width={745}
+              height={655}
+            />
+          </Col>
+        </Row>
+      </div>
     </Container>
   );
 }
