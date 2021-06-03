@@ -37,9 +37,9 @@ const items: IContact[] = [
 function ContactInfo() {
   return (
     <address>
-      <Row md={3} sm={1} className="my-4">
+      <Row className="my-4">
         {items.map((item) => (
-          <Col>
+          <Col md={4}>
             <ContactItem key={item.id} {...item} />
           </Col>
         ))}

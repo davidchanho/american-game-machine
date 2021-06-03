@@ -1,10 +1,10 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import ContactForm from "./ContactForm";
+import Contact from ".";
 
-describe("ContactForm", () => {
+describe("Contact", () => {
   it("renders correctly", () => {
-    const tree = renderer.create(<ContactForm />).toJSON();
+    const tree = renderer.create(<Contact />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import Section from "../../shared/section";
 import { IProduct } from "./types";
 
 function Product({
@@ -8,10 +9,9 @@ function Product({
   details: { screen, cabinet, dimensions, players },
 }: IProduct) {
   return (
-    <div className="d-flex align-items-center justify-content-between bg-dark">
       <Row xs={1}>
         <Col>
-          <img src={src} width={420} height={360} />
+          <img className="w-100" src={src} width={420} height={360} />
         </Col>
         {/* <Col>
           <h2 className="text-white">{name} Specs</h2>
@@ -35,7 +35,6 @@ function Product({
           </ListGroup>
         </Col> */}
       </Row>
-    </div>
   );
 }
 

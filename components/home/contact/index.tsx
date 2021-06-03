@@ -1,16 +1,14 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import Section from "../../shared/section";
 import SectionTitle from "../../shared/section-title";
 import ContactForm from "./ContactForm";
 
 function Contact() {
   return (
-    <section>
-      <Container>
-        <SectionTitle section="contact" />
-        <ContactForm />
-      </Container>
-    </section>
+    <Section>
+      <SectionTitle section="contact" />
+      <ContactForm />
+    </Section>
   );
 }
 

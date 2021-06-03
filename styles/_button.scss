@@ -1,0 +1,21 @@
+.btn {
+  border-radius: 0;
+  font-weight: bold;
+  max-width: 9.375rem;
+  border: 0.125rem solid transparent;
+}
+
+.btn-light {
+  &:hover {
+    background-color: $dark;
+    color: $white;
+  }
+}
+
+.btn-dark {
+  &:hover {
+    background-color: $white;
+    color: $dark;
+  }
+}
+
