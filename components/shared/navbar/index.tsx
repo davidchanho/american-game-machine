@@ -5,7 +5,7 @@ import Nav from "./Nav";
 
 export default function Navbar() {
   return (
-    <BsNavbar expand="xs" variant="dark">
+    <BsNavbar variant="dark">
       <Container>
         <Brand />
         <BsNavbar.Toggle
