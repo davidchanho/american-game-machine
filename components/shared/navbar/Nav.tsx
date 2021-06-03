@@ -10,7 +10,7 @@ const links = [
 
 function Nav() {
   return (
-    <BsNav>
+    <BsNav className="ms-auto">
       {links.map(({ href, label }) => {
         return (
           <BsNav.Link

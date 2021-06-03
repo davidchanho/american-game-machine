@@ -12,7 +12,7 @@ function Logo() {
         width={30}
         height={30}
       />
-      <NavItem className="fw-bold ms-2">American Game Machine</NavItem>
+      <NavItem className="fw-bold ms-2 show-mobile">AMG</NavItem>
     </div>
   );
 }
