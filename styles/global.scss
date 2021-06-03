@@ -30,7 +30,9 @@ main {
 }
 
 section {
+  min-height: 100vh;
   scroll-snap-align: start;
+  margin-bottom: 5rem;
 }
 
 .bg-transparent {

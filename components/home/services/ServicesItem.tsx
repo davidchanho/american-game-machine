@@ -4,7 +4,7 @@ import { IService } from "./types";
 
 function ServicesItem({ Icon, title, description }: IService) {
   return (
-    <Card className="text-center d-flex align-items-center justify-content-center shadow-sm">
+    <Card className="w-100 h-100 p-4 text-center d-flex align-items-center justify-content-center shadow-sm">
       <Card.Header>
         <Icon className="mb-3" size={48} />
         <h2 className="mb-3">{title}</h2>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Col, Row } from "react-bootstrap";
 import { services } from "../../../context";
 import Section from "../../shared/section";
 import SectionTitle from "../../shared/section-title";
@@ -8,11 +9,15 @@ function Services() {
   return (
     <Section>
       <SectionTitle section="services" />
-      <div className='w-100 mx-auto'>
+      <Row className="w-100 mx-auto">
         {services.map((service) => {
-          return <ServiceItem key={`service-${service.id}`} {...service} />;
+          return (
+            <Col md={4}>
+              <ServiceItem key={`service-${service.id}`} {...service} />
+            </Col>
+          );
         })}
-      </div>
+      </Row>
     </Section>
   );
 }

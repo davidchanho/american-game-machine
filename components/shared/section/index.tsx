@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 
 function Section({ children }: PropsWithChildren<{}>) {
   return (
-    <section className="vh-100">
+    <section className="h-auto">
       <Container>
         {children}
       </Container>

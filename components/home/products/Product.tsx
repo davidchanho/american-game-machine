@@ -9,9 +9,9 @@ function Product({
   details: { screen, cabinet, dimensions, players },
 }: IProduct) {
   return (
-      <Row xs={1}>
+      <>
         <Col>
-          <img className="w-100" src={src} width={420} height={360} />
+          <img className="w-50" src={src} width={420} height={360} />
         </Col>
         {/* <Col>
           <h2 className="text-white">{name} Specs</h2>
@@ -34,7 +34,7 @@ function Product({
             </ListGroup.Item>
           </ListGroup>
         </Col> */}
-      </Row>
+      </>
   );
 }
 

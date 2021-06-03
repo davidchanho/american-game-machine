@@ -9,7 +9,7 @@ function Products() {
   return (
     <Section>
       <SectionTitle section="products" />
-      <Row xs={1}>
+      <Row>
         {products.map((product) => (
           <Product key={product.id} {...product} />
         ))}
