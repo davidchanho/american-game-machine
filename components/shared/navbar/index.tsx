@@ -5,13 +5,10 @@ import Nav from "./Nav";
 
 export default function Navbar() {
   return (
-    <BsNavbar variant="dark">
+    <BsNavbar expand="lg" variant="dark">
       <Container>
         <Brand />
-        <BsNavbar.Toggle
-          className="border-0 p-0 hide-mobile"
-          aria-controls="navbar-nav"
-        />
+        <BsNavbar.Toggle aria-controls="navbar-nav" />
         <BsNavbar.Collapse id="navbar-nav">
           <Nav />
         </BsNavbar.Collapse>

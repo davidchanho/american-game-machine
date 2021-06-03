@@ -9,26 +9,26 @@ function Product({
 }: IProduct) {
   return (
     <>
-      <Col>
+      <Col md={6} sm={12}>
         <img className="w-100" src={src} width={420} height={360} />
       </Col>
-      <Col>
+      <Col md={6} sm={12}>
         <h2>{name}</h2>
         <ListGroup>
           <ListGroup.Item>
-            <h3>Screen</h3>
+            <h5>Screen</h5>
             <p>{screen}"</p>
           </ListGroup.Item>
           <ListGroup.Item>
-            <h3>Cabinet</h3>
+            <h5>Cabinet</h5>
             <p>{cabinet}</p>
           </ListGroup.Item>
           <ListGroup.Item>
-            <h3>Dimensions</h3>
+            <h5>Dimensions</h5>
             <p>{dimensions}</p>
           </ListGroup.Item>
           <ListGroup.Item>
-            <h3>Players</h3>
+            <h5>Players</h5>
             <p>{players}</p>
           </ListGroup.Item>
         </ListGroup>
