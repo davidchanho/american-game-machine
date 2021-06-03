@@ -6,7 +6,11 @@ import { NavbarContainer } from "./styles";
 
 export default function Navbar() {
   return (
-    <NavbarContainer className="w-100" expand="md" variant="dark">
+    <NavbarContainer
+      className="w-100"
+      expand="sm"
+      variant="dark"
+    >
       <Container>
         <Brand />
         <BsNavbar.Toggle

@@ -1,17 +1,12 @@
-import { Card } from "react-bootstrap";
 import styled from "styled-components";
 
-export const ProductContainer = styled(Card)`
+export const ProductContainer = styled.section`
   width: 100%;
   display: flex;
   align-items: center;
-  flex-direction: row;
-
-  &:nth-child(odd) {
-    flex-direction: row-reverse;
-  }
+  justify-content: space-between;
+  background-color: ${(props) => props.theme.colors.dark};
   @media (max-width: ${(props) => props.theme.breakpoints.lg}) {
     flex-direction: column;
   }
 `;
-

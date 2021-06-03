@@ -1,19 +1,41 @@
 import React from "react";
-import { Card } from "react-bootstrap";
-import SectionTitle from "../../shared/section-title";
+import { Col, ListGroup, Row } from "react-bootstrap";
 import { ProductContainer } from "./styles";
-import { ProductProps } from "./types";
+import { IProduct } from "./types";
 
-function Product({ name, details }: ProductProps) {
+function Product({
+  name,
+  src,
+  details: { screen, cabinet, dimensions, players },
+}: IProduct) {
   return (
     <ProductContainer>
-      <Card.Img src={`/img/machines/${name}.png`} />
-      <Card.Body>
-        <SectionTitle section={name} />
-        {details.map((detail, index) => (
-          <Card.Text key={`${name}-${index}`}>{detail}</Card.Text>
-        ))}
-      </Card.Body>
+      <Row>
+        <Col >
+          <img src={src} width={420} height={360} />
+        </Col>
+        {/* <Col>
+          <h2 className="text-white">{name} Specs</h2>
+          <ListGroup>
+            <ListGroup.Item>
+              <h3>Screen</h3>
+              <p>{screen}"</p>
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <h3>Cabinet</h3>
+              <p>{cabinet}</p>
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <h3>Dimensions</h3>
+              <p>{dimensions}</p>
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <h3>Players</h3>
+              <p>{players}</p>
+            </ListGroup.Item>
+          </ListGroup>
+        </Col> */}
+      </Row>
     </ProductContainer>
   );
 }

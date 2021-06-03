@@ -1,5 +1,5 @@
 import React from "react";
-import { CardDeck } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { BiConversation } from "react-icons/bi";
 import { FaStore } from "react-icons/fa";
 import { GiAutoRepair } from "react-icons/gi";
@@ -34,12 +34,14 @@ const services: IService[] = [
 function Services() {
   return (
     <section>
-      <SectionTitle section="services" />
-      <CardDeck>
-        {services.map((service) => {
-          return <ServiceItem key={`service-${service.id}`} {...service} />;
-        })}
-      </CardDeck>
+      <Container>
+        <SectionTitle section="services" />
+        <div className='g-4'>
+          {services.map((service) => {
+            return <ServiceItem key={`service-${service.id}`} {...service} />;
+          })}
+        </div>
+      </Container>
     </section>
   );
 }

@@ -2,14 +2,16 @@ import React, { PropsWithChildren } from "react";
 import Hero from "../../home/hero";
 import Footer from "../footer";
 import Head from "../head";
-import { Container, Main } from "./styles";
+import Sidebar from "../sidebar";
+import { Main } from "./styles";
 
 function Layout({ children }: PropsWithChildren<{}>) {
   return (
     <Main>
       <Head />
       <Hero />
-      <Container>{children}</Container>
+      <div>{children}</div>
+      <Sidebar />
       <Footer />
     </Main>
   );

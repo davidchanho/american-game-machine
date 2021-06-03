@@ -6,7 +6,7 @@ function ContactForm() {
   const { form, onChange, onSubmit } = useContactForm();
 
   return (
-    <Form className="m-5" id="contact-form" onSubmit={onSubmit}>
+    <Form id="contact-form" onSubmit={onSubmit}>
       <Form.Group controlId="name">
         <Form.Control
           type="text"
@@ -47,7 +47,6 @@ function ContactForm() {
       <Form.Group controlId="department">
         <Form.Control
           as="select"
-          custom
           onChange={onChange}
           value={form.subject}
           name="subject"
@@ -74,7 +73,7 @@ function ContactForm() {
         />
       </Form.Group>
 
-      <Button variant="dark" type="submit">
+      <Button className="mobile-full" variant="dark" type="submit">
         Submit
       </Button>
     </Form>

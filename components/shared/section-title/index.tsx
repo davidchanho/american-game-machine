@@ -1,12 +1,12 @@
 import React from "react";
 
 interface Props {
-  section?: string;
+  section: string;
 }
 
 function SectionTitle({ section }: Props) {
   return (
-    <h3 className="anchor text-capitalize">
+    <h3 className="anchor mb-5 text-capitalize">
       <span id={section} />
       <h3 className="text-center">{section}</h3>
     </h3>

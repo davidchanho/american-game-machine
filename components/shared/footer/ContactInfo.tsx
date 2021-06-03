@@ -1,5 +1,4 @@
 import React from "react";
-import { CardDeck } from "react-bootstrap";
 import { FaEnvelope, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 import ContactItem from "./ContactItem";
 import { IContact } from "./types";
@@ -37,11 +36,11 @@ const items: IContact[] = [
 function ContactInfo() {
   return (
     <address>
-      <CardDeck className="my-4">
+      <div className="g-4 my-4">
         {items.map((item) => (
           <ContactItem key={item.id} {...item} />
         ))}
-      </CardDeck>
+      </div>
     </address>
   );
 }

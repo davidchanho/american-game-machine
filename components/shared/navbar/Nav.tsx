@@ -10,10 +10,10 @@ const links = [
 
 function Nav() {
   return (
-    <NavContainer className="bg-dark">
+    <NavContainer>
       {links.map(({ href, label }) => {
         return (
-          <BsNav.Link key={`nav-link-${label}`} href={href}>
+          <BsNav.Link className='text-capitalize' key={`nav-link-${label}`} href={href}>
             {label}
           </BsNav.Link>
         );

@@ -1,27 +1,36 @@
 import React from "react";
 import SectionTitle from "../../shared/section-title";
 import Product from "./Product";
+import { IProduct } from "./types";
 
-const products = [
+const products: IProduct[] = [
   {
     id: "product-1",
-    name: "standups",
-    details: ["43 inch Flat Screen", "Metal Cabinet", "Vibrant LED Lights"],
+    name: "Skill Games",
+    src: "/img/machines/standups.png",
+    details: {
+      screen: "43",
+      cabinet: "Metal",
+      dimensions: 'W23" D20" H82"',
+      players: "1",
+    },
   },
-  {
-    id: "product-2",
-    name: "fishtables",
-    details: ["68 inch Flat Screen", "Metal Cabinet", "Vibrant LED Lights"],
-  },
+  // {
+  //   id: "product-2",
+  //   name: "fishtables",
+  //   details: ["68 inch Flat Screen", "Metal Cabinet", "Vibrant LED Lights"],
+  // },
 ];
 
 function Products() {
   return (
-    <section>
+    <section className='w-100'>
       <SectionTitle section="products" />
-      {products.map(({ id, name, details }) => (
-        <Product key={id} name={name} details={details} />
-      ))}
+      <div>
+        {products.map((product) => (
+          <Product key={product.id} {...product} />
+        ))}
+      </div>
     </section>
   );
 }
