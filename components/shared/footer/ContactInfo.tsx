@@ -1,4 +1,5 @@
 import React from "react";
+import { Col, Row } from "react-bootstrap";
 import { FaEnvelope, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 import ContactItem from "./ContactItem";
 import { IContact } from "./types";
@@ -36,11 +37,13 @@ const items: IContact[] = [
 function ContactInfo() {
   return (
     <address>
-      <div className="g-4 my-4">
+      <Row md={3} sm={1} className="my-4">
         {items.map((item) => (
-          <ContactItem key={item.id} {...item} />
+          <Col>
+            <ContactItem key={item.id} {...item} />
+          </Col>
         ))}
-      </div>
+      </Row>
     </address>
   );
 }

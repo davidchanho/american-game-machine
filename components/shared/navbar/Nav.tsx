@@ -1,6 +1,6 @@
 import React from "react";
 import { Nav as BsNav } from "react-bootstrap";
-import { NavContainer } from "./styles";
+
 
 const links = [
   { href: "/#products", label: "products" },
@@ -10,15 +10,19 @@ const links = [
 
 function Nav() {
   return (
-    <NavContainer>
+    <BsNav>
       {links.map(({ href, label }) => {
         return (
-          <BsNav.Link className='text-capitalize' key={`nav-link-${label}`} href={href}>
+          <BsNav.Link
+            className="text-capitalize"
+            key={`nav-link-${label}`}
+            href={href}
+          >
             {label}
           </BsNav.Link>
         );
       })}
-    </NavContainer>
+    </BsNav>
   );
 }
 

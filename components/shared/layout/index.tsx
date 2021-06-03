@@ -2,18 +2,15 @@ import React, { PropsWithChildren } from "react";
 import Hero from "../../home/hero";
 import Footer from "../footer";
 import Head from "../head";
-import Sidebar from "../sidebar";
-import { Main } from "./styles";
 
 function Layout({ children }: PropsWithChildren<{}>) {
   return (
-    <Main>
+    <main>
       <Head />
       <Hero />
-      <div>{children}</div>
-      <Sidebar />
+      <div className="position-relative">{children}</div>
       <Footer />
-    </Main>
+    </main>
   );
 }
 

@@ -1,12 +1,11 @@
 import React from "react";
-import { Title } from "./styles";
 
 function HeroHeader() {
   return (
     <header className="px-3 h-100 text-left">
-      <Title className="mb-3">
+      <h1 className="mb-3">
         Skill games and business solutions that meet your needs.
-      </Title>
+      </h1>
       <a
         href="/#contact"
         className="btn btn-light bg-lg mobile-full"

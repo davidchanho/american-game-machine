@@ -4,9 +4,9 @@ import { IContact } from "./types";
 
 function ContactItem({ Icon, contact, info, href, btnLabel }: IContact) {
   return (
-    <Card className='mx-0'>
+    <Card className="mx-0">
       <Card.Header className="d-flex align-items-center mb-3">
-        <Icon className="mr-2" color="white" size={18} />
+        <Icon className="me-2" color="white" size={18} />
         <h3 className="text-capitalize">{contact}</h3>
       </Card.Header>
       <Card.Body className="mb-3">

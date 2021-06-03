@@ -1,8 +1,5 @@
 import React from "react";
-
-interface Props {
-  section: string;
-}
+import { Props } from "./types";
 
 function SectionTitle({ section }: Props) {
   return (

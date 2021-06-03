@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Button, Offcanvas } from "react-bootstrap";
+import { Col, Navbar, Offcanvas, Row } from "react-bootstrap";
+import Nav from "../navbar/Nav";
 
 function Sidebar() {
   const [show, setShow] = useState(false);
@@ -9,18 +10,22 @@ function Sidebar() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Launch
-      </Button>
-
+      <Navbar.Toggle
+        onClick={handleShow}
+        className="text-white border-0 p-0"
+        aria-controls="responsive-navbar-nav"
+      />
       <Offcanvas show={show} onHide={handleClose} placement="end">
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
-        </Offcanvas.Header>
-        <Offcanvas.Body>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
-        </Offcanvas.Body>
+        <Row>
+          <Col>
+            <Offcanvas.Body>
+              <Nav />
+            </Offcanvas.Body>
+          </Col>
+          <Col>
+            <Offcanvas.Header closeButton />
+          </Col>
+        </Row>
       </Offcanvas>
     </>
   );

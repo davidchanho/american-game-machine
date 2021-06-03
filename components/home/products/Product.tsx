@@ -1,6 +1,5 @@
 import React from "react";
-import { Col, ListGroup, Row } from "react-bootstrap";
-import { ProductContainer } from "./styles";
+import { Col, Row } from "react-bootstrap";
 import { IProduct } from "./types";
 
 function Product({
@@ -9,9 +8,9 @@ function Product({
   details: { screen, cabinet, dimensions, players },
 }: IProduct) {
   return (
-    <ProductContainer>
-      <Row>
-        <Col >
+    <div className="d-flex align-items-center justify-content-between bg-dark">
+      <Row xs={1}>
+        <Col>
           <img src={src} width={420} height={360} />
         </Col>
         {/* <Col>
@@ -36,7 +35,7 @@ function Product({
           </ListGroup>
         </Col> */}
       </Row>
-    </ProductContainer>
+    </div>
   );
 }
 

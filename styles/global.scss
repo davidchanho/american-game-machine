@@ -1,22 +1,19 @@
-import { createGlobalStyle } from "styled-components";
-import Breakpoints from "./breakpoints";
-import Colors from "./colors";
-import TypeFace from "./type-face";
+@import "../node_modules/bootstrap/scss/bootstrap";
 
-const GlobalStyle = createGlobalStyle`
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
   margin: 0;
-  font-family: ${TypeFace.primary};
-  color: ${Colors.dark};
+  font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-snap-type: y mandatory;
@@ -26,7 +23,7 @@ body {
 
 main {
   margin: 0 auto;
-} 
+}
 
 section {
   min-height: 100vh;
@@ -53,7 +50,9 @@ img {
   height: 100%;
 }
 
-.card, .card-header, .card-footer {
+.card,
+.card-header,
+.card-footer {
   background-color: inherit;
 }
 
@@ -65,21 +64,11 @@ img {
   border-top: none;
 }
 
-.card-body, .card-header, .card-footer {
+.card-body,
+.card-header,
+.card-footer {
   padding: 0;
   margin: 0;
-}
-
-.card-deck {
-  margin: 3rem auto;
-
- @media (max-width: ${Breakpoints.lg}) {
-  flex-direction: column;
-  
-  & > .card {
-    margin: 0 0 1rem 0;
-  }
- }
 }
 
 .anchor > span {
@@ -98,58 +87,64 @@ img {
 
 .btn-light {
   &:hover {
-    background-color: ${Colors.dark};
-    color: ${Colors.white};
+    background-color: $dark;
+    color: $white;
   }
 }
 
 .btn-dark {
   &:hover {
-    background-color: ${Colors.white};
-    color: ${Colors.dark};
+    background-color: $white;
+    color: $dark;
   }
 }
 
 .mobile-full {
-  @media (max-width: ${Breakpoints.md}) {
+  @media (max-width: map-get($map: $grid-breakpoints, $key: md)) {
     width: 100%;
   }
 }
 
 .show-desktop {
   display: none;
-  @media (min-width: ${Breakpoints.lg}) {
+  @media (min-width: map-get($map: $grid-breakpoints, $key: lg )) {
     display: block;
   }
 }
 
 .show-tablet {
   display: none;
-  @media only screen and (min-width: ${Breakpoints.xs}) and (max-width: ${Breakpoints.lg}) {
+  @media only screen and (min-width: map-get($map: $grid-breakpoints, $key: xs )) and (max-width: map-get($map: $grid-breakpoints, $key: lg )) {
     display: block;
   }
 }
 
 .show-mobile {
-  @media (max-width: ${Breakpoints.xs}) {
+  @media (max-width: map-get($map: $grid-breakpoints, $key: xs )) {
     display: none;
   }
 }
 
 .navbar-collapse {
-  @media (max-width: ${Breakpoints.sm}) {
+  @media (max-width: map-get($map: $grid-breakpoints, $key: sm)) {
     z-index: 999;
     position: absolute;
     top: 85%;
     left: 0;
     right: 0;
     text-align: center;
-    background-color: ${Colors.dark};
+    background-color: $dark;
     padding: 0.75rem 0;
   }
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
@@ -164,6 +159,3 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: inherit;
   color: white;
 }
-`;
-
-export default GlobalStyle;

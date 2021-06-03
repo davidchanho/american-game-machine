@@ -12,11 +12,11 @@ function Logo() {
         width={30}
         height={30}
       />
-      <NavItem className="font-weight-bold ml-2">
+      <NavItem className="fw-bold ms-2">
         <span className="show-desktop">American Game Machine</span>
         <span className="show-tablet">AGM</span>
       </NavItem>
-    </div> 
+    </div>
   );
 }
 
