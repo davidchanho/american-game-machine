@@ -21,7 +21,8 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "node_modules/@types", "test/**/**.ts"
 , "function.js", "functions/src/index.js", "next.config.js"  ],
   "exclude": [
     "node_modules"
