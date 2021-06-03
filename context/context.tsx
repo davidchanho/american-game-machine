@@ -26,17 +26,17 @@ export const appState = {
         players: "1",
       },
     },
-    {
-      id: "product-2",
-      name: "fishtables",
-      src: "/img/machines/standups.png",
-      details: {
-        screen: "43",
-        cabinet: "Metal",
-        dimensions: 'W23" D20" H82"',
-        players: "1",
-      },
-    },
+    // {
+    //   id: "product-2",
+    //   name: "Fish Tables",
+    //   src: "/img/machines/standups.png",
+    //   details: {
+    //     screen: "68",
+    //     cabinet: "Metal",
+    //     dimensions: 'W23" D20" H82"',
+    //     players: "1",
+    //   },
+    // },
   ],
   services: [
     {
