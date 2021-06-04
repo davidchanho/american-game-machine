@@ -30,7 +30,9 @@ const sendEmail = () => {
 function useContactForm() {
   const [form, setForm] = useState(initialForm);
 
-  const onChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const onChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
     const { name, value } = e.target;
     setForm({
       ...form,

@@ -1,18 +1,17 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
-import { contact } from "../../../context";
+import { contacts } from "../../../context";
 import ContactItem from "./ContactItem";
 
 function ContactInfo() {
   return (
     <address>
-      <Row className="my-4">
-        {contact.map((item) => (
-          <Col md={4}>
+      <div className="row my-4">
+        {contacts.map((item) => (
+          <div className="col">
             <ContactItem key={item.id} {...item} />
-          </Col>
+          </div>
         ))}
-      </Row>
+      </div>
     </address>
   );
 }

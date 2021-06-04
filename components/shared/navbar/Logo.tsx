@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import { NavItem } from "react-bootstrap";
 
 function Logo() {
   return (
@@ -12,7 +11,7 @@ function Logo() {
         width={30}
         height={30}
       />
-      <NavItem className="fw-bold ms-2">AMG</NavItem>
+      <p className="nav-item fw-bold ms-2">AMG</p>
     </div>
   );
 }

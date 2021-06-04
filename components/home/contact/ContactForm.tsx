@@ -1,14 +1,14 @@
 import React from "react";
-import { Button, Form } from "react-bootstrap";
 import useContactForm from "./useContactForm";
 
 function ContactForm() {
   const { form, onChange, onSubmit } = useContactForm();
 
   return (
-    <Form id="contact-form" onSubmit={onSubmit}>
-      <Form.Group className="mb-3" controlId="name">
-        <Form.Control
+    <form className="form" id="contact-form" onSubmit={onSubmit}>
+      <div className="mb-3">
+        <input
+          className="form-control"
           type="text"
           onChange={onChange}
           value={form.name}
@@ -17,10 +17,11 @@ function ContactForm() {
           required
           min={3}
         />
-      </Form.Group>
+      </div>
 
-      <Form.Group className="mb-3" controlId="email">
-        <Form.Control
+      <div className="mb-3">
+        <input
+          className="form-control"
           type="email"
           onChange={onChange}
           value={form.email}
@@ -29,10 +30,11 @@ function ContactForm() {
           required
           min={6}
         />
-      </Form.Group>
+      </div>
 
-      <Form.Group className="mb-3" controlId="phone">
-        <Form.Control
+      <div className="mb-3">
+        <input
+          className="form-control"
           type="tel"
           onChange={onChange}
           value={form.phone}
@@ -42,11 +44,11 @@ function ContactForm() {
           required
           min={6}
         />
-      </Form.Group>
+      </div>
 
-      <Form.Group className="mb-3" controlId="department">
-        <Form.Control
-          as="select"
+      <div className="mb-3">
+        <select
+          className="form-select"
           onChange={onChange}
           value={form.subject}
           name="subject"
@@ -57,12 +59,12 @@ function ContactForm() {
           <option>Consulting Services</option>
           <option>Store Setup Services</option>
           <option>Repair Services</option>
-        </Form.Control>
-      </Form.Group>
+        </select>
+      </div>
 
-      <Form.Group className="mb-3" controlId="message">
-        <Form.Control
-          as="textarea"
+      <div className="mb-3">
+        <textarea
+          className="form-control"
           onChange={onChange}
           value={form.message}
           name="message"
@@ -71,12 +73,12 @@ function ContactForm() {
           rows={5}
           required
         />
-      </Form.Group>
+      </div>
 
-      <Button className="mobile-full" variant="dark" type="submit">
+      <button className="btn btn-dark mobile-full" type="submit">
         Submit
-      </Button>
-    </Form>
+      </button>
+    </form>
   );
 }
 

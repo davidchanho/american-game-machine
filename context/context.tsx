@@ -5,7 +5,7 @@ import { GiAutoRepair } from "react-icons/gi";
 
 export const appState = {
   companyName: "American Game Machine",
-  contact: [
+  contacts: [
     {
       id: "contact-1",
       contact: "address",

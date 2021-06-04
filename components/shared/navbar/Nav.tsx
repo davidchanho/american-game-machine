@@ -1,6 +1,4 @@
 import React from "react";
-import { Nav as BsNav } from "react-bootstrap";
-
 
 const links = [
   { href: "/#products", label: "products" },
@@ -10,19 +8,19 @@ const links = [
 
 function Nav() {
   return (
-    <BsNav className="ms-auto">
+    <nav className="nav ms-auto">
       {links.map(({ href, label }) => {
         return (
-          <BsNav.Link
-            className="text-capitalize"
+          <a
+            className="nav-link text-capitalize"
             key={`nav-link-${label}`}
             href={href}
           >
             {label}
-          </BsNav.Link>
+          </a>
         );
       })}
-    </BsNav>
+    </nav>
   );
 }
 

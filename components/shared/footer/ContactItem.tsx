@@ -1,20 +1,19 @@
 import React from "react";
-import { Card } from "react-bootstrap";
 import { IContact } from "../../../types";
 
 function ContactItem({ Icon, contact, info, href, btnLabel }: IContact) {
   return (
-    <Card className="w-100 mx-0 mb-3">
-      <Card.Header className="d-flex align-items-center mb-3">
+    <div className="card w-100 mx-0 mb-3">
+      <div className="card-header d-flex align-items-center mb-3">
         <Icon className="me-2" color="white" size={18} />
         <h3 className="text-capitalize">{contact}</h3>
-      </Card.Header>
-      <Card.Body className="mb-3">
+      </div>
+      <div className="card-body mb-3">
         {info.map((i, index) => (
-          <Card.Text className={`${info}-${index}`}>{i}</Card.Text>
+          <div className='card-text' key={`${info}-${index}`}>{i}</div>
         ))}
-      </Card.Body>
-      <Card.Footer>
+      </div>
+      <div className="card-footer">
         <a
           href={href}
           className="btn btn-light bg-lg text-capitalize"
@@ -22,8 +21,8 @@ function ContactItem({ Icon, contact, info, href, btnLabel }: IContact) {
         >
           {btnLabel}
         </a>
-      </Card.Footer>
-    </Card>
+      </div>
+    </div>
   );
 }
 

@@ -1,18 +1,27 @@
 import React from "react";
-import { Container, Navbar as BsNavbar } from "react-bootstrap";
 import Brand from "./Brand";
 import Nav from "./Nav";
 
 export default function Navbar() {
   return (
-    <BsNavbar expand="lg" variant="dark">
-      <Container>
+    <header className="navbar navbar-expand-lg navbar-dark">
+      <div className="container">
         <Brand />
-        <BsNavbar.Toggle aria-controls="navbar-nav" />
-        <BsNavbar.Collapse id="navbar-nav">
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbar-nav">
           <Nav />
-        </BsNavbar.Collapse>
-      </Container>
-    </BsNavbar>
+        </div>
+      </div>
+    </header>
   );
 }

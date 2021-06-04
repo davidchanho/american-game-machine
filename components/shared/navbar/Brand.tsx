@@ -1,12 +1,11 @@
 import React from "react";
-import { Navbar } from "react-bootstrap";
 import Logo from "./Logo";
 
 function Brand() {
   return (
-    <Navbar.Brand href="/">
+    <a className='navbar-brand' href="/">
       <Logo />
-    </Navbar.Brand>
+    </a>
   );
 }
 

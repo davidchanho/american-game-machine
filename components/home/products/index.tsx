@@ -1,21 +1,20 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
 import { products } from "../../../context";
 import Section from "../../shared/section";
 import SectionTitle from "../../shared/section-title";
-import Product from "./Product";
+import ProductItem from "./ProductItem";
 
 function Products() {
   return (
     <Section>
       <SectionTitle section="products" />
-      <Row xs={1} md={3}>
+      <div className="row row-cols-1 row-cols-md-2 g-4">
         {products.map((product) => (
-          <Col>
-            <Product key={product.id} {...product} />
-          </Col>
+          <div className='col'>
+            <ProductItem key={product.id} {...product} />
+          </div>
         ))}
-      </Row>
+      </div>
     </Section>
   );
 }

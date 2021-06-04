@@ -1,14 +1,13 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
 import Navbar from "../../shared/navbar";
 
 function Hero() {
   return (
     <section className="w-100 text-white bg-dark">
       <Navbar />
-      <Container className="me-0">
-        <Row className="d-flex align-items-center">
-          <Col md={7} sm={12}>
+      <div className="container me-0">
+        <div className="row row-cols-1 row-cols-md-2 g-4 d-flex align-items-center">
+          <div className="col">
             <header className="text-left w-75">
               <h1 className="mb-3">
                 Machines and business solutions that meet your needs.
@@ -21,8 +20,8 @@ function Hero() {
                 Contact Us
               </a>
             </header>
-          </Col>
-          <Col md={{ span: 4, offset: 1 }} sm={12}>
+          </div>
+          <div className="col">
             <img
               className="w-100"
               src="/img/machines/hero-banner.png"
@@ -30,9 +29,9 @@ function Hero() {
               sizes="(max-width: 600px) 180px,
             360px"
             />
-          </Col>
-        </Row>
-      </Container>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
