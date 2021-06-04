@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import Navbar from "../../shared/navbar";
 
@@ -22,12 +23,15 @@ function Hero() {
             </header>
           </div>
           <div className="col">
-            <img
+            <Image
               className="w-100"
               src="/img/machines/hero-banner.png"
               alt="hero banner"
+              layout="responsive"
               sizes="(max-width: 600px) 180px,
             360px"
+              width={180}
+              height={360}
             />
           </div>
         </div>
