@@ -6,12 +6,12 @@ function Hero() {
   return (
     <section className="w-100 text-white bg-dark">
       <Navbar />
-      <Container>
+      <Container className="me-0">
         <Row className="d-flex align-items-center">
-          <Col md={6} sm={12}>
-            <header className="text-left">
+          <Col md={7} sm={12}>
+            <header className="text-left w-75">
               <h1 className="mb-3">
-                Skill games and business solutions that meet your needs.
+                Machines and business solutions that meet your needs.
               </h1>
               <a
                 href="/#contact"
@@ -22,7 +22,7 @@ function Hero() {
               </a>
             </header>
           </Col>
-          <Col md={{ span: 5, offset: 1 }} sm={12}>
+          <Col md={{ span: 4, offset: 1 }} sm={12}>
             <img
               className="w-100"
               src="/img/machines/hero-banner.png"

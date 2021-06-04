@@ -1,19 +1,39 @@
 import React, { createContext, useContext } from "react";
 import { BiConversation } from "react-icons/bi";
-import { FaStore } from "react-icons/fa";
+import { FaEnvelope, FaMapMarkerAlt, FaPhone, FaStore } from "react-icons/fa";
 import { GiAutoRepair } from "react-icons/gi";
 
 export const appState = {
   companyName: "American Game Machine",
-  address: {
-    street: "101 E Carteret Street",
-    unit: "107",
-    city: "Greensboro",
-    state: "NC",
-    zipcode: "27406",
-  },
-  phone: "919-971-0827",
-  email: "contact@empire-amusement.com",
+  contact: [
+    {
+      id: "contact-1",
+      contact: "address",
+      Icon: FaMapMarkerAlt,
+      info: ["101 E Carteret Street, Unit 107", "Greensboro, NC 27406"],
+      btnLabel: "get directions",
+      href: "https://www.google.com/maps/place/101+E+Carteret+St+UNIT+107,+Greensboro,+NC+27406/@36.0373818,-79.7924992,17z/data=!3m1!4b1!4m5!3m4!1s0x885319ac1d05bfdd:0x6be5d01592cda5c9!8m2!3d36.0373775!4d-79.7903105",
+      rel: "",
+    },
+    {
+      id: "contact-2",
+      contact: "phone",
+      Icon: FaPhone,
+      info: ["919-971-0827"],
+      btnLabel: "get a quote",
+      href: "tel:+01-919-306-0509",
+      rel: "nofollow",
+    },
+    {
+      id: "contact-3",
+      contact: "email",
+      Icon: FaEnvelope,
+      info: ["contact@empire-amusement.com"],
+      btnLabel: "email us",
+      href: "mailto: contact@empire-amusement.com",
+      rel: "",
+    },
+  ],
   products: [
     {
       id: "product-1",
@@ -22,21 +42,25 @@ export const appState = {
       details: {
         screen: "43",
         cabinet: "Metal",
-        dimensions: 'W23" D20" H82"',
+        dimensions: "44*34*48cm",
         players: "1",
+        weight: "80kg",
+        voltage: "110v-240v",
       },
     },
-    // {
-    //   id: "product-2",
-    //   name: "Fish Tables",
-    //   src: "/img/machines/standups.png",
-    //   details: {
-    //     screen: "68",
-    //     cabinet: "Metal",
-    //     dimensions: 'W23" D20" H82"',
-    //     players: "1",
-    //   },
-    // },
+    {
+      id: "product-2",
+      name: "Fish Tables",
+      src: "/img/machines/standups.png",
+      details: {
+        screen: "55",
+        cabinet: "Metal",
+        dimensions: "L200*W195*H57cm",
+        players: "2-10",
+        weight: "250kg",
+        voltage: "110v-240v",
+      },
+    },
   ],
   services: [
     {

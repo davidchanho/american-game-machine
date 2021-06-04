@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import { IContact } from "./types";
+import { IContact } from "../../../types";
 
 function ContactItem({ Icon, contact, info, href, btnLabel }: IContact) {
   return (

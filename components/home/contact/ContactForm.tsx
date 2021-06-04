@@ -7,7 +7,7 @@ function ContactForm() {
 
   return (
     <Form id="contact-form" onSubmit={onSubmit}>
-      <Form.Group className='mb-3' controlId="name">
+      <Form.Group className="mb-3" controlId="name">
         <Form.Control
           type="text"
           onChange={onChange}
@@ -19,7 +19,7 @@ function ContactForm() {
         />
       </Form.Group>
 
-      <Form.Group className='mb-3' controlId="email">
+      <Form.Group className="mb-3" controlId="email">
         <Form.Control
           type="email"
           onChange={onChange}
@@ -31,7 +31,7 @@ function ContactForm() {
         />
       </Form.Group>
 
-      <Form.Group className='mb-3' controlId="phone">
+      <Form.Group className="mb-3" controlId="phone">
         <Form.Control
           type="tel"
           onChange={onChange}
@@ -44,7 +44,7 @@ function ContactForm() {
         />
       </Form.Group>
 
-      <Form.Group className='mb-3' controlId="department">
+      <Form.Group className="mb-3" controlId="department">
         <Form.Control
           as="select"
           onChange={onChange}
@@ -60,7 +60,7 @@ function ContactForm() {
         </Form.Control>
       </Form.Group>
 
-      <Form.Group className='mb-3' controlId="message">
+      <Form.Group className="mb-3" controlId="message">
         <Form.Control
           as="textarea"
           onChange={onChange}

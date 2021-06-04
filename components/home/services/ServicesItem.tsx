@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import { IService } from "./types";
+import { IService } from "../../../types";
 
 function ServicesItem({ Icon, title, description }: IService) {
   return (
