@@ -1,29 +1,36 @@
-import React, { useState } from "react";
-import Logo from "./Logo";
+import React, { HTMLAttributes, useState } from "react";
+import Brand from "./Brand";
 
-export default function Navbar() {
+export default function Navbar({ className }: HTMLAttributes<HTMLDivElement>) {
   const [active, setActive] = useState(0);
+  const [show, setShow] = useState(false);
+
+  const handleShow = () => {
+    setShow(!show);
+  };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className={`navbar navbar-expand-sm navbar-dark bg-dark ${className}`}>
       <div className="container">
-        <a className="navbar-brand" href="/">
-          <Logo />
-        </a>
+        <Brand />
 
         <button
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
+          data-bs-target="#navbar"
+          aria-controls="navbar"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          onClick={handleShow}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <div
+          className={`collapse ${show ? "show" : ""} navbar-collapse`}
+          id="navbar"
+        >
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <a

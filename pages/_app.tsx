@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap-reboot.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+
 import React from "react";
 import Layout from "../components/shared/layout";
 import { AppProvider } from "../context/context";

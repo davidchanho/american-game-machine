@@ -1,5 +1,5 @@
 import React, { PropsWithChildren } from "react";
-import Hero from "../../home/hero";
+import BackToTop from "../back-to-top";
 import Footer from "../footer";
 import Head from "../head";
 
@@ -7,7 +7,7 @@ function Layout({ children }: PropsWithChildren<{}>) {
   return (
     <main>
       <Head />
-      <Hero />
+      <BackToTop />
       <div className="position-relative">{children}</div>
       <Footer />
     </main>

@@ -37,14 +37,14 @@ export const appState = {
   products: [
     {
       id: "product-1",
-      name: "Skill Games",
+      name: "Stand Ups",
       src: "/img/machines/standups.png",
       details: {
         screen: "43",
         cabinet: "Metal",
-        dimensions: "44*34*48cm",
+        dimensions: "44 cm x 34 cm x 48 cm",
         players: "1",
-        weight: "80kg",
+        weight: "80 kg",
         voltage: "110v-240v",
       },
     },
@@ -55,9 +55,9 @@ export const appState = {
       details: {
         screen: "55",
         cabinet: "Metal",
-        dimensions: "L200*W195*H57cm",
+        dimensions: "200 cm x 195 cm x 57cm",
         players: "2-10",
-        weight: "250kg",
+        weight: "250 kg",
         voltage: "110v-240v",
       },
     },

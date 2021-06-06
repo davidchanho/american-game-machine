@@ -3,7 +3,7 @@ import React from "react";
 
 function Logo() {
   return (
-    <div className="d-flex align-items-center text-white">
+    <div className="d-flex align-items-center  pointer">
       <Image
         className="bg-white rounded p-1"
         src="/svg/logo.svg"
