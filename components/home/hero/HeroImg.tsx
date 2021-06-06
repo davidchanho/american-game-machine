@@ -4,7 +4,6 @@ import React from "react";
 function HeroImg() {
   return (
     <Image
-      className="w-100"
       src="/img/machines/hero-banner.png"
       alt="hero banner"
       layout="responsive"

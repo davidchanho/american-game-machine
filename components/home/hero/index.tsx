@@ -8,9 +8,9 @@ function Hero() {
     <section className="w-100 mh-100 text-white bg-dark">
       <Navbar className="position-relative" />
 
-      <div className="container me-0 mh-100 ">
-        <div className="row row-cols-1 row-cols-md-2 g-4 d-flex align-items-center h-100">
-          <div className="col mh-100">
+      <div className="mx-3">
+        <div className="row row-cols-1 row-cols-md-2 d-flex align-items-center h-100">
+          <div className="col col-md-5 offset-md-1">
             <Header />
           </div>
           <div className="col">

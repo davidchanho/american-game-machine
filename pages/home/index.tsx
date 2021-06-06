@@ -8,9 +8,11 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <Products />
-      <Services />
-      <Contact />
+      <div className="container px-5">
+        <Products />
+        <Services />
+        <Contact />
+      </div>
     </>
   );
 }
