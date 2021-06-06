@@ -4,15 +4,13 @@ import ContactItem from "./ContactItem";
 
 function ContactInfo() {
   return (
-    <address>
-      <div className="row row-cols-1 row-cols-md-3 my-4">
-        {contacts.map((item) => (
-          <div className="col">
-            <ContactItem key={item.id} {...item} />
-          </div>
-        ))}
-      </div>
-    </address>
+    <div className="row row-cols-1 row-cols-md-3 my-4 mx-1">
+      {contacts.map((item) => (
+        <div className="col">
+          <ContactItem key={item.id} {...item} />
+        </div>
+      ))}
+    </div>
   );
 }
 

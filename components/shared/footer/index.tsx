@@ -6,7 +6,7 @@ import Copyright from "./Copyright";
 function Footer() {
   return (
     <footer className="bg-dark text-white py-4">
-      <div className="container">
+      <div className="container px-5">
         <Logo />
         <ContactInfo />
         <Copyright />
