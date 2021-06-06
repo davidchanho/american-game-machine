@@ -3,7 +3,7 @@ import { IContact } from "../../../types";
 
 function ContactItem({ Icon, contact, info, href, btnLabel }: IContact) {
   return (
-    <div className="card mb-3">
+    <div className="card h-100 mb-3">
       <div className="card-header d-flex align-items-center mb-3">
         <Icon className="me-2" color="white" size={18} />
         <h3 className="text-capitalize">{contact}</h3>

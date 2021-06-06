@@ -20,7 +20,7 @@ export const appState = {
       contact: "phone",
       Icon: FaPhone,
       info: ["919-971-0827"],
-      btnLabel: "get a quote",
+      btnLabel: "call us",
       href: "tel:+01-919-306-0509",
       rel: "nofollow",
     },
