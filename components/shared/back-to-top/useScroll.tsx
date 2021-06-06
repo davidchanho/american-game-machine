@@ -2,13 +2,11 @@ import { useEffect, useState } from "react";
 
 interface Props {
   scrollpos: number;
-  visible: boolean;
 }
 
 const useScroll = () => {
   const [scrollState, setScrollState] = useState<Props>({
     scrollpos: 0,
-    visible: false,
   });
 
   const scrollTop = () => {
@@ -20,11 +18,8 @@ const useScroll = () => {
 
   const handleScroll = () => {
     const currentScrollPos = window.pageYOffset;
-    const visible = currentScrollPos > 600;
-
     setScrollState({
       scrollpos: currentScrollPos,
-      visible,
     });
   };
 
@@ -35,7 +30,7 @@ const useScroll = () => {
     };
   }, []);
 
-  return { visible: scrollState.visible, scrollTop };
+  return { scrollTop };
 };
 
 export default useScroll;

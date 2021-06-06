@@ -10,7 +10,9 @@ export default function Navbar({ className }: HTMLAttributes<HTMLDivElement>) {
   };
 
   return (
-    <nav className={`navbar navbar-expand-sm navbar-dark bg-dark px-4 ${className}`}>
+    <nav
+      className={`navbar navbar-expand-sm navbar-dark bg-dark px-5 ${className}`}
+    >
       <Brand />
 
       <button

@@ -5,7 +5,7 @@ import HeroImg from "./HeroImg";
 
 function Hero() {
   return (
-    <section className="w-100 mh-100 text-white bg-dark">
+    <section className="w-100 mh-100 text-white bg-dark z-index-10">
       <Navbar className="position-relative" />
 
       <div className="mx-3">
