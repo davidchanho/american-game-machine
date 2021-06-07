@@ -1,26 +1,25 @@
 import React, { useState } from "react";
 import NavLink from "./NavLink";
 
+const links = [
+  { id: "nav-link-1", link: "products" },
+  { id: "nav-link-2", link: "services" },
+  { id: "nav-link-3", link: "contact" },
+];
+
 function Nav() {
   const [active, setActive] = useState(0);
 
   return (
     <ul className="navbar-nav ms-auto">
-      <NavLink
-        isActive={active === 0}
-        handleClick={() => setActive(0)}
-        link="products"
-      />
-      <NavLink
-        isActive={active === 1}
-        handleClick={() => setActive(1)}
-        link="services"
-      />
-      <NavLink
-        isActive={active === 2}
-        handleClick={() => setActive(2)}
-        link="contact"
-      />
+      {links.map(({ id, link }, index) => (
+        <NavLink
+          key={id}
+          isActive={active === index}
+          handleClick={() => setActive(index)}
+          link={link}
+        />
+      ))}
     </ul>
   );
 }
