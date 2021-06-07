@@ -1,5 +1,5 @@
 import React from "react";
-import { IProduct } from "../../types";
+import { IProduct } from "../../../types";
 
 function ProductSpecs({
   details: { screen, cabinet, dimensions, players, weight, voltage },

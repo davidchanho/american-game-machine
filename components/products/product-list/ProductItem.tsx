@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import { IProduct } from "../../types";
+import { IProduct } from "../../../types";
 
-function ProductFeatureItem({ name, src }: IProduct) {
+function ProductListItem({ name, src }: IProduct) {
   return (
-    <>
+    <div className="row row-cols-1 row-cols-md-2 row-cols-lg-2 row-alternating g-0">
       <div className="col p-3 d-flex align-items-center justify-content-center">
         <h2>{name}</h2>
       </div>
@@ -17,8 +17,8 @@ function ProductFeatureItem({ name, src }: IProduct) {
           height={240}
         />
       </div>
-    </>
+    </div>
   );
 }
 
-export default ProductFeatureItem;
+export default ProductListItem;

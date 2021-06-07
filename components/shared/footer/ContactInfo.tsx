@@ -6,7 +6,7 @@ function ContactInfo() {
   return (
     <div className="row row-cols-1 row-cols-md-3 my-4 mx-1">
       {contacts.map((item) => (
-        <div className="col">
+        <div className="col p-0">
           <ContactItem key={item.id} {...item} />
         </div>
       ))}

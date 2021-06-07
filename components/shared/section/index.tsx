@@ -7,9 +7,11 @@ interface SectionProps {
 
 function Section({ title, children }: PropsWithChildren<SectionProps>) {
   return (
-    <section className="h-auto">
+    <section className="mh-100">
       <SectionTitle title={title} />
-      {children}
+      <div className="d-flex align-items-center justify-content-center">
+        {children}
+      </div>
     </section>
   );
 }

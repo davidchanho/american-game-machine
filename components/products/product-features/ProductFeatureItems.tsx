@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import { IProduct } from "../../types";
+import { IProduct } from "../../../types";
 
-function ProductItem({ name, src }: IProduct) {
+function ProductFeatureItem({ name, src }: IProduct) {
   return (
     <>
       <div className="col p-3 d-flex align-items-center justify-content-center">
@@ -21,4 +21,4 @@ function ProductItem({ name, src }: IProduct) {
   );
 }
 
-export default ProductItem;
+export default ProductFeatureItem;

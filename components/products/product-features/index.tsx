@@ -1,7 +1,7 @@
 import React from "react";
-import { products } from "../../context";
-import Section from "../shared/section";
-import ProductItem from "./ProductItem";
+import { products } from "../../../context";
+import Section from "../../shared/section";
+import ProductItem from "../product-list/ProductItem";
 
 function ProductFeatures() {
   return (
