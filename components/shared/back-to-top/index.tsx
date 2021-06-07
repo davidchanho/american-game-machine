@@ -13,7 +13,7 @@ function BackToTop() {
       }`}
     >
       <Logo />
-      <IoIosArrowUp className="pointer" size={30} onClick={scrollTop} />
+      <IoIosArrowUp className="pointer"  size={30} onClick={scrollTop} />
     </nav>
   );
 }

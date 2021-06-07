@@ -20,7 +20,7 @@ const useScroll = () => {
 
   const handleScroll = () => {
     const currentScrollPos = window.pageYOffset;
-    const visible = currentScrollPos > 20;
+    const visible = currentScrollPos > 1000;
 
     setScrollState({
       scrollpos: currentScrollPos,
