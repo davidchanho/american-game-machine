@@ -1,8 +1,11 @@
 import React, { PropsWithChildren } from "react";
-import SectionTitle from "../section-title";
-import { Props } from "./types";
+import SectionTitle from "./SectionTitle";
 
-function Section({ title, children }: PropsWithChildren<Props>) {
+interface SectionProps {
+  title: string;
+}
+
+function Section({ title, children }: PropsWithChildren<SectionProps>) {
   return (
     <section className="h-auto">
       <SectionTitle title={title} />

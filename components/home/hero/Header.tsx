@@ -2,7 +2,7 @@ import React from "react";
 
 function Header() {
   return (
-    <header className="ps-md-5">
+    <header className="w-75 ps-md-5">
       <h1 className="hero-title mb-3">
         Machines and business solutions that meet your needs.
       </h1>

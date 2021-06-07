@@ -3,14 +3,13 @@ import React from "react";
 
 function Logo() {
   return (
-      <Image
-        className="bg-white rounded p-1"
-        src="/svg/logo.svg"
-        alt="logo"
-        width={30}
-        height={30}
-      />
-    
+    <Image
+      className="bg-white rounded p-1"
+      src="/svg/logo.svg"
+      alt="logo"
+      width={30}
+      height={30}
+    />
   );
 }
 
