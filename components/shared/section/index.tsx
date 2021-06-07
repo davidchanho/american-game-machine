@@ -1,7 +1,14 @@
 import React, { PropsWithChildren } from "react";
+import SectionTitle from "../section-title";
+import { Props } from "./types";
 
-function Section({ children }: PropsWithChildren<{}>) {
-  return <section className="h-auto">{children}</section>;
+function Section({ title, children }: PropsWithChildren<Props>) {
+  return (
+    <section className="h-auto">
+      <SectionTitle title={title} />
+      {children}
+    </section>
+  );
 }
 
 export default Section;

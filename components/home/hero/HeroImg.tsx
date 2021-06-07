@@ -4,7 +4,7 @@ import React from "react";
 function HeroImg() {
   return (
     <Image
-      src="/img/machines/hero-banner.png"
+      src="/img/machines/hero-banner.webp"
       alt="hero banner"
       layout="responsive"
       sizes="(max-width: 600px) 180px,

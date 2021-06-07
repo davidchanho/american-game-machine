@@ -38,7 +38,7 @@ export const appState = {
     {
       id: "product-1",
       name: "Stand Ups",
-      src: "/img/machines/standups.png",
+      src: "/img/machines/standups.webp",
       details: {
         screen: "43",
         cabinet: "Metal",
@@ -51,7 +51,7 @@ export const appState = {
     {
       id: "product-2",
       name: "Fish Tables",
-      src: "/img/machines/standups.png",
+      src: "/img/machines/standups.webp",
       details: {
         screen: "55",
         cabinet: "Metal",
