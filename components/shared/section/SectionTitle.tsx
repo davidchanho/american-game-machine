@@ -1,5 +1,4 @@
 import React from "react";
-import AppearText from "../appear-text";
 
 interface SectionTitleProps {
   title: string;
@@ -7,12 +6,12 @@ interface SectionTitleProps {
 
 function SectionTitle({ title }: SectionTitleProps) {
   return (
-    <AppearText>
+    <div>
       <div className="anchor mb-5 text-capitalize">
         <span id={title} className="d-block position-relative hidden" />
         <p className="section-title text-center">{title}</p>
       </div>
-    </AppearText>
+    </div>
   );
 }
 
