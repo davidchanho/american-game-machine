@@ -109,3 +109,9 @@ p {
 .hero-title {
   font-size: clamp(1rem, -0.875rem + 8.333vw, 2.5rem);
 }
+
+.header {
+  @media (min-width: map-get($map: $grid-breakpoints, $key: sm )) {
+    margin-left: 10%;
+  }
+}
