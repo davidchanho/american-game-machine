@@ -5,10 +5,10 @@ import HeroImg from "./HeroImg";
 
 function Hero() {
   return (
-    <section className="w-100 mh-100 text-white bg-dark">
+    <section className="hero w-100 mh-100 text-white bg-dark">
       <Navbar />
       <div className="row row-cols-1 row-cols-md-2 d-flex align-items-center h-100">
-        <div className="col">
+        <div className="col d-flex justify-content-center">
           <Header />
         </div>
         <div className="col">

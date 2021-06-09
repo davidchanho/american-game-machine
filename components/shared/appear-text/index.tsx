@@ -23,7 +23,7 @@ function AppearText({
       initial={{ opacity: 0 }}
       variants={variants}
       animate={isVisible ? "visible" : "hidden"}
-      transition={{ duration: 0.5, delay: 0.5 }}
+      transition={{ duration: 0.3, delay: 0.1 }}
       className={className}
     >
       {children}

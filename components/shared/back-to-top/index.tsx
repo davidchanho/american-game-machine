@@ -12,8 +12,10 @@ function BackToTop() {
         visible ? "visible" : "invisible"
       }`}
     >
-      <Logo />
-      <IoIosArrowUp className="pointer"  size={30} onClick={scrollTop} />
+      <div className="w-100 d-flex align-items-center justify-content-between container">
+        <Logo />
+        <IoIosArrowUp className="pointer" size={30} onClick={scrollTop} />
+      </div>
     </nav>
   );
 }

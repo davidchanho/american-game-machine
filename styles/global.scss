@@ -34,7 +34,9 @@ main {
 section {
   min-height: 100vh;
   scroll-snap-align: start;
-  margin-bottom: 5rem;
+  &:not(:last-child) {
+    margin-bottom: 10rem;
+  }
 }
 
 .bg-transparent {
@@ -58,23 +60,23 @@ img {
   }
 }
 
-.show-desktop {
-  display: none;
-  @media (min-width: map-get($map: $grid-breakpoints, $key: lg )) {
-    display: block;
+.center-mobile {
+  @media (max-width: map-get($map: $grid-breakpoints, $key: sm )) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
   }
 }
 
-.show-tablet {
-  display: none;
-  @media only screen and (min-width: map-get($map: $grid-breakpoints, $key: xs )) and (max-width: map-get($map: $grid-breakpoints, $key: lg )) {
-    display: block;
-  }
-}
-
-.show-mobile {
-  @media (max-width: map-get($map: $grid-breakpoints, $key: xs )) {
-    display: none;
+.hero {
+  @media (max-width: map-get($map: $grid-breakpoints, $key: sm )) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
   }
 }
 
