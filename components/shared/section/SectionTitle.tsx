@@ -10,7 +10,7 @@ function SectionTitle({ title }: SectionTitleProps) {
     <AppearText>
       <div className="anchor mb-5 text-capitalize">
         <span id={title} className="d-block position-relative hidden" />
-        <p className="text-center">{title}</p>
+        <p className="section-title text-center">{title}</p>
       </div>
     </AppearText>
   );

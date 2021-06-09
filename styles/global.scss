@@ -32,11 +32,17 @@ main {
 }
 
 section {
+  width: 90%;
+  margin: 0 auto;
   min-height: 100vh;
   scroll-snap-align: start;
   &:not(:last-child) {
     margin-bottom: 10rem;
   }
+}
+
+.section-title {
+  font-size: 2.25rem;
 }
 
 .bg-transparent {
@@ -71,15 +77,6 @@ img {
   }
 }
 
-.hero {
-  @media (max-width: map-get($map: $grid-breakpoints, $key: sm )) {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-}
-
 h1,
 h2,
 h3,
@@ -98,6 +95,15 @@ p {
 
 .pointer {
   cursor: pointer;
+}
+
+.hero {
+  @media (max-width: map-get($map: $grid-breakpoints, $key: sm )) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+  }
 }
 
 .hero-title {
