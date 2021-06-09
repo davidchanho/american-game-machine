@@ -8,10 +8,10 @@ interface SectionTitleProps {
 function SectionTitle({ title }: SectionTitleProps) {
   return (
     <AppearText>
-      <p className="anchor mb-5 text-capitalize">
+      <div className="anchor mb-5 text-capitalize">
         <span id={title} className="d-block position-relative hidden" />
-        <h3 className="text-center">{title}</h3>
-      </p>
+        <p className="text-center">{title}</p>
+      </div>
     </AppearText>
   );
 }
