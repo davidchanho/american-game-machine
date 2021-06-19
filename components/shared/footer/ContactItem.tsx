@@ -1,6 +1,5 @@
 import React from "react";
 import { IContact } from "../../../types";
-import AppearText from "../appear-text";
 
 function ContactItem({ Icon, contact, info, href, btnLabel }: IContact) {
   return (

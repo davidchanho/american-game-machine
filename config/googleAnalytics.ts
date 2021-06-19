@@ -1,6 +1,6 @@
 import GA4React from "ga-4-react";
 
-const ga4react = new GA4React("G-PWFCPYM760", {}, [], 5000);
+const ga4react = new GA4React(process.env.GOOGLE_ANALYTICS, {}, [], 5000);
 
 ga4react.initialize().then(
   (ga4) => {

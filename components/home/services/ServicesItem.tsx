@@ -1,6 +1,6 @@
 import React from "react";
 import { IService } from "../../../types";
-import AppearText from "../../shared/appear-text";
+
 
 function ServicesItem({ Icon, title, description }: IService) {
   return (
