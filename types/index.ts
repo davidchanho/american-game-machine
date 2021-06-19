@@ -12,7 +12,7 @@ interface IDetails {
 export interface IProduct {
   id: string;
   name: string;
-  src: string;
+  src: StaticImageData;
   details: IDetails;
 }
 

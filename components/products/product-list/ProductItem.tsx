@@ -12,9 +12,7 @@ function ProductListItem({ name, src }: IProduct) {
         <Image
           src={src}
           alt={name}
-          layout="responsive"
-          width={420}
-          height={240}
+          placeholder='blur'
         />
       </div>
     </div>

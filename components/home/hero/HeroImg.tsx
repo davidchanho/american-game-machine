@@ -1,18 +1,9 @@
 import Image from "next/image";
 import React from "react";
+import hero from "../../../public/img/machines/hero-banner.webp";
 
 function HeroImg() {
-  return (
-    <Image
-      src="/img/machines/hero-banner.webp"
-      alt="hero banner"
-      layout="responsive"
-      sizes="(max-width: 600px) 180px,
-            240px"
-      width={180}
-      height={240}
-    />
-  );
+  return <Image src={hero} alt="hero banner" placeholder='blur' />;
 }
 
 export default HeroImg;

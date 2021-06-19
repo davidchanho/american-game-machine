@@ -2,6 +2,7 @@ import React, { createContext, useContext } from "react";
 import { BiConversation } from "react-icons/bi";
 import { FaEnvelope, FaMapMarkerAlt, FaPhone, FaStore } from "react-icons/fa";
 import { GiAutoRepair } from "react-icons/gi";
+import standupsImg from "../public/img/machines/standups.webp";
 
 export const appState = {
   companyName: "American Game Machine",
@@ -38,7 +39,7 @@ export const appState = {
     {
       id: "product-1",
       name: "Stand Ups",
-      src: "/img/machines/standups.webp",
+      src: standupsImg,
       details: {
         screen: "43",
         cabinet: "Metal",
@@ -51,7 +52,7 @@ export const appState = {
     {
       id: "product-2",
       name: "Fish Tables",
-      src: "/img/machines/standups.webp",
+      src: standupsImg,
       details: {
         screen: "55",
         cabinet: "Metal",
