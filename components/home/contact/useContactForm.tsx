@@ -11,8 +11,8 @@ const initialForm = {
 
 function useContactForm() {
   const [form, setForm] = useState(initialForm);
-  const [error, setError] = useState(true);
-  const [success, setSuccess] = useState(true);
+  const [error, setError] = useState(false);
+  const [success, setSuccess] = useState(false);
 
   const sendEmail = () => {
     emailjs
