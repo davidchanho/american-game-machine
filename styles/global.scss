@@ -1,8 +1,8 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
-@import "card";
-@import "button";
-@import "listgroup";
-@import "navbar";
+@use "../node_modules/bootstrap/scss/bootstrap" as *;
+@use "card" as *;
+@use "button" as *;
+@use "listgroup" as *;
+@use "navbar" as *;
 
 html {
   box-sizing: border-box;
@@ -98,11 +98,17 @@ p {
 }
 
 .hero {
+  width: 100%;
+  max-height: 100vh;
   @media (max-width: map-get($map: $grid-breakpoints, $key: sm )) {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     flex-direction: column;
+  }
+
+  img {
+    max-height: 100vh;
   }
 }
 

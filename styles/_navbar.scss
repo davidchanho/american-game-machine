@@ -1,6 +1,12 @@
+@use "../node_modules/bootstrap/scss/bootstrap" as *;
+
+.navbar {
+  z-index: 999;
+  background-color: transparent;
+}
+
 .navbar-collapse {
   @media (max-width: map-get($map: $grid-breakpoints, $key: sm)) {
-    z-index: 999;
     position: absolute;
     top: 85%;
     left: 0;

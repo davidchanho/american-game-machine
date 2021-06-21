@@ -8,7 +8,7 @@ export default function Navbar() {
   const handleShow = () => setShow(!show);
 
   return (
-    <nav className="w-100 navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="w-100 navbar navbar-expand-lg navbar-dark position-absolute">
       <div className="w-100 container d-flex align-items-center justify-content-between">
         <Brand />
 
