@@ -4,7 +4,7 @@ import React from "react";
 function Logo() {
   return (
     <Image
-      className="bg-white rounded p-1"
+      className="bg-white rounded p-1 pointer"
       src="/svg/logo.svg"
       alt="logo"
       width={30}

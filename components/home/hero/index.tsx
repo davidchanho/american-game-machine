@@ -17,9 +17,13 @@ function Hero() {
           <HeroImg />
         </div>
       </div>
-      <div className="position-absolute bottom-0 start-50 translate-middle-x mb-3">
+
+      <a
+        className="position-absolute bottom-0 start-50 translate-middle-x mb-3 pointer text-white"
+        href="/#products"
+      >
         <ArrowDownIcon />
-      </div>
+      </a>
     </section>
   );
 }

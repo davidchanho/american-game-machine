@@ -14,7 +14,7 @@ function BackToTop() {
     >
       <div className="w-100 d-flex align-items-center justify-content-between container">
         <Logo />
-        <span onClick={scrollTop}>
+        <span onClick={scrollTop} className="pointer">
           <ChevronUpIcon />
         </span>
       </div>
