@@ -1,8 +1,9 @@
 @use "../node_modules/bootstrap/scss/bootstrap" as *;
-@use "card" as *;
-@use "button" as *;
-@use "listgroup" as *;
-@use "navbar" as *;
+@use "card";
+@use "button";
+@use "listgroup";
+@use "navbar";
+@use "animation";
 
 html {
   box-sizing: border-box;
@@ -122,20 +123,4 @@ p {
   }
 }
 
-.bounce {
-  animation-name: bounce;
-  animation-timing-function: ease;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
+
