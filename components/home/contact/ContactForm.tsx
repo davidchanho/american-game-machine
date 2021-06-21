@@ -1,9 +1,8 @@
 import React from "react";
-import useContactForm from "./useContactForm";
 
-function ContactForm() {
-  const { form, onChange, onSubmit } = useContactForm();
+interface Props {}
 
+function ContactForm({ form, onChange, onSubmit }) {
   return (
     <form className="form" id="contact-form" onSubmit={onSubmit}>
       <div className="mb-3">

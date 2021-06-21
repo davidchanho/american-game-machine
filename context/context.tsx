@@ -1,4 +1,12 @@
 import React, { createContext, useContext } from "react";
+import {
+  ConsultingIcon,
+  MailIcon,
+  MapIcon,
+  PhoneIcon,
+  RepairIcon,
+  StoreIcon,
+} from "../components/shared/icons";
 import standupsImg from "../public/img/machines/standups.webp";
 
 export const appState = {
@@ -7,7 +15,7 @@ export const appState = {
     {
       id: "contact-1",
       contact: "address",
-      Icon: <i className="bi bi-geo-alt"></i>,
+      Icon: <MapIcon />,
       info: ["101 E Carteret Street, Unit 107", "Greensboro, NC 27406"],
       btnLabel: "get directions",
       href: "https://www.google.com/maps/place/101+E+Carteret+St+UNIT+107,+Greensboro,+NC+27406/@36.0373818,-79.7924992,17z/data=!3m1!4b1!4m5!3m4!1s0x885319ac1d05bfdd:0x6be5d01592cda5c9!8m2!3d36.0373775!4d-79.7903105",
@@ -16,7 +24,7 @@ export const appState = {
     {
       id: "contact-2",
       contact: "phone",
-      Icon: <i className="bi bi-telephone"></i>,
+      Icon: <PhoneIcon />,
       info: ["919-971-0827"],
       btnLabel: "call us",
       href: "tel:+01-919-306-0509",
@@ -25,7 +33,7 @@ export const appState = {
     {
       id: "contact-3",
       contact: "email",
-      Icon: <i className="bi bi-envelope"></i>,
+      Icon: <MailIcon />,
       info: ["contact@empire-amusement.com"],
       btnLabel: "email us",
       href: "mailto: contact@empire-amusement.com",
@@ -64,21 +72,21 @@ export const appState = {
     {
       id: "service-1",
       title: "Store Setup",
-      Icon: <i className="bi bi-shop"></i>,
+      Icon: <StoreIcon />,
       description:
         "Ever dreamed of becoming a small business owner? We provide store setup services that get you up and running in no time.",
     },
     {
       id: "service-2",
       title: "Maintenance",
-      Icon: <i className="bi bi-wrench"></i>,
+      Icon: <RepairIcon />,
       description:
         "Stuck joysticks, blank screens, random shutdowns... whatever it is, our technicians are here for you.",
     },
     {
       id: "service-3",
       title: "Consulting",
-      Icon: <i className="bi bi-chat-right-quote"></i>,
+      Icon: <ConsultingIcon />,
       description:
         "Not only will we help you setup your store, we will help you every step of the way.",
     },
