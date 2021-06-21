@@ -12,13 +12,13 @@ function Contact() {
         <ContactForm form={form} onChange={onChange} onSubmit={onSubmit} />
 
         {success && (
-          <div className="alert alert-success">
+          <div className="alert alert-success mt-3">
             Email successfully sent. We will response as soon as we can.
           </div>
         )}
 
         {error && (
-          <div className="alert alert-danger">
+          <div className="alert alert-danger mt-3">
             An error has occurred. Please try again later.
           </div>
         )}
