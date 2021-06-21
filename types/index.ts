@@ -1,4 +1,4 @@
-import { IconType } from "react-icons";
+import { HTMLAttributes, ReactNode } from "react";
 
 interface IDetails {
   screen: string;
@@ -16,19 +16,17 @@ export interface IProduct {
   details: IDetails;
 }
 
-export interface IContact {
+export interface IContact extends HTMLAttributes<HTMLDivElement> {
   id?: string;
   contact: string;
-  Icon: IconType;
   info: string[];
   btnLabel: string;
   href?: string;
   rel: string;
 }
 
-export interface IService {
+export interface IService extends HTMLAttributes<HTMLDivElement> {
   id?: string;
-  Icon: IconType;
   title: string;
   description: string;
 }

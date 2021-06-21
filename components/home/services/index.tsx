@@ -8,7 +8,9 @@ function Services() {
     <Section title="services">
       <div className="mx-auto row row-cols-1 row-cols-lg-3 g-4">
         {services.map((service) => (
-          <ServiceItem key={`service-${service.id}`} {...service} />
+          <ServiceItem key={`service-${service.id}`} {...service}>
+            {service.Icon}
+          </ServiceItem>
         ))}
       </div>
     </Section>

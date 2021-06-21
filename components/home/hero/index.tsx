@@ -8,7 +8,7 @@ function Hero() {
     <section className="hero text-white bg-dark">
       <Navbar />
 
-      <div className="w-100 row row-cols-1 row-cols-md-2 d-flex align-items-center">
+      <div className="w-100 row row-cols-1 row-cols-md-2 g-0 d-flex align-items-center">
         <div className="col">
           <Header />
         </div>
@@ -16,10 +16,6 @@ function Hero() {
           <HeroImg />
         </div>
       </div>
-
-      {/* <div className='w-100 mx-auto position-absolute'>
-
-      </div> */}
     </section>
   );
 }

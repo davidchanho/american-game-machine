@@ -1,5 +1,4 @@
 import React from "react";
-import { IoIosArrowUp } from "react-icons/io";
 import Logo from "../navbar/Logo";
 import useScroll from "./useScroll";
 
@@ -14,7 +13,7 @@ function BackToTop() {
     >
       <div className="w-100 d-flex align-items-center justify-content-between container">
         <Logo />
-        <IoIosArrowUp className="pointer" size={30} onClick={scrollTop} />
+        <i className="bi bi-arrow-up pointer" onClick={scrollTop}></i>
       </div>
     </nav>
   );
