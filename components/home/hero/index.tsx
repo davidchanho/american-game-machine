@@ -1,4 +1,5 @@
 import React from "react";
+import { ArrowDownIcon } from "../../shared/icons";
 import Navbar from "../../shared/navbar";
 import Header from "./Header";
 import HeroImg from "./HeroImg";
@@ -15,6 +16,9 @@ function Hero() {
         <div className="col d-flex justify-content-end">
           <HeroImg />
         </div>
+      </div>
+      <div className="position-absolute bottom-0 start-50 translate-middle-x mb-3">
+        <ArrowDownIcon />
       </div>
     </section>
   );

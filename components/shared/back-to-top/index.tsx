@@ -1,4 +1,5 @@
 import React from "react";
+import { ChevronUpIcon } from "../icons";
 import Logo from "../navbar/Logo";
 import useScroll from "./useScroll";
 
@@ -13,7 +14,9 @@ function BackToTop() {
     >
       <div className="w-100 d-flex align-items-center justify-content-between container">
         <Logo />
-        <i className="bi bi-arrow-up pointer" onClick={scrollTop}></i>
+        <span onClick={scrollTop}>
+          <ChevronUpIcon />
+        </span>
       </div>
     </nav>
   );
