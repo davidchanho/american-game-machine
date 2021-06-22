@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { HTMLAttributes, PropsWithChildren } from "react";
+import { useInView } from "react-intersection-observer";
 
 const variants = {
   visible: { opacity: 1, y: 0 },
@@ -7,6 +8,7 @@ const variants = {
 };
 
 const transition = {
+  delay: 0.2,
   duration: 0.35,
 };
 
@@ -14,11 +16,16 @@ const AppearContainer = ({
   className,
   children,
 }: PropsWithChildren<HTMLAttributes<HTMLParagraphElement>>) => {
+  const [ref, inView] = useInView({
+    threshold: 0,
+  });
+
   return (
     <motion.div
+      ref={ref}
       className={className}
       initial="hidden"
-      animate="visible"
+      animate={inView ? "visible" : "hidden"}
       variants={variants}
       transition={transition}
     >
