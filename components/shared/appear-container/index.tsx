@@ -10,7 +10,7 @@ const transition = {
   duration: 0.35,
 };
 
-const AppearText = ({
+const AppearContainer = ({
   className,
   children,
 }: PropsWithChildren<HTMLAttributes<HTMLParagraphElement>>) => {
@@ -27,4 +27,4 @@ const AppearText = ({
   );
 };
 
-export default AppearText;
+export default AppearContainer;

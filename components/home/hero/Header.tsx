@@ -1,15 +1,15 @@
 import React from "react";
-import AppearText from "../../shared/appear-text";
+import AppearContainer from "../../shared/appear-container";
 import GetAQuote from "../../shared/get-a-quote";
 
 function Header() {
   return (
-    <AppearText className="header w-75 center-mobile">
+    <AppearContainer className="header w-75 center-mobile">
       <div className="hero-title">
         Machines and business solutions that meet your needs.
       </div>
       <GetAQuote />
-    </AppearText>
+    </AppearContainer>
   );
 }
 

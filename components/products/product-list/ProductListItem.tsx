@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { IProduct } from "../../../types";
-import AppearText from "../../shared/appear-text";
+import AppearContainer from "../../shared/appear-container";
 
 function ProductListItem({ name, src }: IProduct) {
   const [enter, setEnter] = useState(false);
@@ -10,7 +10,7 @@ function ProductListItem({ name, src }: IProduct) {
 
   return (
     <div className="col-5">
-      <AppearText>
+      <AppearContainer>
         <div
           className="card shadow"
           onMouseEnter={handleEnter}
@@ -28,7 +28,7 @@ function ProductListItem({ name, src }: IProduct) {
             </div>
           )}
         </div>
-      </AppearText>
+      </AppearContainer>
     </div>
   );
 }
