@@ -1,6 +1,6 @@
 import React from "react";
 import { ChevronUpIcon } from "../icons";
-import Logo from "../navbar/Logo";
+import Logo from "../logo";
 import useScroll from "./useScroll";
 
 function BackToTop() {

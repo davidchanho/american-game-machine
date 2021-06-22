@@ -1,12 +1,13 @@
 import React from "react";
 import { IContact } from "../../../types";
+import AppearText from "../appear-text";
 
 function ContactItem({ contact, info, href, btnLabel, children }: IContact) {
   return (
-    <div className="center-mobile card h-100 mb-3">
+    <AppearText className="center-mobile card h-100 mb-3">
       <div className="card-header d-flex align-items-center mb-3">
         {children}
-        <h3 className="text-capitalize">{contact}</h3>
+        <h3 className="text-capitalize ml-3">{contact}</h3>
       </div>
       <div className="card-body mb-3">
         {info.map((i, index) => (
@@ -24,7 +25,7 @@ function ContactItem({ contact, info, href, btnLabel, children }: IContact) {
           {btnLabel}
         </a>
       </div>
-    </div>
+    </AppearText>
   );
 }
 

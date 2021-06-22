@@ -9,12 +9,10 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <div className="container px-1">
-        <BackToTop />
-        <ProductList />
-        <Services />
-        <Contact />
-      </div>
+      <BackToTop />
+      <ProductList />
+      <Services />
+      <Contact />
     </>
   );
 }

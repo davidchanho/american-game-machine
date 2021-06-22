@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import NavLink from "./NavLink";
+import NavLink from "../nav-link";
 
 const links = [
   { id: "nav-link-1", link: "products" },

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { ArrowDownIcon } from "../../shared/icons";
 import Navbar from "../../shared/navbar";
@@ -9,18 +10,19 @@ function Hero() {
     <section className="hero text-white bg-dark">
       <Navbar />
 
-      <div className="w-100 row row-cols-1 row-cols-md-2 g-0 d-flex align-items-center">
+      <motion.div className="w-100 row row-cols-1 row-cols-md-2 g-0 d-flex align-items-center">
         <div className="col">
           <Header />
         </div>
         <div className="col d-flex justify-content-end">
           <HeroImg />
         </div>
-      </div>
+      </motion.div>
 
       <a
         className="position-absolute bottom-0 start-50 translate-middle-x mb-3 pointer text-white"
         href="/#products"
+        aria-label="scroll down"
       >
         <ArrowDownIcon />
       </a>

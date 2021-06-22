@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Brand from "./Brand";
-import Nav from "./Nav";
+import Nav from "../nav";
 
 export default function Navbar() {
   const [show, setShow] = useState(false);
