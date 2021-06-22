@@ -5,6 +5,7 @@ import AppearContainer from "../../shared/appear-container";
 
 function ProductListItem({ name, src }: IProduct) {
   const [enter, setEnter] = useState(false);
+  
   const handleEnter = () => setEnter(true);
   const handleLeave = () => setEnter(false);
 

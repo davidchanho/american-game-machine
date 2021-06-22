@@ -15,7 +15,7 @@ const transition = {
 const AppearContainer = ({
   className,
   children,
-}: PropsWithChildren<HTMLAttributes<HTMLParagraphElement>>) => {
+}: PropsWithChildren<HTMLAttributes<HTMLDivElement>>) => {
   const [ref, inView] = useInView({
     threshold: 0,
   });
