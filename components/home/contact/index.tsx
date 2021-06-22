@@ -8,7 +8,7 @@ function Contact() {
 
   return (
     <Section title="contact">
-      <div className="d-flex flex-column">
+      <div className="d-flex flex-column mx-3">
         <ContactForm form={form} onChange={onChange} onSubmit={onSubmit} />
 
         {success && (

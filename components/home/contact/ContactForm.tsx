@@ -1,7 +1,5 @@
 import React from "react";
 
-interface Props {}
-
 function ContactForm({ form, onChange, onSubmit }) {
   return (
     <form className="form" id="contact-form" onSubmit={onSubmit}>

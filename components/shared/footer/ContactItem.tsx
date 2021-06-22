@@ -2,11 +2,10 @@ import React from "react";
 import { IContact } from "../../../types";
 import AppearText from "../appear-text";
 
-function ContactItem({ contact, info, href, btnLabel, children }: IContact) {
+function ContactItem({ contact, info, href, btnLabel }: IContact) {
   return (
     <AppearText className="center-mobile card h-100 mb-3">
       <div className="card-header d-flex align-items-center mb-3">
-        {children}
         <h3 className="text-capitalize ml-3">{contact}</h3>
       </div>
       <div className="card-body mb-3">

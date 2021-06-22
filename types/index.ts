@@ -1,4 +1,4 @@
-import { HTMLAttributes, ReactNode } from "react";
+import { HTMLAttributes } from "react";
 
 interface IDetails {
   screen: string;
@@ -16,7 +16,7 @@ export interface IProduct {
   details: IDetails;
 }
 
-export interface IContact extends HTMLAttributes<HTMLDivElement> {
+export interface IContact {
   id?: string;
   contact: string;
   info: string[];
