@@ -6,7 +6,7 @@ function Header() {
   return (
     <AppearContainer className="header w-75 center-mobile">
       <div className="hero-title">
-        Machines and business solutions that meet your needs.
+        Skill games and business solutions that meet your needs.
       </div>
       <GetAQuote />
     </AppearContainer>

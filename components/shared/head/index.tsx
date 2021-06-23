@@ -6,9 +6,7 @@ function Head() {
   return (
     <NHead>
       <meta charSet="utf-8" />
-      <title>
-        {companyName} - Arcade Machines sales and business solutions
-      </title>
+      <title>Skill Game Machines and business solutions | {companyName}</title>
       <meta
         name="description"
         content="We provide stand ups and fish tables for sale or lease, repair, consulting and store setup. We are located conveniently in Greensboro, NC."

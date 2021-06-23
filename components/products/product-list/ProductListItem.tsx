@@ -3,17 +3,31 @@ import React, { useState } from "react";
 import { IProduct } from "../../../types";
 import AppearContainer from "../../shared/appear-container";
 
-function ProductListItem({ name, src, link }: IProduct) {
+interface Props extends IProduct {
+  delay?: number;
+}
+
+function ProductListItem({ name, src, link, delay }: Props) {
   const [enter, setEnter] = useState(false);
 
   const handleEnter = () => setEnter(true);
   const handleLeave = () => setEnter(false);
 
+  const ProductButton = () => {
+    return (
+      <div className="card-img-overlay d-flex align-items-center justify-content-center">
+        <a className="btn btn-light p-3 pointer" href={link}>
+          <h5 className="card-title mb-0 fw-bold">View Details</h5>
+        </a>
+      </div>
+    );
+  };
+
   return (
-    <div className="col-5">
-      <AppearContainer>
+    <div className="col">
+      <AppearContainer delay={delay}>
         <div
-          className="card shadow"
+          className="card shadow mb-5"
           onMouseEnter={handleEnter}
           onMouseLeave={handleLeave}
         >
@@ -21,13 +35,7 @@ function ProductListItem({ name, src, link }: IProduct) {
 
           <p className="card-title">{name}</p>
 
-          {enter && (
-            <div className="card-img-overlay d-flex align-items-center justify-content-center">
-              <a className="btn btn-light p-3 pointer" href={link}>
-                <h5 className="card-title mb-0 fw-bold">View Details</h5>
-              </a>
-            </div>
-          )}
+          {enter && <ProductButton />}
         </div>
       </AppearContainer>
     </div>

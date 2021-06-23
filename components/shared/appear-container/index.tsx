@@ -2,23 +2,28 @@ import { motion } from "framer-motion";
 import { HTMLAttributes, PropsWithChildren } from "react";
 import { useInView } from "react-intersection-observer";
 
+interface Props extends HTMLAttributes<HTMLDivElement> {
+  delay?: number;
+}
+
 const variants = {
   visible: { opacity: 1, y: 0 },
   hidden: { opacity: 0, y: 50 },
 };
 
-const transition = {
-  delay: 0.2,
-  duration: 0.35,
-};
-
 const AppearContainer = ({
   className,
   children,
-}: PropsWithChildren<HTMLAttributes<HTMLDivElement>>) => {
+  delay = 0.2,
+}: PropsWithChildren<Props>) => {
   const [ref, inView] = useInView({
     threshold: 0,
   });
+
+  const transition = {
+    delay,
+    duration: 0.35,
+  };
 
   return (
     <motion.div
