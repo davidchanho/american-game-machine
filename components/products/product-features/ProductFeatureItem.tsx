@@ -9,13 +9,7 @@ function ProductFeatureItem({ name, src }: IProduct) {
         <h2>{name}</h2>
       </div>
       <div className="col bg-dark">
-        <Image
-          src={src}
-          alt={name}
-          layout="responsive"
-          width={420}
-          height={240}
-        />
+        <Image src={src} alt={name} />
       </div>
     </>
   );

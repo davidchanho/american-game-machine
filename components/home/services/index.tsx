@@ -9,9 +9,7 @@ function Services() {
       <div className="container">
         <div className="mx-5 row row-cols-1 row-cols-lg-3 g-4">
           {services.map((service) => (
-            <ServiceItem key={`service-${service.id}`} {...service}>
-              {service.Icon}
-            </ServiceItem>
+            <ServiceItem key={`service-${service.id}`} {...service}/>
           ))}
         </div>
       </div>

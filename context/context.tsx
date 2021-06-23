@@ -1,9 +1,6 @@
 import React, { createContext, useContext } from "react";
 import {
   ConsultingIcon,
-  MailIcon,
-  MapIcon,
-  PhoneIcon,
   RepairIcon,
   StoreIcon,
 } from "../components/shared/icons";
@@ -42,6 +39,7 @@ export const appState = {
       id: "product-1",
       name: "Stand Ups",
       src: standupsImg,
+      link: '/products/stand-ups',
       details: {
         screen: "43",
         cabinet: "Metal",
@@ -55,6 +53,7 @@ export const appState = {
       id: "product-2",
       name: "Fish Tables",
       src: standupsImg,
+      link: '/products/stand-ups',
       details: {
         screen: "55",
         cabinet: "Metal",

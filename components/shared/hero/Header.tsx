@@ -1,6 +1,6 @@
 import React from "react";
-import AppearContainer from "../../shared/appear-container";
-import GetAQuote from "../../shared/get-a-quote";
+import AppearContainer from "../appear-container";
+import GetAQuote from "../get-a-quote";
 
 function Header() {
   return (

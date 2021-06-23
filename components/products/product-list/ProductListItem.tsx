@@ -3,9 +3,9 @@ import React, { useState } from "react";
 import { IProduct } from "../../../types";
 import AppearContainer from "../../shared/appear-container";
 
-function ProductListItem({ name, src }: IProduct) {
+function ProductListItem({ name, src, link }: IProduct) {
   const [enter, setEnter] = useState(false);
-  
+
   const handleEnter = () => setEnter(true);
   const handleLeave = () => setEnter(false);
 
@@ -23,9 +23,9 @@ function ProductListItem({ name, src }: IProduct) {
 
           {enter && (
             <div className="card-img-overlay d-flex align-items-center justify-content-center">
-              <button className="btn btn-light p-3 pointer">
+              <a className="btn btn-light p-3 pointer" href={link}>
                 <h5 className="card-title mb-0 fw-bold">View Details</h5>
-              </button>
+              </a>
             </div>
           )}
         </div>

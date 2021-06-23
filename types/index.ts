@@ -1,5 +1,3 @@
-import { HTMLAttributes } from "react";
-
 interface IDetails {
   screen: string;
   cabinet: string;
@@ -14,6 +12,7 @@ export interface IProduct {
   name: string;
   src: StaticImageData;
   details: IDetails;
+  link: string;
 }
 
 export interface IContact {
@@ -25,8 +24,9 @@ export interface IContact {
   rel: string;
 }
 
-export interface IService extends HTMLAttributes<HTMLDivElement> {
+export interface IService {
   id?: string;
   title: string;
   description: string;
+  Icon: JSX.Element;
 }
