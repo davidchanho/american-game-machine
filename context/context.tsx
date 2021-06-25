@@ -16,7 +16,6 @@ export const appState = {
       btnLabel: "get directions",
       href: "https://www.google.com/maps/place/101+E+Carteret+St+UNIT+107,+Greensboro,+NC+27406/@36.0373818,-79.7924992,17z/data=!3m1!4b1!4m5!3m4!1s0x885319ac1d05bfdd:0x6be5d01592cda5c9!8m2!3d36.0373775!4d-79.7903105",
       rel: "",
-      delay: 0.2,
     },
     {
       id: "contact-2",
@@ -25,7 +24,6 @@ export const appState = {
       btnLabel: "call us",
       href: "tel:+01-919-306-0509",
       rel: "nofollow",
-      delay: 0.5,
     },
     {
       id: "contact-3",
@@ -34,7 +32,6 @@ export const appState = {
       btnLabel: "email us",
       href: "mailto: contact@empire-amusement.com",
       rel: "",
-      delay: 0.8,
     },
   ],
   products: [
@@ -51,7 +48,6 @@ export const appState = {
         weight: "80 kg",
         voltage: "110v-240v",
       },
-      delay: 0.2,
     },
     {
       id: "product-2",
@@ -66,7 +62,6 @@ export const appState = {
         weight: "250 kg",
         voltage: "110v-240v",
       },
-      delay: 0.5,
     },
   ],
   solutions: [
@@ -76,7 +71,6 @@ export const appState = {
       Icon: <StoreIcon />,
       description:
         "Ever dreamed of becoming a small business owner? We provide store setup solutions that get you up and running in no time.",
-      delay: 0.2,
     },
     {
       id: "solution-2",
@@ -84,7 +78,6 @@ export const appState = {
       Icon: <RepairIcon />,
       description:
         "Stuck buttons, blank screens, random shutdowns... whatever it is, our technicians are here for you.",
-      delay: 0.5,
     },
     {
       id: "solution-3",
@@ -92,7 +85,6 @@ export const appState = {
       Icon: <ConsultingIcon />,
       description:
         "Not only will we help you setup your store, we will help you every step of the way.",
-      delay: 0.8,
     },
   ],
 };
