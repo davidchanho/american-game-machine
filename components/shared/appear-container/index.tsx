@@ -18,6 +18,7 @@ const AppearContainer = ({
 }: PropsWithChildren<Props>) => {
   const [ref, inView] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
 
   const transition = {
