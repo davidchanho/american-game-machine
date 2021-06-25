@@ -1,6 +1,8 @@
 import emailjs from "emailjs-com";
 import { ChangeEvent, FormEvent, useState } from "react";
 
+type Props = "idle" | "success" | "error";
+
 const initialForm = {
   email: "",
   name: "",
@@ -11,8 +13,7 @@ const initialForm = {
 
 function useContactForm() {
   const [form, setForm] = useState(initialForm);
-  const [error, setError] = useState(false);
-  const [success, setSuccess] = useState(false);
+  const [status, setStatus] = useState<Props>("idle");
 
   const sendEmail = () => {
     emailjs
@@ -25,11 +26,11 @@ function useContactForm() {
       .then(
         (result) => {
           console.log(result);
-          setSuccess(true);
+          setStatus("success");
         },
         (error) => {
           console.log(error);
-          setError(true);
+          setStatus("error");
         }
       );
   };
@@ -50,7 +51,7 @@ function useContactForm() {
     setForm(initialForm);
   };
 
-  return { form, onChange, onSubmit, error, success };
+  return { form, onChange, onSubmit, status };
 }
 
 export default useContactForm;

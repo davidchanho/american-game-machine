@@ -17,7 +17,7 @@ function ProductListItem({ name, src, link, delay }: Props) {
     return (
       <div className="card-img-overlay d-flex align-items-center justify-content-center">
         <a className="btn btn-light p-3 pointer" href={link}>
-          <h5 className="card-title mb-0 fw-bold">View Details</h5>
+          <span className="card-title mb-0 fw-bold">View Details</span>
         </a>
       </div>
     );

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function FishTables() {
+function ProductPage() {
     return (
         <div>
             
@@ -8,4 +8,4 @@ function FishTables() {
     )
 }
 
-export default FishTables
+export default ProductPage
