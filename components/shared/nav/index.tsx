@@ -3,8 +3,8 @@ import NavLink from "../nav-link";
 
 const links = [
   { id: "nav-link-1", link: "products" },
-  { id: "nav-link-2", link: "services" },
-  { id: "nav-link-3", link: "contact" },
+  { id: "nav-link-2", link: "solutions" },
+  // { id: "nav-link-3", link: "contact" },
 ];
 
 function Nav() {

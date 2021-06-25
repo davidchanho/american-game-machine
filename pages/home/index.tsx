@@ -10,7 +10,7 @@ export default function HomePage() {
       <BackToTop />
       <ProductList />
       <Services />
-      <Contact />
+      {/* <Contact /> */}
     </>
   );
 }
