@@ -69,17 +69,17 @@ export const appState = {
       delay: 0.5,
     },
   ],
-  services: [
+  solutions: [
     {
-      id: "service-1",
+      id: "solution-1",
       title: "Store Setup",
       Icon: <StoreIcon />,
       description:
-        "Ever dreamed of becoming a small business owner? We provide store setup services that get you up and running in no time.",
+        "Ever dreamed of becoming a small business owner? We provide store setup solutions that get you up and running in no time.",
       delay: 0.2,
     },
     {
-      id: "service-2",
+      id: "solution-2",
       title: "Maintenance",
       Icon: <RepairIcon />,
       description:
@@ -87,7 +87,7 @@ export const appState = {
       delay: 0.5,
     },
     {
-      id: "service-3",
+      id: "solution-3",
       title: "Consulting",
       Icon: <ConsultingIcon />,
       description:

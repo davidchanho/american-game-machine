@@ -1,12 +1,12 @@
 import React from "react";
-import { IService } from "../../../types";
+import { ISolution } from "../../../types";
 import AppearContainer from "../../shared/appear-container";
 
-interface Props extends IService {
+interface Props extends ISolution {
   delay?: number;
 }
 
-function ServicesItem({ title, description, Icon, delay }: Props) {
+function SolutionItem({ title, description, Icon, delay }: Props) {
   return (
     <div className="col">
       <AppearContainer delay={delay}>
@@ -24,4 +24,4 @@ function ServicesItem({ title, description, Icon, delay }: Props) {
   );
 }
 
-export default ServicesItem;
+export default SolutionItem;

@@ -24,7 +24,7 @@ export interface IContact {
   rel: string;
 }
 
-export interface IService {
+export interface ISolution {
   id?: string;
   title: string;
   description: string;

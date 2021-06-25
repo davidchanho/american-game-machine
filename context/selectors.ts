@@ -1,3 +1,3 @@
 import { appState } from "./context";
 
-export const { companyName, contacts, products, services } = appState;
+export const { companyName, contacts, products, solutions } = appState;
