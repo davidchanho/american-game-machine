@@ -83,7 +83,7 @@ export const appState = {
       title: "Maintenance",
       Icon: <RepairIcon />,
       description:
-        "Stuck joysticks, blank screens, random shutdowns... whatever it is, our technicians are here for you.",
+        "Stuck buttons, blank screens, random shutdowns... whatever it is, our technicians are here for you.",
       delay: 0.5,
     },
     {
