@@ -8,13 +8,13 @@ function BackToTop() {
 
   return (
     <nav
-      className={`w-100 d-flex align-items-center justify-content-between px-2 pt-2 fixed-top ${
+      className={`w-100 d-flex align-items-center justify-content-between pb-1 fixed-top bg-dark ${
         visible ? "visible" : "invisible"
       }`}
     >
       <div className="w-100 d-flex align-items-center justify-content-between container">
         <Logo />
-        <span onClick={scrollTop} className="pointer">
+        <span onClick={scrollTop} className="pointer text-white">
           <ChevronUpIcon />
         </span>
       </div>

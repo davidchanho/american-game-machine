@@ -70,7 +70,7 @@ export const appState = {
       title: "Store Setup",
       Icon: <StoreIcon />,
       description:
-        "Ever dreamed of becoming a small business owner? We provide store setup solutions that get you up and running in no time.",
+        "We provide store setup service that will help you get up and running in no time.",
     },
     {
       id: "solution-2",

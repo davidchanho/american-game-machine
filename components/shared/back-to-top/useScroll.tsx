@@ -5,18 +5,18 @@ interface Props {
   visible: boolean;
 }
 
+const scrollTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+
 const useScroll = () => {
   const [scrollState, setScrollState] = useState<Props>({
     scrollpos: 0,
     visible: false,
   });
-
-  const scrollTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
 
   const handleScroll = () => {
     const currentScrollPos = window.pageYOffset;
