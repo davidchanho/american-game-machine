@@ -2,6 +2,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { IProduct } from "../../../types";
 import AppearContainer from "../../shared/appear-container";
+import ProductButton from "./ProductButton";
 
 interface Props extends IProduct {
   delay?: number;
@@ -12,16 +13,6 @@ function ProductListItem({ name, src, link, delay }: Props) {
 
   const handleEnter = () => setEnter(true);
   const handleLeave = () => setEnter(false);
-
-  const ProductButton = () => {
-    return (
-      <div className="card-img-overlay d-flex align-items-center justify-content-center">
-        <a className="btn btn-light p-3 pointer" href={link}>
-          <span className="card-title mb-0 fw-bold">View Details</span>
-        </a>
-      </div>
-    );
-  };
 
   return (
     <div className="col">
@@ -35,7 +26,7 @@ function ProductListItem({ name, src, link, delay }: Props) {
 
           <p className="card-title">{name}</p>
 
-          {enter && <ProductButton />}
+          {enter && <ProductButton link={link} />}
         </div>
       </AppearContainer>
     </div>

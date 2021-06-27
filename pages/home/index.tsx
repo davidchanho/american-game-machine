@@ -7,7 +7,7 @@ import BackToTop from "../../components/shared/back-to-top";
 export default function HomePage() {
   return (
     <>
-      <BackToTop />
+      {/* <BackToTop /> */}
       <ProductList />
       <Services />
       <Contact />

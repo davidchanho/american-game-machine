@@ -5,6 +5,7 @@ import {
   StoreIcon,
 } from "../components/shared/icons";
 import standupsImg from "../public/img/machines/standups.webp";
+import fishtableImg from "../public/img/machines/fish-table.png";
 
 export const appState = {
   companyName: "American Game Machine",
@@ -52,7 +53,7 @@ export const appState = {
     {
       id: "product-2",
       name: "Fish Tables",
-      src: standupsImg,
+      src: fishtableImg,
       link: "/products/stand-ups",
       details: {
         screen: "55",

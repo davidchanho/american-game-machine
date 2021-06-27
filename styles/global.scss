@@ -38,9 +38,6 @@ section {
   margin: 0 auto;
   min-height: 100vh;
   scroll-snap-align: start;
-  &:not(:last-child) {
-    margin-bottom: 10rem;
-  }
 }
 
 .section-title {
