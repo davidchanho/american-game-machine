@@ -33,26 +33,8 @@ main {
   margin: 0 auto;
 }
 
-section {
-  width: 90%;
-  margin: 0 auto;
-  min-height: 100vh;
-  scroll-snap-align: start;
-}
-
-.section-title {
-  font-size: 2.25rem;
-}
-
 img {
   display: block;
-}
-
-.anchor > span {
-  display: block;
-  position: relative;
-  top: -5rem;
-  visibility: hidden;
 }
 
 .mobile-full {

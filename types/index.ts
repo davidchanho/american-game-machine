@@ -7,12 +7,15 @@ interface IDetails {
   voltage: string;
 }
 
-export interface IProduct {
+export interface ICategory {
   id: string;
   name: string;
   src: StaticImageData;
-  details: IDetails;
   link: string;
+}
+
+export interface IProduct extends ICategory {
+  details: IDetails;
 }
 
 export interface IContact {

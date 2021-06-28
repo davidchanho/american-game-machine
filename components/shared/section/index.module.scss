@@ -1,0 +1,16 @@
+.section {
+  width: 75%;
+  margin: 0 auto;
+  min-height: 100vh;
+  scroll-snap-align: start;
+  display: grid;
+  place-content: center;
+}
+
+.title {
+  font-size: 2.25rem;
+}
+
+.anchor > span {
+  top: -5rem;
+}

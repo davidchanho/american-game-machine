@@ -1,14 +1,14 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import { IProduct } from "../../../types";
+import { ICategory } from "../../../types";
 import AppearContainer from "../../shared/appear-container";
-import ProductButton from "./ProductButton";
+import CategoryButton from "./CategoryButton";
 
-interface Props extends IProduct {
+interface Props extends ICategory {
   delay?: number;
 }
 
-function ProductListItem({ name, src, link, delay }: Props) {
+function CategoryListItem({ name, src, link, delay }: Props) {
   const [enter, setEnter] = useState(false);
 
   const handleEnter = () => setEnter(true);
@@ -17,20 +17,25 @@ function ProductListItem({ name, src, link, delay }: Props) {
   return (
     <div className="col">
       <AppearContainer delay={delay}>
-        <div
+        <article
           className="card shadow mb-5"
           onMouseEnter={handleEnter}
           onMouseLeave={handleLeave}
         >
-          <Image className="card-img" src={src} alt={name} placeholder="blur" />
+          <p className="card-title text-center pt-3">{name}</p>
 
-          <p className="card-title">{name}</p>
+          <Image
+            className="card-img category-img"
+            src={src}
+            alt={name}
+            placeholder="blur"
+          />
 
-          {enter && <ProductButton link={link} />}
-        </div>
+          {enter && <CategoryButton link={link} />}
+        </article>
       </AppearContainer>
     </div>
   );
 }
 
-export default ProductListItem;
+export default CategoryListItem;

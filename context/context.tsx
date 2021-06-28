@@ -4,8 +4,8 @@ import {
   RepairIcon,
   StoreIcon,
 } from "../components/shared/icons";
-import standupsImg from "../public/img/machines/standups.webp";
 import fishtableImg from "../public/img/machines/fish-table.png";
+import standupsImg from "../public/img/machines/standups.webp";
 
 export const appState = {
   companyName: "American Game Machine",
@@ -35,12 +35,12 @@ export const appState = {
       rel: "",
     },
   ],
-  products: [
+  category: [
     {
-      id: "product-1",
+      id: "category-1",
       name: "Stand Ups",
       src: standupsImg,
-      link: "/products/stand-ups",
+      link: "/category/stand-ups",
       details: {
         screen: "43",
         cabinet: "Metal",
@@ -51,10 +51,10 @@ export const appState = {
       },
     },
     {
-      id: "product-2",
+      id: "category-2",
       name: "Fish Tables",
       src: fishtableImg,
-      link: "/products/stand-ups",
+      link: "/category/fish-tables",
       details: {
         screen: "55",
         cabinet: "Metal",
@@ -65,6 +65,7 @@ export const appState = {
       },
     },
   ],
+  products: {},
   solutions: [
     {
       id: "solution-1",

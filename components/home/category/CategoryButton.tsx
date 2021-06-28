@@ -4,7 +4,7 @@ interface Props {
   link: string;
 }
 
-function ProductButton({ link }: Props) {
+function CategoryButton({ link }: Props) {
   return (
     <div className="card-img-overlay d-flex align-items-center justify-content-center">
       <a className="btn btn-light p-3 pointer" href={link}>
@@ -14,4 +14,4 @@ function ProductButton({ link }: Props) {
   );
 }
 
-export default ProductButton;
+export default CategoryButton;

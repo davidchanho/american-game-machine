@@ -1,14 +1,11 @@
 import React from "react";
+import Section from "../../shared/section";
 
 function About() {
   return (
-    <div>
-      <h1>About</h1>
-      <p>
-        At American Game Machine, we sell and lease stand up and fish tables
-        machines.{" "}
-      </p>
-    </div>
+    <Section title="about">
+      <p>At American Game Machine, we sell and lease skill games.</p>
+    </Section>
   );
 }
 

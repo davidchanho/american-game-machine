@@ -1,5 +1,5 @@
 import React, { PropsWithChildren } from "react";
-import SectionTitle from "./SectionTitle";
+import styles from "./index.module.scss";
 
 interface SectionProps {
   title: string;
@@ -7,8 +7,11 @@ interface SectionProps {
 
 function Section({ title, children }: PropsWithChildren<SectionProps>) {
   return (
-    <section className="section mh-100 w-100">
-      <SectionTitle title={title} />
+    <section className={styles.section}>
+      <div className={`${styles.anchor} mb-5 text-capitalize`}>
+        <span id={title} className="d-block position-relative hidden" />
+        <p className={`${styles.title} text-center`}>{title}</p>
+      </div>
 
       <div className="d-flex align-items-center justify-content-center">
         <div className="container">{children}</div>
