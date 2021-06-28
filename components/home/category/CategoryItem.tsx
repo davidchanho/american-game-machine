@@ -31,7 +31,7 @@ function CategoryListItem({ name, src, link, delay }: Props) {
             placeholder="blur"
           />
 
-          {enter && <CategoryButton link={link} />}
+          {/* {enter && <CategoryButton link={link} />} */}
         </article>
       </AppearContainer>
     </div>

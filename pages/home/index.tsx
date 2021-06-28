@@ -1,16 +1,16 @@
 import React from "react";
 import About from "../../components/home/about";
-import ProductList from "../../components/home/category";
+import Category from "../../components/home/category";
 import Contact from "../../components/home/contact";
-import Services from "../../components/home/solutions";
+import Solutions from "../../components/home/solutions";
 
 export default function HomePage() {
   return (
     <>
       {/* <BackToTop /> */}
-      <About />
-      <ProductList />
-      <Services />
+      {/* <About /> */}
+      <Category />
+      <Solutions />
       <Contact />
     </>
   );
