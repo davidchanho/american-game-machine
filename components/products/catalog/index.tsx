@@ -1,6 +1,6 @@
 import React from 'react'
 
-function CategoryDetailPage() {
+function Catalog() {
     return (
         <div>
             
@@ -8,4 +8,4 @@ function CategoryDetailPage() {
     )
 }
 
-export default CategoryDetailPage
+export default Catalog

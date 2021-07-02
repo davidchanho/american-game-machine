@@ -3,43 +3,43 @@ import React from "react";
 function ContactForm({ form, onChange, onSubmit }) {
   return (
     <form className="form" id="contact-form" onSubmit={onSubmit}>
-      <div className="mb-3">
-        <input
-          className="form-control"
-          type="text"
-          onChange={onChange}
-          value={form.name}
-          name="name"
-          placeholder="Name"
-          required
-          min={3}
-        />
-      </div>
-
-      <div className="mb-3">
-        <input
-          className="form-control"
-          type="email"
-          onChange={onChange}
-          value={form.email}
-          name="email"
-          placeholder="Email"
-          required
-          min={6}
-        />
-      </div>
-
-      <div className="mb-3">
-        <input
-          className="form-control"
-          type="tel"
-          onChange={onChange}
-          value={form.phone}
-          name="phone"
-          placeholder="Phone Number"
-          required
-          min={6}
-        />
+      <div className="row row-cols-1 row-cols-md-3">
+        <div className="col mb-3">
+          <input
+            className="form-control"
+            type="text"
+            onChange={onChange}
+            value={form.name}
+            name="name"
+            placeholder="Name"
+            required
+            min={3}
+          />
+        </div>
+        <div className="col mb-3">
+          <input
+            className="form-control"
+            type="email"
+            onChange={onChange}
+            value={form.email}
+            name="email"
+            placeholder="Email"
+            required
+            min={6}
+          />
+        </div>
+        <div className="col mb-3">
+          <input
+            className="form-control"
+            type="tel"
+            onChange={onChange}
+            value={form.phone}
+            name="phone"
+            placeholder="Phone Number"
+            required
+            min={6}
+          />
+        </div>
       </div>
 
       <div className="mb-3">
@@ -71,7 +71,7 @@ function ContactForm({ form, onChange, onSubmit }) {
         />
       </div>
 
-      <button className="btn btn-dark mobile-full" type="submit">
+      <button className="btn btn-dark" type="submit">
         Submit
       </button>
     </form>

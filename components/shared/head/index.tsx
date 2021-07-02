@@ -9,7 +9,7 @@ function Head() {
       <title>Skill Game Machines and business solutions | {companyName}</title>
       <meta
         name="description"
-        content="We provide stand ups and fish tables for sale or lease, repair, consulting and store setup. We are located conveniently in Greensboro, NC."
+        content="We provide stand ups and fish tables for sale or rent, repair, consulting and store setup. We are located conveniently in Greensboro, NC."
       />
       <link rel="icon" href="/favicon.ico" />
       <link

@@ -4,7 +4,7 @@ import Section from "../../shared/section";
 function About() {
   return (
     <Section title="about">
-      <p>At American Game Machine, we sell and lease skill games.</p>
+      <p>At American Game Machine, we sell and rent skill games.</p>
     </Section>
   );
 }

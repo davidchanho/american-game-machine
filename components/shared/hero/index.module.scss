@@ -1,0 +1,18 @@
+@use '../../../styles' as *;
+
+.container {
+  width: 100%;
+  max-height: 100vh;
+  background-color: $dark;
+
+  @media (max-width: $sm) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  img {
+    max-height: 100vh;
+  }
+}

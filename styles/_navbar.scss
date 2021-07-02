@@ -1,4 +1,4 @@
-@use "../node_modules/bootstrap/scss/bootstrap" as *;
+@use "index" as *;
 
 .navbar {
   z-index: 999;
@@ -6,7 +6,7 @@
 }
 
 .navbar-collapse {
-  @media (max-width: map-get($map: $grid-breakpoints, $key: sm)) {
+  @media (max-width:$sm) {
     position: absolute;
     top: 85%;
     left: 0;

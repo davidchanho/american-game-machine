@@ -4,7 +4,7 @@ function GetAQuote() {
   return (
     <a
       href="/#contact"
-      className="btn btn-light bg-lg mobile-full mt-3"
+      className="btn btn-light bg-lg mt-3"
       role="button"
     >
       Get a Quote

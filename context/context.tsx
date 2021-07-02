@@ -21,7 +21,7 @@ export const appState = {
     {
       id: "contact-2",
       contact: "phone",
-      info: ["919-971-0827"],
+      info: ["(919) 971-0827"],
       btnLabel: "call us",
       href: "tel:+01-919-306-0509",
       rel: "nofollow",
