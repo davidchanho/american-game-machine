@@ -1,3 +1,4 @@
+import fourPlayerImg from "../public/img/machines/4-player.png";
 import fishtableImg from "../public/img/machines/fish-table.png";
 import standupsImg from "../public/img/machines/standups.webp";
 
@@ -34,19 +35,25 @@ const data = {
       id: "category-1",
       name: "Stand Ups",
       src: standupsImg,
-      link: "/products/stand-ups",
+      desc: "Our stand ups machines have metal cabinets and 43 inch flat screen with touch function capabilities.",
     },
     {
       id: "category-2",
-      name: "Fish Tables",
-      src: fishtableImg,
-      link: "/products/fish-tables",
+      name: "Curved Screen Stand Ups",
+      src: standupsImg,
+      desc: "Our stand up machines with metal cabinets got even better. 43 inch curved screen with touch function capabilities are now available.",
     },
     {
       id: "category-3",
-      name: "Accessories",
+      name: "Fish Tables",
       src: fishtableImg,
-      link: "/products/accessories",
+      desc: "Fast paced gameplay fishing game with 68 inch horizontal screen. Up to 10 players.",
+    },
+    {
+      id: "category-4",
+      name: "Vertical Fish Tables",
+      src: fourPlayerImg,
+      desc: "The best of both worlds. The action orientated gameplay of fish table and the convenience of stand up machines. Up to 4 players.",
     },
   ],
 };

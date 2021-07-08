@@ -8,7 +8,7 @@ function Hero() {
   return (
     <section className={styles.container}>
       <Navbar />
-
+      
       <HeroContent />
 
       <ScrollDown />

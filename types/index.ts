@@ -2,7 +2,7 @@ export interface ICategory {
   id: string;
   name: string;
   src: StaticImageData;
-  link: string;
+  desc: string;
 }
 
 export interface IContact {

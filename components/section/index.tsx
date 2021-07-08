@@ -2,15 +2,14 @@ import React, { PropsWithChildren } from "react";
 import styles from "./index.module.scss";
 
 interface SectionProps {
-  title: string;
+  link: string;
 }
 
-function Section({ title, children }: PropsWithChildren<SectionProps>) {
+function Section({ link, children }: PropsWithChildren<SectionProps>) {
   return (
     <section className={styles.section}>
       <div className={`${styles.anchor} mb-5 text-capitalize`}>
-        <span id={title} className="d-block position-relative hidden" />
-        <p className={styles.title}>{title}</p>
+        <span id={link} className="d-block position-relative hidden" />
       </div>
 
       <div className="d-flex align-items-center justify-content-center">

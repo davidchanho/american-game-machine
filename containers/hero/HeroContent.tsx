@@ -11,11 +11,10 @@ function HeroContent() {
       <div className="col">
         <AppearContainer className={styles.header}>
           <h1 className={styles.heroTitle}>
-            Skill Games & Fish Tables that meet your needs.
+            American Game Machine - Skill Games & Fish Tables that meet your
+            needs.
           </h1>
-          <p>
-            
-          </p>
+          <p></p>
           <GetAQuote />
         </AppearContainer>
       </div>
