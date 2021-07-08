@@ -26,10 +26,3 @@ export interface IContact {
   href?: string;
   rel: string;
 }
-
-export interface ISolution {
-  id?: string;
-  title: string;
-  description: string;
-  Icon: JSX.Element;
-}

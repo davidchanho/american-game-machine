@@ -1,5 +1,5 @@
 import React from "react";
-import { IContact } from "../../../types";
+import { IContact } from "../../types";
 import AppearContainer from "../appear-container";
 
 interface Props extends IContact {
