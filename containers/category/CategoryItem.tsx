@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { ICategory } from "../../types";
-import AppearContainer from "../appear-container";
+import AppearContainer from "../../components/appear-container";
 
 interface Props extends ICategory {
   delay?: number;

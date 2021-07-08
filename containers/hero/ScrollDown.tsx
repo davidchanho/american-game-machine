@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowDownIcon } from "../icons";
+import { ArrowDownIcon } from "../../components/icons";
 
 function ScrollDown() {
   return (

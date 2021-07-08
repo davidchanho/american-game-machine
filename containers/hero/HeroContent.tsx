@@ -1,7 +1,7 @@
 import React from "react";
 import home from "../../public/img/machines/hero-banner.webp";
-import AppearContainer from "../appear-container";
-import GetAQuote from "../get-a-quote";
+import AppearContainer from "../../components/appear-container";
+import GetAQuote from "../../components/get-a-quote";
 import styles from "./HeroContent.module.scss";
 import HeroImg from "./HeroImg";
 

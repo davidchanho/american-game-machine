@@ -1,6 +1,6 @@
 import React from "react";
-import Category from "../../components/category";
-import Layout from "../../components/layout";
+import Category from "../../containers/category";
+import Layout from "../../containers/layout";
 
 function Home() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import { category } from "../../data";
-import Section from "../section";
+import Section from "../../components/section";
 import CategoryItem from "./CategoryItem";
 
 function Category() {
