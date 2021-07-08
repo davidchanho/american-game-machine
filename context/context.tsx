@@ -1,9 +1,4 @@
 import React, { createContext, useContext } from "react";
-import {
-  ConsultingIcon,
-  RepairIcon,
-  StoreIcon,
-} from "../components/shared/icons";
 import fishtableImg from "../public/img/machines/fish-table.png";
 import standupsImg from "../public/img/machines/standups.webp";
 
@@ -40,53 +35,19 @@ export const appState = {
       id: "category-1",
       name: "Stand Ups",
       src: standupsImg,
-      link: "/category/stand-ups",
-      details: {
-        screen: "43",
-        cabinet: "Metal",
-        dimensions: "44 cm x 34 cm x 48 cm",
-        players: "1",
-        weight: "80 kg",
-        voltage: "110v-240v",
-      },
+      link: "/products/stand-ups",
     },
     {
       id: "category-2",
       name: "Fish Tables",
       src: fishtableImg,
-      link: "/category/fish-tables",
-      details: {
-        screen: "55",
-        cabinet: "Metal",
-        dimensions: "200 cm x 195 cm x 57cm",
-        players: "2-10",
-        weight: "250 kg",
-        voltage: "110v-240v",
-      },
-    },
-  ],
-  products: {},
-  solutions: [
-    {
-      id: "solution-1",
-      title: "Store Setup",
-      Icon: <StoreIcon />,
-      description:
-        "We provide store setup service that will help you get up and running in no time.",
+      link: "/products/fish-tables",
     },
     {
-      id: "solution-2",
-      title: "Maintenance",
-      Icon: <RepairIcon />,
-      description:
-        "Stuck buttons, blank screens, random shutdowns... whatever it is, our technicians are here for you.",
-    },
-    {
-      id: "solution-3",
-      title: "Consulting",
-      Icon: <ConsultingIcon />,
-      description:
-        "Not only will we help you setup your store, we will help you every step of the way.",
+      id: "category-3",
+      name: "Accessories",
+      src: fishtableImg,
+      link: "/products/accessories",
     },
   ],
 };

@@ -1,6 +1,6 @@
 import React from "react";
-import HomePage from "./home";
+import Category from "../components/category";
 
 export default function App() {
-  return <HomePage />;
+  return <Category />;
 }

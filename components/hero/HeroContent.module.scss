@@ -1,0 +1,28 @@
+@use '../../styles' as *;
+
+.heroTitle {
+  color: $white;
+  font-size: clamp(1rem, -0.875rem + 8.333vw, 2.5rem);
+}
+
+.header {
+  width: 75%;
+  @media (max-width: $md) {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    z-index: 60;
+    background-color: #ccc;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+  }
+  @media (min-width: $md) {
+    margin-left: 10%;
+  }
+}

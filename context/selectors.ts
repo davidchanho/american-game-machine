@@ -1,4 +1,3 @@
 import { appState } from "./context";
 
-export const { companyName, contacts, products, category, solutions } =
-  appState;
+export const { companyName, contacts, category } = appState;
