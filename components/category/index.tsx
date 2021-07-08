@@ -1,5 +1,5 @@
 import React from "react";
-import { category } from "../../context";
+import { category } from "../../data";
 import Section from "../section";
 import CategoryItem from "./CategoryItem";
 

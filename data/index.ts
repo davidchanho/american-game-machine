@@ -1,8 +1,7 @@
-import React, { createContext, useContext } from "react";
 import fishtableImg from "../public/img/machines/fish-table.png";
 import standupsImg from "../public/img/machines/standups.webp";
 
-export const appState = {
+const data = {
   companyName: "American Game Machine",
   contacts: [
     {
@@ -52,12 +51,4 @@ export const appState = {
   ],
 };
 
-export const AppContext = createContext(appState);
-
-export function AppProvider({ children }) {
-  return <AppContext.Provider value={appState}>{children}</AppContext.Provider>;
-}
-
-export function useAppContext() {
-  return useContext(AppContext);
-}
+export const { companyName, contacts, category } = data;

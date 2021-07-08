@@ -1,5 +1,5 @@
 import React from "react";
-import { contacts } from "../../context";
+import { contacts } from "../../data";
 import ContactItem from "./ContactItem";
 
 function ContactInfo() {
