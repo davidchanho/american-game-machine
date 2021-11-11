@@ -13,8 +13,8 @@ function CategoryListItem({ name, src, desc, delay }: Props) {
   return (
     <AppearContainer delay={delay}>
       <Section link={name}>
-        <div className="row row-cols-1 row-cols-md-2">
-          <div className="col">
+        <div className="row">
+          <div className="col-8">
             <div className="card-body p-3">
               <h2 className="card-title">{name}</h2>
               <p className="card-text">{desc}</p>
@@ -22,9 +22,9 @@ function CategoryListItem({ name, src, desc, delay }: Props) {
             </div>
           </div>
           <div className="col">
-            <div className="w-75">
+            <div className="card">
               <Image
-                className="card-img h-75"
+                className="card-img"
                 src={src}
                 alt={name}
                 placeholder="blur"
