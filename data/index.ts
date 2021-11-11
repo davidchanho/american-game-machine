@@ -1,6 +1,7 @@
 import fourPlayerImg from "../public/img/machines/4-player.png";
 import fishtableImg from "../public/img/machines/fish-table.png";
 import standupsImg from "../public/img/machines/standups.webp";
+import curvedImg from "../public/img/machines/curved.png";
 
 const data = {
   companyName: "American Game Machine",
@@ -40,7 +41,7 @@ const data = {
     {
       id: "category-2",
       name: "Curved Screen Stand Ups",
-      src: standupsImg,
+      src: curvedImg,
       desc: "Our stand up machines with metal cabinets got even better. 43 inch curved screen with touch function capabilities are now available.",
     },
     {

@@ -24,7 +24,7 @@ function CategoryListItem({ name, src, desc, delay }: Props) {
           <div className="col">
             <div className="w-75">
               <Image
-                className="card-img"
+                className="card-img h-75"
                 src={src}
                 alt={name}
                 placeholder="blur"
