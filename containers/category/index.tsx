@@ -6,7 +6,7 @@ function Category() {
   return (
     <div id="category">
       {category.map((c, index) => (
-        <CategoryItem key={c.id} {...c} delay={index * 0.2 + 0.2} />
+        <CategoryItem key={c.id} c={c} delay={index * 0.2 + 0.2} />
       ))}
     </div>
   );

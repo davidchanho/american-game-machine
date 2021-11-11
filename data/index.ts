@@ -1,7 +1,8 @@
 import fourPlayerImg from "../public/img/machines/4-player.png";
+import curvedControl1Img from "../public/img/machines/curved-control-1.png";
+import curvedImg from "../public/img/machines/curved.png";
 import fishtableImg from "../public/img/machines/fish-table.png";
 import standupsImg from "../public/img/machines/standups.webp";
-import curvedImg from "../public/img/machines/curved.png";
 
 const data = {
   companyName: "American Game Machine",
@@ -37,24 +38,38 @@ const data = {
       name: "Stand Ups",
       src: standupsImg,
       desc: "Our stand ups machines have metal cabinets and 43 inch flat screen with touch function capabilities.",
+      features: [],
     },
     {
       id: "category-2",
       name: "Curved Screen Stand Ups",
       src: curvedImg,
       desc: "Our stand up machines with metal cabinets got even better. 43 inch curved screen with touch function capabilities are now available.",
+      features: [
+        {
+          id: "feature-2",
+          name: "Three ways to play",
+          list: [
+            { id: "curved-1", src: curvedControl1Img, desc: "asdfasdf" },
+            { id: "curved-2", src: curvedControl1Img, desc: "asdfsadf" },
+            { id: "curved-3", src: curvedControl1Img, desc: "asdfsadfsadfsa" },
+          ],
+        },
+      ],
     },
     {
       id: "category-3",
       name: "Fish Tables",
       src: fishtableImg,
       desc: "Fast paced gameplay fishing game with 68 inch horizontal screen. Up to 10 players.",
+      features: [],
     },
     {
       id: "category-4",
       name: "Vertical Fish Tables",
       src: fourPlayerImg,
       desc: "The best of both worlds. The action orientated gameplay of fish table and the convenience of stand up machines. Up to 4 players.",
+      features: [],
     },
   ],
 };

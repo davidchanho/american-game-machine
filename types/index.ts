@@ -1,8 +1,18 @@
-export interface ICategory {
+interface IContent {
   id: string;
-  name: string;
   src: StaticImageData;
   desc: string;
+}
+
+interface IFeature {
+  id: string;
+  name: string;
+  list: IContent[]
+};
+
+export interface ICategory extends IContent {
+  name: string;
+  features: IFeature[];
 }
 
 export interface IContact {
