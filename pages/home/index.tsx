@@ -2,15 +2,17 @@ import React from "react";
 import About from "../../containers/about";
 import Category from "../../containers/category";
 import Contact from "../../containers/contact";
-import Layout from "../../containers/layout";
+import Hero from "../../containers/hero";
+import MainTemplate from "../../templates/MainTemplate";
 
 function Home() {
   return (
-    <Layout>
+    <MainTemplate>
+      <Hero />
       <About />
       <Category />
       <Contact />
-    </Layout>
+    </MainTemplate>
   );
 }
 

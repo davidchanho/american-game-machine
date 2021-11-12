@@ -1,5 +1,5 @@
-import "bootstrap/dist/css/bootstrap-reboot.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/scss/bootstrap-reboot.scss";
+import "bootstrap/scss/bootstrap.scss";
 import React from "react";
 import "../styles/global.scss";
 

@@ -1,5 +1,5 @@
+import Image from "next/image";
 import React from "react";
-import { ArrowDownIcon } from "../../components/icons";
 
 function ScrollDown() {
   return (
@@ -8,7 +8,14 @@ function ScrollDown() {
       href="/#category"
       aria-label="scroll down"
     >
-      <ArrowDownIcon />
+      <div className="bounce pointer">
+        <Image
+          src="/svg/arrow-down.svg"
+          alt="arrow-down"
+          width={30}
+          height={30}
+        />
+      </div>
     </a>
   );
 }

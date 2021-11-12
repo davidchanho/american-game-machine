@@ -1,9 +1,12 @@
+import Link from "next/link";
 import React from "react";
 
 function Nav() {
   return (
     <ul className="navbar-nav ms-auto text-white">
-      <p>Call us for a quote at 919-971-0827</p>
+      <li className="nav-link">
+        <Link href="/catalog">Catalog</Link>
+      </li>
     </ul>
   );
 }
