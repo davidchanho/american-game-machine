@@ -1,5 +1,4 @@
 import React, { PropsWithChildren } from "react";
-import styles from "./index.module.scss";
 
 interface SectionProps {
   link: string;
@@ -7,9 +6,9 @@ interface SectionProps {
 
 function Section({ link, children }: PropsWithChildren<SectionProps>) {
   return (
-    <section className={styles.section}>
-      <div className={`${styles.anchor} mb-5 text-capitalize`}>
-        <span id={link} className="d-block position-relative hidden" />
+    <section className="w-75 min-vh-100 mx-auto d-flex align-items-center justify-content-center">
+      <div className="mb-5 text-capitalize">
+        <span id={link} className="d-block position-relative hidden mb-3" />
       </div>
 
       <div className="d-flex align-items-center justify-content-center">

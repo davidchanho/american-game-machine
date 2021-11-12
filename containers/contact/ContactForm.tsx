@@ -3,37 +3,40 @@ import React from "react";
 function ContactForm({ form, onChange, onSubmit }) {
   return (
     <form className="form" id="contact-form" onSubmit={onSubmit}>
-      <div className="row row-cols-1 row-cols-md-2">
-        <div className="col mb-3">
-          <input
-            className="form-control"
-            type="text"
-            onChange={onChange}
-            value={form.name}
-            name="name"
-            placeholder="Name"
-            required
-            min={3}
-          />
-        </div>
-        <div className="col mb-3">
-          <input
-            className="form-control"
-            type="email"
-            onChange={onChange}
-            value={form.email}
-            name="email"
-            placeholder="Email"
-            required
-            min={6}
-          />
-        </div>
+      <div className="form-floating mb-3">
+        <input
+          className="form-control"
+          id="name"
+          type="text"
+          onChange={onChange}
+          value={form.name}
+          name="name"
+          placeholder="Name"
+          required
+        />
+        <label htmlFor="name">Name</label>
       </div>
 
-      <div className="mb-3">
+      <div className="form-floating mb-3">
+        <input
+          className="form-control"
+          type="email"
+          id="email"
+          onChange={onChange}
+          value={form.email}
+          name="email"
+          placeholder="Email"
+          required
+          min={6}
+        />
+        <label htmlFor="email">Email</label>
+      </div>
+
+      <div className="form-floating mb-3">
         <input
           className="form-control"
           type="tel"
+          id="phoneNumber"
           onChange={onChange}
           value={form.phone}
           name="phone"
@@ -41,10 +44,15 @@ function ContactForm({ form, onChange, onSubmit }) {
           required
           min={6}
         />
+        <label htmlFor="phoneNumber">Phone Number</label>
       </div>
 
       <div className="mb-3">
+        <label className="mb-3" htmlFor="subject">
+          Subject
+        </label>
         <select
+          id="subject"
           className="form-select"
           onChange={onChange}
           value={form.subject}
@@ -60,7 +68,11 @@ function ContactForm({ form, onChange, onSubmit }) {
       </div>
 
       <div className="mb-3">
+        <label className="mb-3" htmlFor="message">
+          Message
+        </label>
         <textarea
+          id="message"
           className="form-control"
           onChange={onChange}
           value={form.message}

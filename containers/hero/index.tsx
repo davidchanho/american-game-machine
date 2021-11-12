@@ -2,13 +2,12 @@ import React from "react";
 import Navbar from "../navbar";
 import HeroContent from "./HeroContent";
 import ScrollDown from "./ScrollDown";
-import styles from './index.module.scss'
 
 function Hero() {
   return (
-    <section className={styles.container}>
+    <section className="w-100 max-h-100 bg-dark flex align-items-end flex-column">
       <Navbar />
-      
+
       <HeroContent />
 
       <ScrollDown />

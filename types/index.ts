@@ -7,7 +7,7 @@ interface IContent {
 interface IFeature {
   id: string;
   name: string;
-  list: IContent[]
+  list: IContent[][]
 };
 
 export interface ICategory extends IContent {

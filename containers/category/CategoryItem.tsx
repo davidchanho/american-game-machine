@@ -25,11 +25,14 @@ function CategoryListItem({ delay, c: { name, src, desc, features } }: Props) {
                     <p className="mb-2">{f.name}</p>
                     <div className="row">
                       {f.list.map((l) => {
-                        return (
-                          <div className="col" key={l.id}>
-                            <Image src={l.src} />
-                          </div>
-                        );
+                        return l.map((e) => {
+                          return (
+                            <div className="col" key={e.id}>
+                              <Image src={e.src} />
+                              <p className="text-center">{e.desc}</p>
+                            </div>
+                          );
+                        });
                       })}
                     </div>
                   </div>

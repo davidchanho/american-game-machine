@@ -1,5 +1,8 @@
 import fourPlayerImg from "../public/img/machines/4-player.png";
 import curvedControl1Img from "../public/img/machines/curved-control-1.png";
+import curvedControl2Img from "../public/img/machines/curved-control-2.jpg";
+import curvedControl3Img from "../public/img/machines/curved-control-3.png";
+import curvedControl3bImg from "../public/img/machines/curved-control-3b.png";
 import curvedImg from "../public/img/machines/curved.png";
 import fishtableImg from "../public/img/machines/fish-table.png";
 import standupsImg from "../public/img/machines/standups.webp";
@@ -28,9 +31,32 @@ export const products = [
         id: "feature-2",
         name: "Three ways to play",
         list: [
-          { id: "curved-1", src: curvedControl1Img, desc: "asdfasdf" },
-          { id: "curved-2", src: curvedControl1Img, desc: "asdfsadf" },
-          { id: "curved-3", src: curvedControl1Img, desc: "asdfsadfsadfsa" },
+          [
+            {
+              id: "controls-1",
+              src: curvedControl1Img,
+              desc: "Two Button Controls",
+            },
+          ],
+          [
+            {
+              id: "controls-2",
+              src: curvedControl2Img,
+              desc: "Multi Button Controls",
+            },
+          ],
+          [
+            {
+              id: "controls-3",
+              src: curvedControl3Img,
+              desc: "Screen Controls",
+            },
+            {
+              id: "controls-3b",
+              src: curvedControl3bImg,
+              desc: "Screen Controls",
+            },
+          ],
         ],
       },
     ],
@@ -85,10 +111,7 @@ const data = {
       rel: "",
     },
   ],
-  category: {
-    standups: products.filter((el) => el.category === "standups"),
-    fishtable: products.filter((el) => el.category === "fish table"),
-  },
+  category: products,
 };
 
 export const { companyName, contacts, category } = data;

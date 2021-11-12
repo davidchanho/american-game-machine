@@ -1,25 +1,23 @@
+import Image from "next/image";
 import React from "react";
-import home from "../../public/img/machines/hero-banner.webp";
 import AppearContainer from "../../components/appear-container";
 import GetAQuote from "../../components/get-a-quote";
-import styles from "./HeroContent.module.scss";
-import HeroImg from "./HeroImg";
+import home from "../../public/img/machines/hero-banner.webp";
 
 function HeroContent() {
   return (
-    <div className="w-100 row row-cols-1 row-cols-md-2 g-0 d-flex align-items-center">
-      <div className="col">
-        <AppearContainer className={styles.header}>
-          <h1 className={styles.heroTitle}>
-            American Game Machine - Skill Games & Fish Tables that meet your
-            needs.
-          </h1>
-          <p></p>
+    <div className="w-100 row g-0 d-flex align-items-center">
+      <div className="col offset-1">
+        <AppearContainer className="text-white ">
+          <h1 className="display-4">American Game Machine</h1>
+          <p className="h3 mt-2">
+            Skill Games & Fish Tables that meet your needs.
+          </p>
           <GetAQuote />
         </AppearContainer>
       </div>
-      <div className="col d-flex justify-content-end">
-        <HeroImg image={home} />
+      <div className="col">
+        <Image src={home} alt="hero banner" placeholder="blur" />
       </div>
     </div>
   );
