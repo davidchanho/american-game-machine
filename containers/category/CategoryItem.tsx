@@ -15,7 +15,7 @@ function CategoryListItem({ delay, c: { name, src, desc, features } }: Props) {
     <AppearContainer delay={delay}>
       <Section link={name}>
         <div className="row">
-          <div className="col-8">
+          <div className="col-12 col-md-8">
             <div className="card-body p-3">
               <h2 className="card-title h2">{name}</h2>
               <p className="card-text mt-3">{desc}</p>
@@ -41,7 +41,7 @@ function CategoryListItem({ delay, c: { name, src, desc, features } }: Props) {
               <GetAQuote />
             </div>
           </div>
-          <div className="col">
+          <div className="col-12 col-md-4">
             <div className="card">
               <Image
                 className="card-img"

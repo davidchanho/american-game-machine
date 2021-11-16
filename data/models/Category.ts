@@ -1,10 +1,16 @@
-import { model, Schema } from "mongoose";
+import { IProduct } from './Products';
+import { Document, model, Schema } from "mongoose";
 
-const categorySchema = new Schema({
+export interface ICategory extends Document {
+  name: string;
+  products: IProduct[];
+}
+
+const categorySchema = new Schema<ICategory>({
   name: { type: String, required: true },
-  
+  products: [{ type: String, ref: "product" }],
 });
 
-const Category = model("category", categorySchema);
+const Category = model<ICategory>("category", categorySchema);
 
 export default Category;

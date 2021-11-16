@@ -1,20 +1,22 @@
-import { model, Schema } from "mongoose";
+import { Document, model, Schema } from "mongoose";
+import { ICategory } from "./Category";
 
-const productSchema = new Schema({
+export interface IProduct extends Document {
+  name: string;
+  category: ICategory[];
+  description: string;
+  features: string[];
+  images: string[];
+}
+
+const productSchema = new Schema<IProduct>({
   name: { type: String, require: true },
-  slug: {
-    type: String,
-    default: function () {
-      return (this.slug = `/${this.name.replace(" ", "-")}`);
-    },
-  },
-  category: { type: String, ref: "category" , require: true },
-  type: { type: String,  require: true },
-  src: { type: String, require: true },
-  desc: { type: String, require: true },
+  category: [{ type: String, ref: "category" }],
+  description: { type: String, require: true },
   features: [{ type: String }],
+  images: [{ type: String }],
 });
 
-const Product = model("product", productSchema);
+const Product = model<IProduct>("product", productSchema);
 
 export default Product;
