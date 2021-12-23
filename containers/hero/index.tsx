@@ -7,7 +7,7 @@ import Navbar from "../navbar";
 
 function Hero() {
   return (
-    <section className="w-100 max-h-100 bg-dark flex align-items-end flex-column">
+    <section className="w-100 max-h-100 bg-dark flex align-items-end flex-column text-center">
       <Navbar />
 
       <div className="row g-0 d-flex align-items-center">
@@ -25,7 +25,7 @@ function Hero() {
         </div>
       </div>
 
-      <div className="bottom-0 start-50 translate-middle-x mb-3 bounce pointer">
+      <div className="d-none d-md-block bottom-0 start-50 translate-middle-x mb-3 bounce pointer">
         <a href="/#category" aria-label="scroll down">
           <Image
             src="/svg/arrow-down.svg"
