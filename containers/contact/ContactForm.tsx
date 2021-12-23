@@ -1,11 +1,11 @@
 import React from "react";
+import { Button, Form } from "react-bootstrap";
 
 function ContactForm({ form, onChange, onSubmit }) {
   return (
-    <form className="form" id="contact-form" onSubmit={onSubmit}>
-      <div className="form-floating mb-3">
-        <input
-          className="form-control"
+    <Form className="d-grid gap-4" id="contact-form" onSubmit={onSubmit}>
+      <Form.Group className="form-floating">
+        <Form.Control
           id="name"
           type="text"
           onChange={onChange}
@@ -14,12 +14,11 @@ function ContactForm({ form, onChange, onSubmit }) {
           placeholder="Name"
           required
         />
-        <label htmlFor="name">Name</label>
-      </div>
+        <Form.Label htmlFor="name">Name</Form.Label>
+      </Form.Group>
 
-      <div className="form-floating mb-3">
-        <input
-          className="form-control"
+      <Form.Group className="form-floating">
+        <Form.Control
           type="email"
           id="email"
           onChange={onChange}
@@ -29,12 +28,11 @@ function ContactForm({ form, onChange, onSubmit }) {
           required
           min={6}
         />
-        <label htmlFor="email">Email</label>
-      </div>
+        <Form.Label htmlFor="email">Email</Form.Label>
+      </Form.Group>
 
-      <div className="form-floating mb-3">
-        <input
-          className="form-control"
+      <Form.Group className="form-floating">
+        <Form.Control
           type="tel"
           id="phoneNumber"
           onChange={onChange}
@@ -44,14 +42,11 @@ function ContactForm({ form, onChange, onSubmit }) {
           required
           min={6}
         />
-        <label htmlFor="phoneNumber">Phone Number</label>
-      </div>
+        <Form.Label htmlFor="phoneNumber">Phone Number</Form.Label>
+      </Form.Group>
 
-      <div className="mb-3">
-        <label className="mb-3" htmlFor="subject">
-          Subject
-        </label>
-        <select
+      <Form.Group className="form-floating">
+        <Form.Select
           id="subject"
           className="form-select"
           onChange={onChange}
@@ -64,30 +59,30 @@ function ContactForm({ form, onChange, onSubmit }) {
           <option>Consulting Services</option>
           <option>Store Setup Services</option>
           <option>Repair Services</option>
-        </select>
-      </div>
+        </Form.Select>
+        <Form.Label htmlFor="subject">Subject</Form.Label>
+      </Form.Group>
 
-      <div className="mb-3">
-        <label className="mb-3" htmlFor="message">
-          Message
-        </label>
-        <textarea
+      <Form.Group className="form-floating">
+        <Form.Control
           id="message"
-          className="form-control"
+          as="textarea"
+          className="h-100"
           onChange={onChange}
           value={form.message}
           name="message"
           placeholder="What can we help you with?"
           cols={80}
-          rows={5}
+          rows={10}
           required
         />
-      </div>
+        <Form.Label htmlFor="message">Message</Form.Label>
+      </Form.Group>
 
-      <button className="btn btn-dark" type="submit">
+      <Button variant="dark" type="submit">
         Submit
-      </button>
-    </form>
+      </Button>
+    </Form>
   );
 }
 

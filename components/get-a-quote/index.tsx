@@ -1,10 +1,17 @@
 import React from "react";
+import { Button } from "react-bootstrap";
 
 function GetAQuote() {
   return (
-    <a href="/#contact" className="btn btn-light bg-lg mt-3" role="button">
+    <Button
+      variant="light"
+      size="lg"
+      href="/#contact"
+      className="mt-3"
+      role="button"
+    >
       Get a Quote
-    </a>
+    </Button>
   );
 }
 
