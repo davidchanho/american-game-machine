@@ -6,9 +6,9 @@ interface Props {
 }
 
 function Button({ label, isDark }: Props) {
-  if (isDark) return <button className="btn btn-dark">{label}</button>;
-  
-  return <button className="btn btn-light">{label}</button>;
+  return (
+    <button className={`btn btn-${isDark ? "dark" : "light"}`}>{label}</button>
+  );
 }
 
 export default Button;

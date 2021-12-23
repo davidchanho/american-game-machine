@@ -43,9 +43,6 @@ function Head() {
         rel="stylesheet"
       />
 
-      {/* bing webmaster tool */}
-      <meta name="msvalidate.01" content="654E17C0EEC2FCAFAEDFB170859C4D1A" />
-
       <script>
         {process.env.NODE_ENV == "production"
           ? "window.__REACT_DEVTOOLS_GLOBAL_HOOK__.inject = function(){}"
